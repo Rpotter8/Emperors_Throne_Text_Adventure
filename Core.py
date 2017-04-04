@@ -1,13 +1,15 @@
 #Emperor's Throne Pre-Alpha 0.0.01
 #Game Core
-from Entity import *
+import Entity
 import random
-from Environment import *
+import Environment
+import EnvironmentGenerator
 
 #Game Intro!
 print("Welcome Player!")
 name = input("Please Input Your Name! ")
-difficulty = int(input("Please Select a Difficulty From 1-5"))
+difficulty = int(input("Please Select a Difficulty From 1-5 "))
+print("---------------------------------------------------------------------------------------------")
 print("Welcome "+name+"! You are about to embark on a great quest which\n is a matter of life and death for the entire kingdom!")
 print("Our story begins here:")
 print("""
@@ -51,7 +53,11 @@ input("Press Enter to Continue...")
 #Game Starts Here!
 JailCell = Environment([Entity("Non-descript Potion","Potion",0,5)],"smelly dark room outside your jail cell.")
 print(JailCell.toString())
+
 #Testing RunCode
+#while(1):
+#    input("Press Enter to Continue...")
+#    print(EnvironmentGenerator.genEnvironment(difficulty).toString())
 
 #objects = []
 #for i in range(0,10):
