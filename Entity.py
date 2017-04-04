@@ -31,4 +31,4 @@ class Entity():
         elif(self.type=="Key"):
             return self.name+" opens door "+str(self.doornum)
         elif(self.type=="Potion"):
-            return self.name+" heals "+str(self.severity)+" hitpoints!"
+            return self.name
