@@ -4,12 +4,15 @@ from Entity import *
 import random
 from Environment import *
 from Player import *
+from Door import *
 import EnvironmentGenerator
 
 #Game Intro!
 print("Welcome Player!")
 name = input("Please Input Your Name! ")
 difficulty = int(input("Please Select a Difficulty From 1-5 "))
+#Player initialization
+#TODO modify stats based on difficulty
 player = Player(name,25,5)
 print("\n\n---------------------------------------------------------------------------------------------")
 print("Welcome "+name+"! You are about to embark on a great quest which\n is a matter of life and death for the entire kingdom!")
@@ -53,13 +56,14 @@ input("Press Enter to Continue...")
 print("You quickly escape the jail cell and decide to confront your uncle in the throne room!")
 input("Press Enter to Continue...")
 #Game Starts Here!
-JailCell = Environment([Entity("Non-descript Potion","Potion",0,5)],"smelly dark room outside your jail cell.")
+#Predefined location, with one potion type random item.
+JailCell = Environment([EnvironmentGenerator.genObject(2,difficulty)],"smelly dark room outside your jail cell",[Door(False,"Up",0)])
 print(JailCell.toString())
 
 #Testing RunCode
 while(1):
     input("Press Enter to Continue...")
-    print(EnvironmentGenerator.genEnvironment(difficulty).toString())
+    print(EnvironmentGenerator.genEnvironment(difficulty,"Up").toString())
 
 #objects = []
 #for i in range(0,10):

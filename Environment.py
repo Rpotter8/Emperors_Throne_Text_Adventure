@@ -2,13 +2,18 @@
 #Contains a description to be given to the user.
 #Contains a list of entities that this environment contains.
 class Environment():
-    def __init__(self,entities,desc):
+    def __init__(self,entities,desc,doors):
         self.entities = entities
+        self.doors = doors
         self.description = desc
     def toString(self):
         if(len(self.entities)==0):
-            return "You have entered "+self.description+" that is empty "
-        retDesc = "You have entered "+self.description+" that contains "
-        for i in self.entities:
-            retDesc = retDesc+"\n a(n)"+i.toString()
+            retDesc = "You have entered "+self.description+" that is empty "
+        else:
+            retDesc = "You have entered "+self.description+" that contains "
+            for i in self.entities:
+                retDesc = retDesc+"\n a(n)"+i.toString()
+        retDesc = retDesc+"\nThe exits from this room are"
+        for z in self.doors:
+            retDesc = retDesc+"\n"+z.toString()
         return retDesc
