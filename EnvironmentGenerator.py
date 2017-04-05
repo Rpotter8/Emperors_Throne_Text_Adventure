@@ -5,6 +5,7 @@ from Environment import *
 import Library
 
 def genObject(objType, difficulty):
+    NUMBER_OF_DOORS = 10
     retEnt = ""
     if objType == 0:
         #BuildRandomEnemy Object Here
@@ -13,10 +14,14 @@ def genObject(objType, difficulty):
         retEnt = Entity(Creatures[Choice],"Enemy",difficulty*random.randint(1,3),difficulty*random.randint(1,3))
     elif objType == 1:
         #BuildRandomKey Object Here
-        retEnt = Entity("Dull Key","Key",1,0)
+        Descriptions = Library.getDescriptionsList()
+        Choice = random.randint(0,len(Descriptions)-1)
+        retEnt = Entity(Descriptions[Choice]+" Key","Key",random.randint(0,NUMBER_OF_DOORS-1),0)
     elif objType == 2:
         #BuildRandomPotion Object Here
-        retEnt = Entity("Non-Descript Potion","Potion",0,5)
+        Descriptions = Library.getDescriptionsList()
+        Choice = random.randint(0,len(Descriptions)-1)
+        retEnt = Entity(Descriptions[Choice]+" Potion","Potion",0,5)
     return retEnt;
 
 def genEnvironment(difficulty):

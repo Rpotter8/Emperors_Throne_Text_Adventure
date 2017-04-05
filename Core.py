@@ -3,6 +3,7 @@
 from Entity import * 
 import random
 from Environment import *
+from Player import *
 import EnvironmentGenerator
 
 #Game Intro!
