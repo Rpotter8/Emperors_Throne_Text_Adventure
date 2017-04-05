@@ -31,7 +31,9 @@ def genEnvironment(difficulty):
         objType = random.randint(0,2)
         objects.append(genObject(objType,difficulty))
     #Generate random room description
-    desc = "a small room"
+    Descriptions = Library.getDescriptionsList()
+    Choice = random.randint(0,len(Descriptions)-1)
+    desc = "a "+Descriptions[Choice]+" room"
     retEnv = Environment(objects,desc)
     return retEnv
         
