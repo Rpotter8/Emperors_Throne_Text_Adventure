@@ -10,7 +10,13 @@ import EnvironmentGenerator
 #Game Intro!
 print("Welcome Player!")
 name = input("Please Input Your Name! ")
-difficulty = int(input("Please Select a Difficulty From 1-5 "))
+while True:
+    try:
+        difficulty = int(input("Please Select a Difficulty From 1-5 "))
+        if(difficulty>0 and difficulty<6):
+            break
+    except ValueError:
+        print()
 #Player initialization
 #TODO modify stats based on difficulty
 player = Player(name,25,5)
@@ -65,21 +71,3 @@ while(1):
     input("Press Enter to Continue...")
     print(EnvironmentGenerator.genEnvironment(difficulty,"Up").toString())
 
-#objects = []
-#for i in range(0,10):
-#    generate = random.randint(0,2)
-#    Object = ""
-#    if(generate == 0):
-#        generate1 = random.randint(0,10)
-#        generate2 = random.randint(0,10)
-#        Object = Entity("Dragon","Enemy",generate1,generate2)
-#    elif(generate == 1):
-#        generate1 = random.randint(0,10)
-#        Object = Entity("Silver Key","Key",generate1,0)
-#    else:
-#        generate1 = random.randint(0,10)
-#        generate2 = random.randint(0,10)
-#        Object = Entity("Potion","Potion",generate1,generate2)
-#    objects.append(Object)
-#cEnvironment = Environment(objects,"a small room")
-#print(cEnvironment.toString())
