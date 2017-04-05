@@ -9,7 +9,8 @@ import EnvironmentGenerator
 print("Welcome Player!")
 name = input("Please Input Your Name! ")
 difficulty = int(input("Please Select a Difficulty From 1-5 "))
-print("---------------------------------------------------------------------------------------------")
+player = Player(name,25,5)
+print("\n\n---------------------------------------------------------------------------------------------")
 print("Welcome "+name+"! You are about to embark on a great quest which\n is a matter of life and death for the entire kingdom!")
 print("Our story begins here:")
 print("""
@@ -47,7 +48,7 @@ input("Press Enter to Continue...")
 print("Your memory slowly returns as you clear the sleep from your eyes...")
 print("You remember the violent murder of your father at the hands of your uncle\nYou realize your uncle must have thrown you in the jail to keep you out of the way")
 print("until he can fully take over the kingdom!")
-print("Press Enter to Continue...")
+input("Press Enter to Continue...")
 print("You quickly escape the jail cell and decide to confront your uncle in the throne room!")
 input("Press Enter to Continue...")
 #Game Starts Here!

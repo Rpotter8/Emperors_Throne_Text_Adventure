@@ -2,12 +2,15 @@
 from Entity import * 
 import random
 from Environment import *
+import Library
 
 def genObject(objType, difficulty):
     retEnt = ""
     if objType == 0:
         #BuildRandomEnemy Object Here
-        retEnt = Entity("Dragon","Enemy",difficulty*random.randint(1,3),difficulty*random.randint(1,3))
+        Creatures = Library.getCreatureList()
+        Choice = random.randint(0,len(Creatures)-1)
+        retEnt = Entity(Creatures[Choice],"Enemy",difficulty*random.randint(1,3),difficulty*random.randint(1,3))
     elif objType == 1:
         #BuildRandomKey Object Here
         retEnt = Entity("Dull Key","Key",1,0)
