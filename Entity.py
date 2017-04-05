@@ -4,7 +4,7 @@
     #Keys have attribute doornum (the id of the door they open)
     #Potions have attributes effect and severity
         #Potion Effects are: 0 = health, 1 = poison
-class entity():
+class Entity():
     def __init__(self,name,etype,attr1,attr2):
         self.name = name
         self.type = etype

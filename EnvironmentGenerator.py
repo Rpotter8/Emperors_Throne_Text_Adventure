@@ -1,7 +1,7 @@
 #Generates Valid New Environments
+from Entity import * 
 import random
-import Environment
-import Entity
+from Environment import *
 
 def genObject(objType, difficulty):
     retEnt = ""

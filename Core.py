@@ -1,8 +1,8 @@
 #Emperor's Throne Pre-Alpha 0.0.01
 #Game Core
-import Entity
+from Entity import * 
 import random
-import Environment
+from Environment import *
 import EnvironmentGenerator
 
 #Game Intro!
@@ -55,9 +55,9 @@ JailCell = Environment([Entity("Non-descript Potion","Potion",0,5)],"smelly dark
 print(JailCell.toString())
 
 #Testing RunCode
-#while(1):
-#    input("Press Enter to Continue...")
-#    print(EnvironmentGenerator.genEnvironment(difficulty).toString())
+while(1):
+    input("Press Enter to Continue...")
+    print(EnvironmentGenerator.genEnvironment(difficulty).toString())
 
 #objects = []
 #for i in range(0,10):
