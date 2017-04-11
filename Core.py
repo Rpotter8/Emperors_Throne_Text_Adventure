@@ -67,13 +67,19 @@ input("Press Enter to Continue...")
 CurrEnv = 0
 JailCell = Environment([EnvironmentGenerator.genObject(2,difficulty)],"smelly dark room outside your jail cell",[Door(False,"Up",0)])
 CurrEnv = JailCell
-print(JailCell.toString())
+rooms = {"0 0":CurrEnv}
+print(CurrEnv.toString())
 
 #Testing RunCode
 while(1):
     data = InputProcessor.processInput(input("What do you do?"),player,CurrEnv)
-    if("Error" not in data and "Look" not in data):
+    if("Error" not in data and "Look" not in data and player.getLocation() not in rooms):
         CurrEnv = EnvironmentGenerator.genEnvironment(difficulty,data)
+        rooms[player.getLocation()] = CurrEnv
+        print(CurrEnv.toString())
+        continue
+    elif("Error" not in data and "Look" not in data):
+        CurrEnv = rooms[player.getLocation()]
         print(CurrEnv.toString())
         continue
     if("Look" in data):

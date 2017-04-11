@@ -32,3 +32,5 @@ class Player():
             self.pos[0] = self.pos[0]-1
         if(direction == "Right"):
             self.pos[0] = self.pos[0]+1
+    def getLocation(self):
+        return str(self.pos[0])+" "+str(self.pos[1])
