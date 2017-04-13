@@ -6,6 +6,7 @@ from Environment import *
 from Player import *
 from Door import *
 import EnvironmentGenerator
+import InputProcessor
 
 #Game Intro!
 print("Welcome Player!")
@@ -63,11 +64,30 @@ print("You quickly escape the jail cell and decide to confront your uncle in the
 input("Press Enter to Continue...")
 #Game Starts Here!
 #Predefined location, with one potion type random item.
+CurrEnv = 0
 JailCell = Environment([EnvironmentGenerator.genObject(2,difficulty)],"smelly dark room outside your jail cell",[Door(False,"Up",0)])
-print(JailCell.toString())
+CurrEnv = JailCell
+rooms = {"0 0":CurrEnv}
+print(CurrEnv.toString())
 
 #Testing RunCode
 while(1):
-    input("Press Enter to Continue...")
-    print(EnvironmentGenerator.genEnvironment(difficulty,"Up").toString())
+    data = InputProcessor.processInput(input("What do you do?"),player,CurrEnv)
+    if("Error" not in data and "Look" not in data and player.getLocation() not in rooms):
+        CurrEnv = EnvironmentGenerator.genEnvironment(difficulty,data)
+        rooms[player.getLocation()] = CurrEnv
+        print(CurrEnv.toString())
+        continue
+    elif("Error" not in data and "Look" not in data):
+        CurrEnv = rooms[player.getLocation()]
+        print(CurrEnv.toString())
+        continue
+    if("Look" in data):
+        print(CurrEnv.toString())
+        continue
+        #print("I do not understand your command")
+    print("You "+data[5:]+", but nothing happens")
+    #input("Press Enter to Continue...")
+    #print(EnvironmentGenerator.genEnvironment(difficulty,"Up").toString())
+    
 

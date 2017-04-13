@@ -17,3 +17,8 @@ class Environment():
         for z in self.doors:
             retDesc = retDesc+"\n"+z.toString()
         return retDesc
+    def hasDoor(self,direction):
+        for z in self.doors:
+            if(direction in z.getDoorDir()):
+                return True
+        return False

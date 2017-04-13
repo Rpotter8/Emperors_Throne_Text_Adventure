@@ -22,6 +22,7 @@ def genObject(objType, difficulty):
         #BuildRandomPotion Object Here
         Descriptions = Library.getDescriptionsList()
         Choice = random.randint(0,len(Descriptions)-1)
+        #TODO Randomize Potion Effect
         retEnt = Entity(Descriptions[Choice]+" Potion","Potion",0,5)
     return retEnt;
 
@@ -48,7 +49,7 @@ def genEnvironment(difficulty,direction):
             isDoor = True
         if isDoor == True:
             randDoor = random.randint(0,len(choices)-1)
-            lockedChance = random.randint(0,100/difficulty)
+            lockedChance = random.randint(0,round(100/difficulty))
             lockedState = False
             if lockedChance <= 10:
                 lockedState = True
@@ -59,6 +60,7 @@ def genEnvironment(difficulty,direction):
         objType = random.randint(0,2)
         objects.append(genObject(objType,difficulty))
     #Generate random room description
+    #TODO make the description more random
     Descriptions = Library.getDescriptionsList()
     Choice = random.randint(0,len(Descriptions)-1)
     desc = "a "+Descriptions[Choice]+" room"

@@ -1,5 +1,6 @@
 class Player():
     def __init__(self,name,health,attack):
+        self.pos = [0,0]
         self.name = name
         self.health = health
         self.attack = attack
@@ -22,3 +23,14 @@ class Player():
         inventory.pop(index)
     def getName(self):
         return self.name
+    def move(self,direction):
+        if(direction == "Up"):
+            self.pos[1] = self.pos[1]+1
+        if(direction == "Down"):
+            self.pos[1] = self.pos[1]-1
+        if(direction == "Left"):
+            self.pos[0] = self.pos[0]-1
+        if(direction == "Right"):
+            self.pos[0] = self.pos[0]+1
+    def getLocation(self):
+        return str(self.pos[0])+" "+str(self.pos[1])
