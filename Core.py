@@ -7,10 +7,13 @@ from Player import *
 from Door import *
 import EnvironmentGenerator
 import InputProcessor
+import RecognizeSpeech
 
 #Game Intro!
 print("Welcome Player!")
 name = input("Please Input Your Name! ")
+#defaults to yes
+stot = input("Would you like to use speech to text? y/n")
 while True:
     try:
         difficulty = int(input("Please Select a Difficulty From 1-5 "))
@@ -72,7 +75,12 @@ print(CurrEnv.toString())
 
 #Testing RunCode
 while(1):
-    data = InputProcessor.processInput(input("What do you do?"),player,CurrEnv)
+    data = ""
+    if(stot != 'n'):
+        text = RecognizeSpeech.recognize()
+        data = InputProcessor.processInput(text,player,CurrEnv)
+    else:
+        data = InputProcessor.processInput(input("What do you do?"),player,CurrEnv)
     if("Error" not in data and "Look" not in data and player.getLocation() not in rooms):
         CurrEnv = EnvironmentGenerator.genEnvironment(difficulty,data)
         rooms[player.getLocation()] = CurrEnv
