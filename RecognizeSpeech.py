@@ -3,7 +3,9 @@ def recognize():
     r = sr.Recognizer()
     text = "ERROR"
     with sr.Microphone() as source:
-        r.adjust_for_ambient_noise(source)
+        r.energy_threshold = 3000
+        r.dynamic_energy_threshold = True
+        #r.adjust_for_ambient_noise(source)
         print("Im listening adventurer...")
         audio = r.listen(source)
     try:

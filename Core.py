@@ -1,4 +1,4 @@
-#Emperor's Throne Pre-Alpha 0.0.01
+#Emperor's Throne Pre-Alpha 0.0.5
 #Game Core
 from Entity import * 
 import random
@@ -94,6 +94,10 @@ while(1):
         print(CurrEnv.toString())
         continue
         #print("I do not understand your command")
+    #This is not working
+    if(data[5:] == " "):
+        print("You must act, Adventurer!")
+        continue
     print("You "+data[5:]+", but nothing happens")
     #input("Press Enter to Continue...")
     #print(EnvironmentGenerator.genEnvironment(difficulty,"Up").toString())
