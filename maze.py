@@ -1,13 +1,10 @@
-from __future__ import print_function
 import random
-
+from EnvironmentGenerator import *
 
 
 class maze():
 
     def getSurrounding(self, curr):
-        print(type(curr))
-        print(str(curr.x) + "|" + str(curr.y) + "\n")
         surr = []
         depth = self.height
         width = self.width
@@ -40,13 +37,9 @@ class maze():
             # print(type(right))
             # print("right")
             surr.append(right);
-        for i in surr:
-            print(str(i.x) + " " + str(i.y))
-        print("\n")
         return surr;
 
     def buildMaze(self, start, end):
-
         st = []
         st.append(start)
         start.visited = True
@@ -68,25 +61,42 @@ class maze():
                         curr.left = False
                         st[-1].right =  False
                 else:
-					if (curr.x < st[-1].x):
-						curr.below = False;
-						st[-1].above = False;
-					else:
-						curr.above = False;
-						st[-1].below = False;
+                    if (curr.x < st[-1].x):
+                        curr.below = False;
+                        st[-1].above = False;
+                    else:
+                        curr.above = False;
+                        st[-1].below = False;
                 if(not foundEnd):
-					if(curr == end):
-						foundEnd = True;
+                    if(curr == end):
+                        foundEnd = True;
             else:
                 curr = st.pop()
 
+    def addDoors(self):
+        up = 0
+        down = 0
+        left = 0
+        right = 0
+        for v in self.matrix:
+            for z in v:
+                if z.above == False:
+                    up = 1
+                if z.below == False:
+                    down = 1
+                if z.left == False:
+                    left = 1
+                if z.right == False:
+                    right = 1
+                z.environment = genEnvironment(self.difficulty,up,down,right,left)
 
+    def getVertex(self,x,y):
+        return self.matrix[x][y]
 
-
-
-    def __init__ (self, height, width):
+    def __init__ (self, height, width,difficulty):
         self.height = height
         self.width = width
+        self.difficulty = difficulty
         self.matrix = [[0 for x in range(width)] for y in range(height)]
 
         for i in range(self.height):
@@ -99,7 +109,7 @@ class maze():
         end.below = False
 
         self.buildMaze(start, end)
-
+        self.addDoors()
 
 
 # Vertex for the maze. The maze is represented as a graph
@@ -113,11 +123,7 @@ class Vertex():
         self.left = True
         self.right = True
         self.visited = False
+        self.environment = None
+    def getEnv(self):
+        return self.environment
 
-
-blah = maze(5,5)
-
-for i in range(5):
-    for j in range(5):
-        print(str(blah.matrix[i][j].x) + ", " + str(blah.matrix[i][j].y) + ' | ', end='')
-    print('\n')

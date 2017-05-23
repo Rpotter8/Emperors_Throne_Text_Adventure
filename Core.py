@@ -8,6 +8,7 @@ from Door import *
 import EnvironmentGenerator
 import InputProcessor
 import RecognizeSpeech
+from maze import *
 
 #Game Intro!
 print("Welcome Player!")
@@ -68,9 +69,9 @@ input("Press Enter to Continue...")
 #Game Starts Here!
 #Predefined location, with one potion type random item.
 CurrEnv = 0
-JailCell = Environment([EnvironmentGenerator.genObject(2,difficulty)],"smelly dark room outside your jail cell",[Door(False,"Up",0)])
-CurrEnv = JailCell
-rooms = {"0 0":CurrEnv}
+currfloor = maze(5,5,difficulty)
+#JailCell = Environment([EnvironmentGenerator.genObject(2,difficulty)],"smelly dark room outside your jail cell",[Door(False,"Up",0)])
+CurrEnv = currfloor.getVertex(player.getLocation()[0],player.getLocation()[1]).getEnv()
 print(CurrEnv.toString())
 
 #Testing RunCode
@@ -81,13 +82,8 @@ while(1):
         data = InputProcessor.processInput(text,player,CurrEnv)
     else:
         data = InputProcessor.processInput(input("What do you do?"),player,CurrEnv)
-    if("Error" not in data and "Look" not in data and player.getLocation() not in rooms):
-        CurrEnv = EnvironmentGenerator.genEnvironment(difficulty,data)
-        rooms[player.getLocation()] = CurrEnv
-        print(CurrEnv.toString())
-        continue
-    elif("Error" not in data and "Look" not in data):
-        CurrEnv = rooms[player.getLocation()]
+    if("Error" not in data and "Look" not in data):
+        CurrEnv = currfloor.getVertex(player.getLocation()[0],player.getLocation()[1]).getEnv()
         print(CurrEnv.toString())
         continue
     if("Look" in data):

@@ -26,35 +26,18 @@ def genObject(objType, difficulty):
         retEnt = Entity(Descriptions[Choice]+" Potion","Potion",0,5)
     return retEnt;
 
-def genEnvironment(difficulty,direction):
+def genEnvironment(difficulty,updoor,downdoor,rightdoor,leftdoor):
     objects = []
     door = []
     choices = []
-    if direction == "Up":
-        door.append(Door(False,"Down",0))
-        choices = ["Up","Left","Right"]
-    elif direction == "Down":
+    if updoor == 1:
         door.append(Door(False,"Up",0))
-        choices = ["Down","Left","Right"]
-    elif direction == "Left":
+    if downdoor == 1:
+        door.append(Door(False,"Down",0))
+    if rightdoor == 1:
         door.append(Door(False,"Right",0))
-        choices = ["Up","Left","Down"]       
-    elif direction == "Right":
+    if leftdoor == 1:
         door.append(Door(False,"Left",0))
-        choices = ["Up","Down","Right"]
-    for x in range(0,3):
-        randDoorChance = random.randint(0,99)
-        isDoor = False
-        if randDoorChance < 35:
-            isDoor = True
-        if isDoor == True:
-            randDoor = random.randint(0,len(choices)-1)
-            lockedChance = random.randint(0,round(100/difficulty))
-            lockedState = False
-            if lockedChance <= 10:
-                lockedState = True
-            door.append(Door(lockedState,choices[randDoor],random.randint(0,NUMBER_OF_DOORS-1)))
-            choices.pop(randDoor)
     numObjects = random.randint(0,2)
     for i in range(0,numObjects):
         objType = random.randint(0,2)
