@@ -80,12 +80,14 @@ class maze():
                 curr = st.pop()
 
     def addDoors(self):
-        up = 0
-        down = 0
-        left = 0
-        right = 0
+
         for v in self.matrix:
+
             for z in v:
+                up = 0
+                down = 0
+                left = 0
+                right = 0
                 if z.above == False:
                     up = 1
                 if z.below == False:
