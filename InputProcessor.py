@@ -28,4 +28,11 @@ def processInput(data,plyr,env):
             return "Errorrun into wall"
     if("look" in data):
         return "Look"
+    if("grab" in data):
+        if(env.hasItem()):
+            for item in env.getItems():
+                plyr.addInventory(item)
+                env.remove(item)
+                print("You have added ",item," to your inventory.")
+        return "Grab"
     return "Error"+data
