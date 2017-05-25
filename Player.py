@@ -25,9 +25,9 @@ class Player():
         return self.name
     def move(self,direction):
         if(direction == "Up"):
-            self.pos[1] = self.pos[1]+1
-        if(direction == "Down"):
             self.pos[1] = self.pos[1]-1
+        if(direction == "Down"):
+            self.pos[1] = self.pos[1]+1
         if(direction == "Left"):
             self.pos[0] = self.pos[0]-1
         if(direction == "Right"):
