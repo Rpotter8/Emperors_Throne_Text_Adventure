@@ -1,3 +1,4 @@
+import Library
 #Class which contains information for objects in the game
 #Attributes are assigned based on object type
     #Enemies have attributes health and damage
@@ -16,6 +17,9 @@ class Entity():
         elif etype=="Potion":
             self.effect = attr1
             self.severity = attr2
+        elif etype=="item":
+            self.strength=attr1
+            self.defense=attr2
             
     def getName(self):
         return self.name
@@ -32,3 +36,17 @@ class Entity():
             return self.name+" opens door "+str(self.doornum)
         elif(self.type=="Potion"):
             return self.name
+        elif(self.type=="item"):
+            if(self.name in Library.getWeaponsList()):
+                return self.name+" which does "+str(self.strength)+" damage."
+            elif(self.name in Library.getArmorsList()):
+                return self.name+" does "+str(self.defense)+" defense."
+            else:
+                return self.name
+        else:
+            return "SOMETHING WENT WRONG WITH ITEM"
+    def toStringItem(self):
+        if(self.type=='item'):
+            return self.name
+        else:
+            return "SOMETHING WENT WRONG WITH ITEM"
