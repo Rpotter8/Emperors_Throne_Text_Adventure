@@ -101,9 +101,9 @@ currfloor = maze(5,5,difficulty)
 #JailCell = Environment([EnvironmentGenerator.genObject(2,difficulty)],"smelly dark room outside your jail cell",[Door(False,"Up",0)])
 CurrEnv = currfloor.getVertex(player.getLocation()[0],player.getLocation()[1]).getEnv()
 print(CurrEnv.toString())
-
 #Testing RunCode
 while(1):
+    print("x:"+str(player.getLocation()[0])+" y:"+str(player.getLocation()[1]))
     data = ""
     if(stot != 'n'):
         text = RecognizeSpeech.recognize()
