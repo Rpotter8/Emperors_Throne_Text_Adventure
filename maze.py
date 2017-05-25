@@ -111,7 +111,7 @@ class maze():
         for i in range(height):
             if(i == 0):
                 for j in range(width):
-                    if (not (j % 2 == 0) and not self.matrix[i][j / 2].above):
+                    if (not (j % 2 == 0) and not self.matrix[i][j // 2].above):
                         self.printer[i][j] = ' '
                     else:
                         self.printer[i][j] = WALL
@@ -121,27 +121,27 @@ class maze():
                         if(j % 2 == 0):
                             self.printer[i][j] = WALL
                         else:
-                            if(self.matrix[i / 2 - 1][j / 2].below):
+                            if(self.matrix[i // 2 - 1][j // 2].below):
                                 self.printer[i][j] = WALL
                             else:
-								self.printer[i][j] = ' '
+                                self.printer[i][j] = ' '
                     else:
                         if (j % 2 == 0):
                             if (j < width - 1):
-                                if (self.matrix[i / 2][j / 2].left):
-									self.printer[i][j] = WALL
+                                if (self.matrix[i // 2][j // 2].left):
+                                    self.printer[i][j] = WALL
                                 else:
-									self.printer[i][j] = ' '
+                                    self.printer[i][j] = ' '
                             else:
-                                if (self.matrix[i / 2][j / 2 - 1].right):
-									self.printer[i][j] = WALL
+                                if (self.matrix[i // 2][j // 2 - 1].right):
+                                    self.printer[i][j] = WALL
                                 else:
-									self.printer[i][j] = ' '
+                                    self.printer[i][j] = ' '
                         else:
-                            if (self.matrix[i / 2][j / 2]):
-								self.printer[i][j] = ' '
+                            if (self.matrix[i // 2][j // 2]):
+                                self.printer[i][j] = ' '
                             else:
-								self.printer[i][j] = ' '
+                                self.printer[i][j] = ' '
         for i in range(width):
             for j in range(height):
                 print(self.printer[i][j], end='')
@@ -182,3 +182,7 @@ class Vertex():
         self.environment = None
     def getEnv(self):
         return self.environment
+
+
+
+maze(5,5,1).display()
