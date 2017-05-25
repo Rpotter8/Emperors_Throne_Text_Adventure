@@ -38,9 +38,9 @@ class Entity():
             return self.name
         elif(self.type=="item"):
             if(self.name in Library.getWeaponsList()):
-                return self.name+" which does "+str(self.strength)+" damage."
+                return self.name+" which does "+str(self.strength)+" damage"
             elif(self.name in Library.getArmorsList()):
-                return self.name+" does "+str(self.defense)+" defense."
+                return self.name+" which does "+str(self.defense)+" defense"
             else:
                 return self.name
         else:

@@ -113,6 +113,12 @@ while(1):
         data = InputProcessor.processInput(input("What do you do?"),player,CurrEnv)
     if("Grab" in data):
         print("GRABBY GRABBY")
+    if("Inventory" in data):
+        print("This is your inventory...")
+    if("Equipment" in data):
+        print("Those are your equipped items..")
+    if("Equip" in data):
+        print ("Equipping done.")
     if("Error" not in data and "Look" not in data):
         CurrEnv = currfloor.getVertex(player.getLocation()[0],player.getLocation()[1]).getEnv()
         print(CurrEnv.toString())

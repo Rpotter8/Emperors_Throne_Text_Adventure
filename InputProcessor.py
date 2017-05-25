@@ -1,5 +1,6 @@
 from Player import *
 from Environment import *
+import Library
 def processInput(data,plyr,env):
     data = data.lower()
     if("up" in data):
@@ -33,6 +34,34 @@ def processInput(data,plyr,env):
             for item in env.getItems():
                 plyr.addInventory(item)
                 env.remove(item)
-                print("You have added ",item," to your inventory.")
+                print("You have added ",item.toString()," to your inventory.")
         return "Grab"
+    if("inventory" in data):
+        inv = plyr.getInventory()
+        print (inv)
+        return "Inventory"
+    if("equipment" in data):
+        armor = plyr.getArmor()
+        weapon = plyr.getWeapon()
+        print ("This is your weapon : ",weapon.toString())
+        print ("This is your armor  : ",armor.toString())
+        return "Equipment"
+    if("equip" in data):
+        comp = plyr.getInventoryComplex()
+        inv = plyr.getInventory()
+        print (inv)
+        equip=input("\tThis is your Inventory, which would you like to equip?\n\t\t")
+        if equip in inv:
+            print ("you have this item!!!");
+            if equip in Library.getWeaponsList():
+                for item in comp:
+                    if item.toStringItem() == equip:
+                        plyr.setWeapon(item)
+            elif equip in Library.getArmorsList():
+                for item in comp:
+                    if item.toStringItem() == equip:
+                        plyr.setArmor(item)
+        else :
+            print ("YOU DONT HAVE THIS@!!!@##R")
+        return "Equip"
     return "Error"+data
