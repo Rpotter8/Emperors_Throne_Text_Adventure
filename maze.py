@@ -27,19 +27,19 @@ class maze():
             right = self.matrix[curr.x][curr.y + 1];
         if (above != None and above.visited == False):
             # print(type(above))
-            print('above', end='')
+            # print('above', end='')
             surr.append(above);
         if (below != None and below.visited == False):
             # print(type(below))
-            print('below', end='')
+            # print('below', end='')
             surr.append(below);
         if (left != None and left.visited == False):
             # print(type(left))
-            print("left", end='')
+            # print("left", end='')
             surr.append(left);
         if (right != None and right.visited == False):
             # print(type(right))
-            print("right", end='')
+            # print("right", end='')
             surr.append(right);
         print()
         return surr;
@@ -80,12 +80,14 @@ class maze():
                 curr = st.pop()
 
     def addDoors(self):
-        up = 0
-        down = 0
-        left = 0
-        right = 0
+
         for v in self.matrix:
+
             for z in v:
+                up = 0
+                down = 0
+                left = 0
+                right = 0
                 if z.above == False:
                     up = 1
                 if z.below == False:
@@ -185,4 +187,4 @@ class Vertex():
 
 
 
-maze(5,5,1).display()
+# maze(5,5,1).display()
