@@ -8,6 +8,10 @@ class Environment():
 
         self.doors = doors
         self.description = desc
+    def changeDesc(self,ndesc):
+        self.description = ndesc
+    def addItem(self,item):
+        self.entities.append(item)
     def toString(self):
         if(len(self.entities)==0):
             retDesc = "You have entered "+self.description+" that is empty "
@@ -37,11 +41,12 @@ class Environment():
         #    print("\t\tDEBUG : ",str(type(z)))
         #    print("\t\t\tDEBUG : ",str(z.toString()))
         lis = []
-        print (self.entities)
-        print (Library.getCollectList())
+        #print (self.entities)
+        #print (Library.getCollectList())
         for item in self.entities:
-            if item.toStringItem() in Library.getCollectList():
+            if(item.getType != "Enemy"):
                 lis.append(item)
-        print (lis)
-        print ([item for item in self.entities if(item.toStringItem() in Library.getCollectList())])
-        return [item for item in self.entities if(item.toStringItem() in Library.getCollectList())]
+        #print (lis)
+        #print ([item for item in self.entities if(item.toStringItem() in Library.getCollectList())])
+        #return [item for item in self.entities if(item.toStringItem() in Library.getCollectList())]
+        return lis

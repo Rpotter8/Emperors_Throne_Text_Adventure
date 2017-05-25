@@ -97,10 +97,11 @@ class maze():
                 if z.right == False:
                     right = 1
                 z.environment = genEnvironment(self.difficulty,up,down,right,left)
-
+                if(z.x==0 and z.y==0):
+                    z.environment.changeDesc("smelly dark room outside your jail cell")
+                    z.environment.addItem(genObject(2,self.difficulty))
     def getVertex(self,x,y):
         return self.matrix[x][y]
-
     def display(self):
 
         height = len(self.printer)

@@ -3,7 +3,7 @@ Creatures = ["Giant","Dragon","Wolf","Mime","Rat"]
 
 Descriptions = ["Giant","Small","Tiny","Red","Black","Blue","Green","Purple","Translucent"]
 
-collect=['a sword','a helmet','a pair of pants','a shirt',\
+collect=['a sword','a helmet','a pair of pants','a shirt',
 		'some armor','a blade','a knife','a hammer']
 
 items=['a potion','a gem','some gold']

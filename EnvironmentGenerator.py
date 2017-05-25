@@ -28,7 +28,7 @@ def genObject(objType, difficulty):
         retEnt = Entity(Descriptions[Choice]+" Potion","Potion",0,5)
     elif objType >= 3:
         #BuildRandomItem object here:
-        print("DEBUG : WE MADE IT BOIZ")
+        #print("DEBUG : WE MADE IT BOIZ")
         items = Library.getCollectList()
         Choice = random.choice(items)
         retEnt = Entity(Choice,"item",random.randint(7,14)-difficulty,\
