@@ -5,6 +5,8 @@ class Player():
         self.health = health
         self.attack = attack
         self.inventory = []
+        self.weaponEquip = None
+        self.armorEquip = None
     def damage(self,amount):
         self.health = self.health-amount
         if self.health<=0:
@@ -13,6 +15,14 @@ class Player():
         self.health = self.health+amount
     def getAttack(self):
         return self.attack
+    def equipWeapon(self,weapon):
+        self.weaponEquip = weapon
+    def equipArmor(self,armor):
+        self.armorEquip = armor
+    def getEquipWeapon(self):
+        return self.weaponEquip
+    def getEquipArmor(self):
+        return self.armorEquip
     def changeAttack(self,number):
         self.attack = number
     def getInventory(self):

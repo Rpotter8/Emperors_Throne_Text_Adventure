@@ -98,7 +98,7 @@ input("Press Enter to Continue...")
 #Predefined location, with one potion type random item.
 CurrEnv = 0
 currfloor = maze(5,5,difficulty)
-currfloor.display()
+#currfloor.display()
 #JailCell = Environment([EnvironmentGenerator.genObject(2,difficulty)],"smelly dark room outside your jail cell",[Door(False,"Up",0)])
 CurrEnv = currfloor.getVertex(player.getLocation()[0],player.getLocation()[1]).getEnv()
 print(CurrEnv.toString())
