@@ -105,8 +105,7 @@ class maze():
         start = self.matrix[0][0]
         end = self.matrix[self.height - 1][self.width - 1]
 
-        start.above = False
-        end.below = False
+
 
         self.buildMaze(start, end)
         self.addDoors()
@@ -126,4 +125,3 @@ class Vertex():
         self.environment = None
     def getEnv(self):
         return self.environment
-
