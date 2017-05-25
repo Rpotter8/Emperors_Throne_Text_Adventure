@@ -1,4 +1,4 @@
-from __future__ import print_function
+
 import random
 from EnvironmentGenerator import *
 
@@ -182,6 +182,3 @@ class Vertex():
         self.environment = None
     def getEnv(self):
         return self.environment
-
-m = maze(5,5, 1)
-m.display()
