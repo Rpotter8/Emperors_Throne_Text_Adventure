@@ -110,6 +110,8 @@ while(1):
         data = InputProcessor.processInput(text,player,CurrEnv)
     else:
         data = InputProcessor.processInput(input("What do you do?"),player,CurrEnv)
+    if("Grab" in data):
+        print("GRABBY GRABBY")
     if("Error" not in data and "Look" not in data):
         CurrEnv = currfloor.getVertex(player.getLocation()[0],player.getLocation()[1]).getEnv()
         print(CurrEnv.toString())
