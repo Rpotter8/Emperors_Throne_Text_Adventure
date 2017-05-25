@@ -1,8 +1,12 @@
+from __future__ import print_function
 import random
 from EnvironmentGenerator import *
 
+WALL = "X"
 
 class maze():
+
+
 
     def getSurrounding(self, curr):
         surr = []
@@ -14,29 +18,30 @@ class maze():
         right = None
 
         if (curr.x + 1 < depth):
-            above = self.matrix[curr.x + 1][curr.y];
+            below = self.matrix[curr.x + 1][curr.y];
         if (curr.x - 1 >= 0):
-            below = self.matrix[curr.x - 1][curr.y];
+            above = self.matrix[curr.x - 1][curr.y];
         if (curr.y - 1 >= 0):
             left = self.matrix[curr.x][curr.y - 1];
         if (curr.y + 1 < width):
             right = self.matrix[curr.x][curr.y + 1];
         if (above != None and above.visited == False):
             # print(type(above))
-            # print('above')
+            print('above', end='')
             surr.append(above);
         if (below != None and below.visited == False):
             # print(type(below))
-            # print('below')
+            print('below', end='')
             surr.append(below);
         if (left != None and left.visited == False):
             # print(type(left))
-            # print("left")
+            print("left", end='')
             surr.append(left);
         if (right != None and right.visited == False):
             # print(type(right))
-            # print("right")
+            print("right", end='')
             surr.append(right);
+        print()
         return surr;
 
     def buildMaze(self, start, end):
@@ -47,6 +52,7 @@ class maze():
         curr = start
         while(len(st) > 0):
             surrVert = self.getSurrounding(curr)
+
             curr.visited = True
             if(len(surrVert) > 0):
                 st.append(curr)
@@ -93,11 +99,62 @@ class maze():
     def getVertex(self,x,y):
         return self.matrix[x][y]
 
-    def __init__ (self, height, width,difficulty):
+    def display(self):
+
+        height = len(self.printer)
+        width = len(self.printer[0])
+
+        for i in range(width):
+            for j in range(height):
+                print(self.printer[i][j], end='')
+            print()
+        for i in range(height):
+            if(i == 0):
+                for j in range(width):
+                    if (not (j % 2 == 0) and not self.matrix[i][j / 2].above):
+                        self.printer[i][j] = ' '
+                    else:
+                        self.printer[i][j] = WALL
+            else:
+                for j in range(width):
+                    if(i % 2 == 0):
+                        if(j % 2 == 0):
+                            self.printer[i][j] = WALL
+                        else:
+                            if(self.matrix[i / 2 - 1][j / 2].below):
+                                self.printer[i][j] = WALL
+                            else:
+								self.printer[i][j] = ' '
+                    else:
+                        if (j % 2 == 0):
+                            if (j < width - 1):
+                                if (self.matrix[i / 2][j / 2].left):
+									self.printer[i][j] = WALL
+                                else:
+									self.printer[i][j] = ' '
+                            else:
+                                if (self.matrix[i / 2][j / 2 - 1].right):
+									self.printer[i][j] = WALL
+                                else:
+									self.printer[i][j] = ' '
+                        else:
+                            if (self.matrix[i / 2][j / 2]):
+								self.printer[i][j] = ' '
+                            else:
+								self.printer[i][j] = ' '
+        for i in range(width):
+            for j in range(height):
+                print(self.printer[i][j], end='')
+            print()
+
+
+    def __init__ (self, height, width, difficulty):
         self.height = height
         self.width = width
+
         self.difficulty = difficulty
-        self.matrix = [[0 for x in range(width)] for y in range(height)]
+        self.matrix = [[0 for x in range(self.width)] for y in range(self.height)]
+        self.printer = [[0 for x in range(self.width*2 + 1)] for y in range(self.height*2 + 1)]
 
         for i in range(self.height):
             for j in range(self.width):
@@ -125,3 +182,6 @@ class Vertex():
         self.environment = None
     def getEnv(self):
         return self.environment
+
+m = maze(5,5, 1)
+m.display()
