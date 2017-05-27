@@ -64,4 +64,13 @@ def processInput(data,plyr,env):
         else :
             print ("YOU DONT HAVE THIS@!!!@##R")
         return "Equip"
+    if("fight" in data or "attack" in data):
+        monLis = env.getMonsters()
+        monsters = env.getMonstersSimple()
+        print (monsters)
+        monster = input("\tWhich would you like to fight?\n\t\t")
+        if monster in monsters:
+            print ("this monster is in room!")
+        else:
+            print ("This monster isnt real@@@@@#")
     return "Error"+data

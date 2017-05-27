@@ -46,7 +46,7 @@ class Entity():
         else:
             return "SOMETHING WENT WRONG WITH ITEM"
     def toStringItem(self):
-        if(self.type=='item'):
+        if(self.type=='item' or self.type=='Enemy'):
             return self.name
         else:
             return "SOMETHING WENT WRONG WITH ITEM"
