@@ -36,28 +36,16 @@ class Environment():
         return [monster.toStringItem() for monster in self.entities\
                 if(monster.toStringItem() in Library.getCreatureList())]
     def getMonsters(self):
-        #lis = []
-        for item in self.entities:
-            print(item.toString())
-        #    if item.toString() in Library.getCreatureList():
-        #        lis.append(item)
-        print (self.entities)
-        print (Library.getCreatureList())
-        print([monster for monster in self.entities\
-                if(monster.toStringItem() in Library.getCreatureList())])
         return [monster for monster in self.entities\
                 if(monster.toStringItem() in Library.getCreatureList())]
+    def getMonstersMap(self):
+        monsterDict = {}
+        for monster in self.entities:
+            if monster.toStringItem() in Library.getCreatureList():
+                monsterDict[monster.toStringItem()] = monster
+        return monsterDict
     def getItems(self):
-        #for z in self.entities:
-        #    print("\t\tDEBUG : ",str(type(z)))
-        #    print("\t\t\tDEBUG : ",str(z.toString()))
-        #lis = []
-        #print (self.entities)
-        #print (Library.getCollectList())
-        #for item in self.entities:
-        #    if item.toStringItem() in Library.getCollectList():
-        #        lis.append(item)
-        #print (lis)
-        #print ([item for item in self.entities if(item.toStringItem() in Library.getCollectList())])
         return [item for item in self.entities\
                 if(item.toStringItem() in Library.getCollectList())]
+    def remove(self,obj):
+        self.entities.remove(obj)

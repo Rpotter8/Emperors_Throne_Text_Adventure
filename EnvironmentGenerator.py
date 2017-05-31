@@ -12,8 +12,8 @@ def genObject(objType, difficulty):
         #BuildRandomEnemy Object Here
         Creatures = Library.getCreatureList()
         Choice = random.choice(Creatures)
-        retEnt = Entity(Choice,"Enemy",difficulty*random.randint(1,3),\
-                difficulty*random.randint(1,3))
+        retEnt = Entity(Choice,"Enemy",difficulty*random.randint(5,10)+difficulty-random.randint(0,3),\
+                difficulty*random.randint(2,10)+(difficulty*2)-random.randint(0,3))
     elif objType == 1:
         #BuildRandomKey Object Here
         Descriptions = Library.getDescriptionsList()
@@ -28,11 +28,10 @@ def genObject(objType, difficulty):
         retEnt = Entity(Descriptions[Choice]+" Potion","Potion",0,5)
     elif objType >= 3:
         #BuildRandomItem object here:
-        print("DEBUG : WE MADE IT BOIZ")
         items = Library.getCollectList()
         Choice = random.choice(items)
-        retEnt = Entity(Choice,"item",random.randint(7,14)-difficulty,\
-            random.randint(7,14)-difficulty)
+        retEnt = Entity(Choice,"item",random.randint(7,34)-difficulty,\
+            random.randint(7,34)-difficulty)
     return retEnt;
 
 def genEnvironment(difficulty,updoor,downdoor,rightdoor,leftdoor):
@@ -49,7 +48,7 @@ def genEnvironment(difficulty,updoor,downdoor,rightdoor,leftdoor):
         door.append(Door(False,"Left",0))
     numObjects = random.randint(0,2)
     for i in range(0,numObjects):
-        objType = random.randint(0,6)
+        objType = random.randint(0,3)
         objects.append(genObject(objType,difficulty))
     #Generate random room description
     #TODO make the description more random
