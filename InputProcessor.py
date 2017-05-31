@@ -64,4 +64,21 @@ def processInput(data,plyr,env):
         else :
             print ("YOU DONT HAVE THIS@!!!@##R")
         return "Equip"
+    if("use" in data):
+        comp = plyr.getInventoryComplex()
+        inv = plyr.getInventory()
+        print(inv)
+        use=input("\tThis is your Inventory, what would you like to use?\n\t\t")
+        if use in inv:
+            print("You have this item!!!")
+            print(Library.getMasterItemList())
+            print(use.split(" "))
+            if tuple(use.split(" ")) in Library.getMasterItemList():
+                for item in comp:
+                    if item.toStringItem() == use:
+                        plyr.useItem(item)
+        else :
+            print ("YOU DONT HAVE THIS@!!!@##R")
+            return "ErrorUsing item."
+        return "Use"
     return "Error"+data

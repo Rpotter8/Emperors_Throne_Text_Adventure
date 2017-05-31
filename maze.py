@@ -41,7 +41,7 @@ class maze():
             # print(type(right))
             # print("right", end='')
             surr.append(right);
-        print()
+        #print()
         return surr;
 
     def buildMaze(self, start, end):

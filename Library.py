@@ -1,3 +1,4 @@
+import itertools
 #Contains all object names that can be used
 Creatures = ["Giant","Dragon","Wolf","Mime","Rat"]
 
@@ -6,7 +7,7 @@ Descriptions = ["Giant","Small","Tiny","Red","Black","Blue","Green","Purple","Tr
 collect=['a sword','a helmet','a pair of pants','a shirt',
 		'some armor','a blade','a knife','a hammer']
 
-items=['a potion','a gem','some gold']
+items=['Potion','Gem']
 
 weapons={'a sword':13,'a blade':9,'a knife':6,'a hammer':10,'a stick':2,'dev sword':50}
 
@@ -17,11 +18,12 @@ def getCreatureList():
 def getDescriptionsList():
     return Descriptions
 def getCollectList():
-	return collect
+    return collect
 def getItemsList():
-	return items
+    return items
 def getWeaponsList():
-	return weapons
+    return weapons
 def getArmorsList():
-	return armors
-
+    return armors
+def getMasterItemList():
+    return list(itertools.product(Descriptions,items))
