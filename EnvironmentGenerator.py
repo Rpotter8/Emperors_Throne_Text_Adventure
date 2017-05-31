@@ -56,7 +56,7 @@ def genEnvironment(difficulty,updoor,downdoor,rightdoor,leftdoor):
     Descriptions = Library.getDescriptionsList()
     Choice = random.randint(0,len(Descriptions)-1)
     desc = "a "+Descriptions[Choice]+" room"
-    retEnv = Environment(objects,desc,door)
+    retEnv = Environment(objects,desc,door,False)
     return retEnv
         
 

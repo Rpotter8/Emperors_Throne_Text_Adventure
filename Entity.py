@@ -4,7 +4,7 @@ import Library
     #Enemies have attributes health and damage
     #Keys have attribute doornum (the id of the door they open)
     #Potions have attributes effect and severity
-        #Potion Effects are: 0 = health, 1 = poison
+    #Potion Effects are: 0 = health, 1 = poison
 class Entity():
     def __init__(self,name,etype,attr1,attr2):
         self.name = name
@@ -46,7 +46,7 @@ class Entity():
         else:
             return "SOMETHING WENT WRONG WITH ITEM"
     def toStringItem(self):
-        if(self.type=='item'):
+        if(self.type!='Enemy'):
             return self.name
         else:
             return "SOMETHING WENT WRONG WITH ITEM"

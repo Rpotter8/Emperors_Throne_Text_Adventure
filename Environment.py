@@ -3,11 +3,11 @@ import Library
 #Contains a description to be given to the user.
 #Contains a list of entities that this environment contains.
 class Environment():
-    def __init__(self,entities,desc,doors):
+    def __init__(self,entities,desc,doors,end):
         self.entities = entities
-
         self.doors = doors
         self.description = desc
+        self.end = end
     def changeDesc(self,ndesc):
         self.description = ndesc
     def addItem(self,item):
@@ -18,7 +18,7 @@ class Environment():
         else:
             retDesc = "You have entered "+self.description+" that contains "
             for i in self.entities:
-                print ("\t\t\t\tDEBUG : ",i)
+                #print ("\t\t\t\tDEBUG : ",i)
                 if i not in Library.getCollectList():
                     retDesc = retDesc+"\n a(n)"+i.toString()
                 else:
