@@ -39,8 +39,8 @@ def genObject(objType, difficulty):
         else:
             print ("YOUR BASE ARE BELONG TO US!")
             base =0
-        retEnt = Entity(Choice,"item",random.randint(7,34)-difficulty+base,\
-            random.randint(7,34)-difficulty+base)
+        retEnt = Entity(Choice,"item",random.randint(4,10)-difficulty+base,\
+            random.randint(4,10)-difficulty+base)
     return retEnt;
 
 def genEnvironment(difficulty,updoor,downdoor,rightdoor,leftdoor):
