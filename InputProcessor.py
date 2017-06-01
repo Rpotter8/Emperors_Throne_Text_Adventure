@@ -53,7 +53,6 @@ def processInput(data,plyr,env):
         print (inv)
         equip=input("\tThis is your Inventory, which would you like to equip?\n\t\t")
         if equip in inv:
-            print ("you have this item!!!");
             if equip in Library.getWeaponsList():
                 for item in comp:
                     if item.toStringItem() == equip:
@@ -63,7 +62,7 @@ def processInput(data,plyr,env):
                     if item.toStringItem() == equip:
                         plyr.setArmor(item)
         else :
-            print ("YOU DONT HAVE THIS@!!!@##R")
+            print ("\tYou do not have this item.\n")
         return "Equip"
     if("use" in data):
         comp = plyr.getInventoryComplex()
@@ -82,4 +81,13 @@ def processInput(data,plyr,env):
             print ("YOU DONT HAVE THIS@!!!@##R")
             return "ErrorUsing item."
         return "Use"
+    if("fight" in data or "attack" in data):
+        monLis = env.getMonstersMap()
+        monster = input("\tWhich would you like to fight?\n\t\t")
+        if monster in monLis.keys():
+            print ("\nBrace yourself, Hero, for a battle commences!\n")
+            plyr.fight(monLis[monster],env)
+        else:
+            print ("\tThis monster isn't in the room with you.\n")
+        return "Fight"
     return "Error"+data

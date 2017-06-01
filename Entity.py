@@ -26,9 +26,41 @@ class Entity():
     def getType(self):
         return self.type
     def getAttr1(self):
-        return self.attr1
+        if self.type=="Enemy":
+            return self.health
+        elif self.type=="Key":
+            return self.doornum
+        elif self.type=="Potion":
+            return self.effect
+        elif self.type=="item":
+            return self.strength
     def getAttr2(self):
-        return self.attr2
+        if self.type=="Enemy":
+            return self.damage
+        elif self.type=="Key":
+            return self.doornum
+        elif self.type=="Potion":
+            return self.severity
+        elif self.type=="item":
+            return self.defense
+    def setAttr2(self,val):
+        if self.type=="Enemy":
+            self.damage = val
+        elif self.type=="Key":
+            self.doornum = val
+        elif self.type=="Potion":
+            self.severity = val
+        elif self.type=="item":
+            self.defense = val
+    def setAttr1(self,val):
+        if self.type=="Enemy":
+            self.health = val
+        elif self.type=="Key":
+            self.doornum = val
+        elif self.type=="Potion":
+            self.effect = val
+        elif self.type=="item":
+            self.strength = val
     def toString(self):
         if(self.type == "Enemy"):
             return self.name+" has "+str(self.attr1)+" hitpoints and does "+str(self.attr2)+" damage!"
@@ -46,7 +78,4 @@ class Entity():
         else:
             return "SOMETHING WENT WRONG WITH ITEM"
     def toStringItem(self):
-        if(self.type!='Enemy'):
-            return self.name
-        else:
-            return "SOMETHING WENT WRONG WITH ITEM"
+        return self.name
