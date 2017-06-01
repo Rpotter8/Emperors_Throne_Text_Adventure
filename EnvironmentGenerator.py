@@ -12,8 +12,8 @@ def genObject(objType, difficulty):
         #BuildRandomEnemy Object Here
         Creatures = Library.getCreatureList()
         Choice = random.choice(Creatures)
-        retEnt = Entity(Choice,"Enemy",difficulty*random.randint(5,10)+difficulty-random.randint(0,3),\
-                difficulty*random.randint(2,10)+(difficulty*2)-random.randint(0,3))
+        retEnt = Entity(Choice,"Enemy",difficulty*random.randint(10,15)+difficulty-random.randint(0,3),\
+                difficulty*random.randint(8,14)+(difficulty*2)-random.randint(0,3))
     elif objType == 1:
         #BuildRandomKey Object Here
         Descriptions = Library.getDescriptionsList()
@@ -30,8 +30,17 @@ def genObject(objType, difficulty):
         #BuildRandomItem object here:
         items = Library.getCollectList()
         Choice = random.choice(items)
-        retEnt = Entity(Choice,"item",random.randint(7,34)-difficulty,\
-            random.randint(7,34)-difficulty)
+        armors = Library.getArmorsList()
+        weapons = Library.getArmorsList()
+        if Choice in armors:
+            base = armors[Choice]
+        elif Choice in weapons:
+            base = weapons[Choice]
+        else:
+            print ("YOUR BASE ARE BELONG TO US!")
+            base =0
+        retEnt = Entity(Choice,"item",random.randint(7,34)-difficulty+base,\
+            random.randint(7,34)-difficulty+base)
     return retEnt;
 
 def genEnvironment(difficulty,updoor,downdoor,rightdoor,leftdoor):
