@@ -27,3 +27,5 @@ def getArmorsList():
     return armors
 def getMasterItemList():
     return list(itertools.product(Descriptions,items))
+def getEquipsList():
+    return getArmorList().keys()+getWeaponsList().keys()

@@ -63,7 +63,7 @@ class Entity():
             self.strength = val
     def toString(self):
         if(self.type == "Enemy"):
-            return self.name+" has "+str(self.attr1)+" hitpoints and does "+str(self.attr)+" damage!"
+            return self.name+" has "+str(self.attr1)+" hitpoints and does "+str(self.attr2)+" damage!"
         elif(self.type=="Key"):
             return self.name+" opens door "+str(self.attr1)
         elif(self.type=="Potion"):

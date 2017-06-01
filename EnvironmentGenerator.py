@@ -1,5 +1,5 @@
 #Generates Valid New Environments
-from Entity import * 
+from Entity import *
 import random
 from Environment import *
 from Door import *
@@ -57,5 +57,3 @@ def genEnvironment(difficulty,updoor,downdoor,rightdoor,leftdoor):
     desc = "a "+Descriptions[Choice]+" room"
     retEnv = Environment(objects,desc,door,False)
     return retEnv
-        
-
