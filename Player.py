@@ -1,11 +1,14 @@
 from Entity import Entity
+import random
 class Player():
     def __init__(self,name,health,attack):
         self.pos = [0,0]
         self.name = name
         self.health = health
         self.attack = attack
-        self.inventory = [Entity("a stick","item",2,2),Entity("rags","item",2,2)]
+        self.defense = 2
+        self.inventory = [Entity("a stick","item",2,2),\
+                            Entity("rags","item",2,2)]
         self.weapon = Entity("a stick","item",2,2)
         self.armor = Entity("rags","item",2,2)
     def damage(self,amount):
@@ -18,9 +21,11 @@ class Player():
         return self.attack
     def setWeapon(self,item):
         self.weapon = item
+        self.attack = self.weapon.getAttr1();
         print(str(item.toStringItem())+" is equipped as weapon")
     def setArmor(self,item):
         self.armor = item
+        self.defense = self.armor.getAttr2();
         print(str(item.toStringItem())+" is equipped as armor")
     def getWeapon(self):
         return self.weapon
@@ -61,3 +66,37 @@ class Player():
             self.pos[0] = self.pos[0]+1
     def getLocation(self):
         return self.pos
+    def fight(self, monster,env):
+        print("You are now fighting a(n) "+monster.toStringItem()+".")
+        while monster.getAttr1() > 0 and self.health > 0:
+            chance = random.randint(1,10)
+            if chance < 9:
+                print("You swing your "+self.weapon.toStringItem()+" and do\n\t"+\
+                    str(self.attack)+" damage to the "+monster.toStringItem()+".")
+                monster.setAttr1(monster.getAttr1()-self.attack)
+                print("\t\tThe monster now has "+str(monster.getAttr1())+" health.\n")
+            else:
+                print("You swing your "+self.weapon.toStringItem()+" but you miss.\n")
+            if monster.getAttr1() <= 0:
+                print("You have defeated the"+monster.toStringItem()+"..\n\t"+\
+                    "Congratulations, Hero!")
+                env.remove(monster)
+            else:
+                chance = random.randint(1,10)
+                if chance < 8:
+                    print("The "+monster.toStringItem()+" attacks you and does "+\
+                        "\n\t"+str(monster.getAttr2())+" damage.")
+                    if self.defense < monster.getAttr2():
+                        print("\tYour armor has blocked "+str(self.defense)+" damage.")
+                        self.health -= (monster.getAttr2()) - self.defense
+                    else:
+                        print("\tYour armor blocks all of this enemies damage.")
+                    if self.health > 0:
+                        print("\tYou have "+str(self.health)+" health remaining, Hero!\n")
+                    else:
+                        print("\n\n\tThe "+monster.toStringItem()+" has slain you!")
+                        print("\tYou have died.")
+                        print("\tThe emporers reign continues...")
+                        exit()
+                else:
+                    print("The "+monster.toStringItem()+" swings at you but misses.\n")

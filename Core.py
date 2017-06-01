@@ -24,7 +24,7 @@ while True:
         print()
 #Player initialization
 #TODO modify stats based on difficulty
-player = Player(name,25,5)
+player = Player(name,100,2)
 print("\n\n---------------------------------------------------------------------------------------------")
 print("Welcome "+name+"! You are about to embark on a great quest which\n is a matter of life and death for the entire kingdom!")
 print("Our story begins here:")
@@ -113,12 +113,16 @@ while(1):
         data = InputProcessor.processInput(input("What do you do?"),player,CurrEnv)
     if("Grab" in data):
         print("GRABBY GRABBY")
+        continue
     if("Inventory" in data):
         print("This is your inventory...")
+        continue
     if("Equipment" in data):
         print("Those are your equipped items..")
+        continue
     if("Equip" in data):
         print ("Equipping done.")
+        continue
     if("Error" not in data and "Look" not in data):
         CurrEnv = currfloor.getVertex(player.getLocation()[0],player.getLocation()[1]).getEnv()
         print(CurrEnv.toString())
