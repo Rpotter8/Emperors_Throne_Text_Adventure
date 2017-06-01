@@ -32,9 +32,10 @@ def processInput(data,plyr,env):
     if("grab" in data):
         if(env.hasItem()):
             for item in env.getItems():
-                plyr.addInventory(item)
-                env.remove(item)
-                print("You have added ",item.toString()," to your inventory.")
+                if item in Library.getEquipsList or tuple(item.getName().split(" ")) in Library.getMasterItemList():
+                    plyr.addInventory(item)
+                    env.remove(item)
+                    print("You have added ",item.toString()," to your inventory.")
         return "Grab"
     if("inventory" in data):
         inv = plyr.getInventory()
