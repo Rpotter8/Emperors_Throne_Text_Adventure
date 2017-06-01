@@ -29,7 +29,7 @@ class Environment():
         return retDesc
     def hasDoor(self,direction):
         for z in self.doors:
-            if(direction in z.getDoorDir()):
+            if(direction == z.getDoorDir()):
                 return True
         return False
     def hasItem(self):
