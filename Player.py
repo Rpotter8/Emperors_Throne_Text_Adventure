@@ -42,7 +42,14 @@ class Player():
     def getName(self):
         return self.name
     def useItem(self,item):
-        print("Tried to use "+item.getName())
+        #print("Tried to use "+item.getName())
+        if(item.getType()=="Potion"):
+            if item.getAttr1() == 0:
+                self.health += item.getAttr2()
+                print("You were healed for "+str(item.getAttr2())+" health")
+            else:
+                self.health -= item.getAttr2()
+                print("You were poisened for "+str(item.getAttr2())+" damage")
     def move(self,direction):
         if(direction == "Up"):
             self.pos[1] = self.pos[1]-1
