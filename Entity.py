@@ -29,6 +29,10 @@ class Entity():
         return self.attr1
     def getAttr2(self):
         return self.attr2
+    def setAttr2(self,val):
+        self.attr2 = val
+    def setAttr1(self,val):
+        self.attr1 = val
     def toString(self):
         if(self.type == "Enemy"):
             return self.name+" has "+str(self.attr1)+" hitpoints and does "+str(self.attr2)+" damage!"
@@ -46,7 +50,4 @@ class Entity():
         else:
             return "SOMETHING WENT WRONG WITH ITEM"
     def toStringItem(self):
-        if(self.type!='Enemy'):
-            return self.name
-        else:
-            return "SOMETHING WENT WRONG WITH ITEM"
+        return self.name

@@ -29,24 +29,27 @@ class Environment():
         return retDesc
     def hasDoor(self,direction):
         for z in self.doors:
-            if(direction in z.getDoorDir()):
+            if(direction == z.getDoorDir()):
                 return True
         return False
     def hasItem(self):
         return len(self.entities)>0
     def remove(self, item):
         self.entities.remove(item)
+    def getMonstersSimple(self):
+        return [monster.toStringItem() for monster in self.entities\
+                if(monster.toStringItem() in Library.getCreatureList())]
+    def getMonsters(self):
+        return [monster for monster in self.entities\
+                if(monster.toStringItem() in Library.getCreatureList())]
+    def getMonstersMap(self):
+        monsterDict = {}
+        for monster in self.entities:
+            if monster.toStringItem() in Library.getCreatureList():
+                monsterDict[monster.toStringItem()] = monster
+        return monsterDict
     def getItems(self):
-        #for z in self.entities:
-        #    print("\t\tDEBUG : ",str(type(z)))
-        #    print("\t\t\tDEBUG : ",str(z.toString()))
-        lis = []
-        #print (self.entities)
-        #print (Library.getCollectList())
-        for item in self.entities:
-            if(item.getType != "Enemy"):
-                lis.append(item)
-        #print (lis)
-        #print ([item for item in self.entities if(item.toStringItem() in Library.getCollectList())])
-        #return [item for item in self.entities if(item.toStringItem() in Library.getCollectList())]
-        return lis
+        return [item for item in self.entities\
+                if(item.toStringItem() in Library.getCollectList())]
+    def remove(self,obj):
+        self.entities.remove(obj)
