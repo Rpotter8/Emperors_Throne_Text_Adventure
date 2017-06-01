@@ -32,7 +32,8 @@ def processInput(data,plyr,env):
     if("grab" in data):
         if(env.hasItem()):
             for item in env.getItems():
-                if item.getName() in Library.getEquipsList() or tuple(item.getName().split(" ")) in Library.getMasterItemList():
+                #print(tuple(item.getName().split(" ")))
+                if (item.getName() in Library.getEquipsList()) or (tuple(item.getName().split(" ")) in Library.getMasterItemList()):
                     plyr.addInventory(item)
                     env.remove(item)
                     print("You have added ",item.toString()," to your inventory.")
@@ -53,6 +54,7 @@ def processInput(data,plyr,env):
         print (inv)
         equip=input("\tThis is your Inventory, which would you like to equip?\n\t\t")
         if equip in inv:
+            print ("you have this item!!!");
             if equip in Library.getWeaponsList():
                 for item in comp:
                     if item.toStringItem() == equip:
@@ -62,7 +64,7 @@ def processInput(data,plyr,env):
                     if item.toStringItem() == equip:
                         plyr.setArmor(item)
         else :
-            print ("\tYou do not have this item.\n")
+            print ("YOU DONT HAVE THIS@!!!@##R")
         return "Equip"
     if("use" in data):
         comp = plyr.getInventoryComplex()

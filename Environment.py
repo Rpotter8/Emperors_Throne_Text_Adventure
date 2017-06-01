@@ -49,7 +49,6 @@ class Environment():
                 monsterDict[monster.toStringItem()] = monster
         return monsterDict
     def getItems(self):
-        return [item for item in self.entities\
-                if(item.toStringItem() in Library.getCollectList())]
+        return [item for item in self.entities]
     def remove(self,obj):
         self.entities.remove(obj)
