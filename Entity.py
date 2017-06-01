@@ -10,16 +10,16 @@ class Entity():
         self.name = name
         self.type = etype
         if etype=="Enemy":
-            self.health = attr1
-            self.damage = attr2
+            self.attr1 = attr1 #Health
+            self.attr2 = attr2 #Damage
         elif etype=="Key":
-            self.doornum = attr1
+            self.attr1 = attr1 #DoorNumber
         elif etype=="Potion":
-            self.effect = attr1
-            self.severity = attr2
+            self.attr1 = attr1 #Effect
+            self.attr2 = attr2 #Severity
         elif etype=="item":
-            self.strength=attr1
-            self.defense=attr2
+            self.attr1=attr1 #Strength
+            self.attr2=attr2 #Defense
             
     def getName(self):
         return self.name
@@ -31,16 +31,16 @@ class Entity():
         return self.attr2
     def toString(self):
         if(self.type == "Enemy"):
-            return self.name+" has "+str(self.health)+" hitpoints and does "+str(self.damage)+" damage!"
+            return self.name+" has "+str(self.attr1)+" hitpoints and does "+str(self.attr)+" damage!"
         elif(self.type=="Key"):
-            return self.name+" opens door "+str(self.doornum)
+            return self.name+" opens door "+str(self.attr1)
         elif(self.type=="Potion"):
             return self.name
         elif(self.type=="item"):
             if(self.name in Library.getWeaponsList()):
-                return self.name+" which does "+str(self.strength)+" damage"
+                return self.name+" which does "+str(self.attr1)+" damage"
             elif(self.name in Library.getArmorsList()):
-                return self.name+" which does "+str(self.defense)+" defense"
+                return self.name+" which does "+str(self.attr2)+" defense"
             else:
                 return self.name
         else:
