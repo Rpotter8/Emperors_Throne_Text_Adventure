@@ -1,5 +1,6 @@
 from Player import *
 from Environment import *
+import Library
 def processInput(data,plyr,env):
     data = data.lower()
     if("up" in data):
@@ -28,4 +29,56 @@ def processInput(data,plyr,env):
             return "Errorrun into wall"
     if("look" in data):
         return "Look"
+    if("grab" in data):
+        if(env.hasItem()):
+            for item in env.getItems():
+                plyr.addInventory(item)
+                env.remove(item)
+                print("You have added ",item.toString()," to your inventory.")
+        return "Grab"
+    if("inventory" in data):
+        inv = plyr.getInventory()
+        print (inv)
+        return "Inventory"
+    if("equipment" in data):
+        armor = plyr.getArmor()
+        weapon = plyr.getWeapon()
+        print ("This is your weapon : ",weapon.toString())
+        print ("This is your armor  : ",armor.toString())
+        return "Equipment"
+    if("equip" in data):
+        comp = plyr.getInventoryComplex()
+        inv = plyr.getInventory()
+        print (inv)
+        equip=input("\tThis is your Inventory, which would you like to equip?\n\t\t")
+        if equip in inv:
+            print ("you have this item!!!");
+            if equip in Library.getWeaponsList():
+                for item in comp:
+                    if item.toStringItem() == equip:
+                        plyr.setWeapon(item)
+            elif equip in Library.getArmorsList():
+                for item in comp:
+                    if item.toStringItem() == equip:
+                        plyr.setArmor(item)
+        else :
+            print ("YOU DONT HAVE THIS@!!!@##R")
+        return "Equip"
+    if("use" in data):
+        comp = plyr.getInventoryComplex()
+        inv = plyr.getInventory()
+        print(inv)
+        use=input("\tThis is your Inventory, what would you like to use?\n\t\t")
+        if use in inv:
+            print("You have this item!!!")
+            print(Library.getMasterItemList())
+            print(use.split(" "))
+            if tuple(use.split(" ")) in Library.getMasterItemList():
+                for item in comp:
+                    if item.toStringItem() == use:
+                        plyr.useItem(item)
+        else :
+            print ("YOU DONT HAVE THIS@!!!@##R")
+            return "ErrorUsing item."
+        return "Use"
     return "Error"+data
