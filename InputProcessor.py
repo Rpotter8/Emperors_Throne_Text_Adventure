@@ -72,9 +72,13 @@ def processInput(data,plyr,env):
         inv = plyr.getInventory()
         #Hardcoded key zero check
         for item in comp:
+            #print(item.getName())
+            #print(item.getAttr1())
             if item.getType() == "Key":
-                for door in env.getDoors():
-                    door.unlock(item.getAttr1)
+                #print("Using Key")
+                #print(env.getDoors())
+                env.unlockDoors(item.getAttr1())
+        return "Key"
                     
     if("use" in data):
         comp = plyr.getInventoryComplex()
@@ -88,8 +92,9 @@ def processInput(data,plyr,env):
             if tuple(use.split(" ")) in Library.getMasterItemList():
                 for item in comp:
                     if item.getType() == "Key":
-                        for door in env.getDoors():
-                            door.unlock(item.getAttr1)
+                        #print("Using Key")
+                        #print(env.getDoors())
+                        env.unlockDoors(item.getAttr1)
                         return "Unlocked"
                     if item.toStringItem() == use:
                         plyr.useItem(item)

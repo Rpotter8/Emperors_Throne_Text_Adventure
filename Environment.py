@@ -34,6 +34,9 @@ class Environment():
         return False
     def getDoors(self):
         return self.doors
+    def unlockDoors(self, key):
+        for door in self.doors:
+            door.unlock(key)
     def hasItem(self):
         return len(self.entities)>0
     def lockDoor(self,direction,key):
