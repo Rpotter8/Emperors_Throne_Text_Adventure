@@ -11,8 +11,11 @@ class Door():
         self.doorNum = key;
         self.locked = True;
     def unlock(self,key):
-        if key == self.doorNum:
+        #print("Attempting to unlock")
+        print(str(key)+" "+str(self.doorNum))
+        if self.doorNum == key:
             self.locked = False
+            #print("Unlocked")
             return True
         return False
     def getDoorNum(self):
