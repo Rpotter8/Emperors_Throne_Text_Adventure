@@ -105,7 +105,7 @@ CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).g
 print(CurrEnv.toString())
 #Testing RunCode
 while(1):
-    #print("x:"+str(player.getLocation()[0])+" y:"+str(player.getLocation()[1]))
+    print("y:"+str(player.getLocation()[0])+" x:"+str(player.getLocation()[1]))
     data = ""
     if(stot != 'n'):
         text = RecognizeSpeech.recognize()

@@ -4,7 +4,7 @@ Creatures = ["Giant","Dragon","Wolf","Mime","Rat"]
 
 Descriptions = ["Giant","Small","Tiny","Red","Black","Blue","Green","Purple","Translucent"]
 
-items=['Potion','Gem']
+items=['Potion','Gem','Key']
 
 weapons={'sword':13,'blade':9,'knife':6,'hammer':10,'stick':2,'devsword':50}
 

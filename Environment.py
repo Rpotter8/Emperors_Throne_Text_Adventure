@@ -29,11 +29,19 @@ class Environment():
         return retDesc
     def hasDoor(self,direction):
         for z in self.doors:
-            if(direction == z.getDoorDir()):
+            if(direction == z.getDoorDir() and not z.isLocked()):
                 return True
         return False
+    def getDoors(self):
+        return self.doors
     def hasItem(self):
         return len(self.entities)>0
+    def lockDoor(self,direction,key):
+        for door in self.doors:
+            if door.getDoorDir()==direction:
+                if door.lock(key):
+                    return True
+        return False
     def remove(self, item):
         self.entities.remove(item)
     def getMonstersSimple(self):
