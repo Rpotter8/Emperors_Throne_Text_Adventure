@@ -50,5 +50,10 @@ class Environment():
         return monsterDict
     def getItems(self):
         return [item for item in self.entities]
+    def containsStairs(self):
+        for item in self.entities:
+            if item.getType() == "stairs":
+                return True
+        return False
     def remove(self,obj):
         self.entities.remove(obj)

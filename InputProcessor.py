@@ -93,4 +93,7 @@ def processInput(data,plyr,env):
         else:
             print ("\tThis monster isn't in the room with you.\n")
         return "Fight"
+    if("stairs" in data):
+        if env.containsStairs():
+            return "Stairs"
     return "Error"+data

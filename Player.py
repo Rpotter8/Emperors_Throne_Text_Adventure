@@ -46,6 +46,9 @@ class Player():
         inventory.pop(index)
     def getName(self):
         return self.name
+    def setLocation(self,x,y):
+        self.pos[0] = y
+        self.pos[1] = x
     def useItem(self,item):
         #print("Tried to use "+item.getName())
         if(item.getType()=="Potion"):

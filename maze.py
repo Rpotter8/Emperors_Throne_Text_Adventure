@@ -7,7 +7,6 @@ WALL = "X"
 class maze():
 
 
-
     def getSurrounding(self, curr):
         surr = []
         depth = self.height
@@ -100,8 +99,11 @@ class maze():
                 if(z.x==0 and z.y==0):
                     z.environment.changeDesc("smelly dark room outside your jail cell")
                     z.environment.addItem(genObject(2,self.difficulty))
+        self.setExit();
     def getVertex(self,x,y):
         return self.matrix[x][y]
+    def setExit(self):
+        self.matrix[self.height - 1][self.width - 1].getEnv().addItem(Entity("set of stairs to the next floor","stairs",0,0));
     def display(self):
 
         height = len(self.printer)

@@ -20,7 +20,6 @@ class Entity():
         elif etype=="item":
             self.attr1=attr1 #Strength
             self.attr2=attr2 #Defense
-            
     def getName(self):
         return self.name
     def getType(self):
@@ -47,7 +46,6 @@ class Entity():
                 return self.name+" which does "+str(self.attr2)+" defense"
             else:
                 return self.name
-        else:
-            return "SOMETHING WENT WRONG WITH ITEM"
+        return self.name
     def toStringItem(self):
         return self.name

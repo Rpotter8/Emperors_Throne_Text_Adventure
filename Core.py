@@ -124,7 +124,9 @@ while(1):
     if("Equip" in data):
         print ("Equipping done.")
         continue
-    if("Error" not in data and "Look" not in data):
+    if("Stairs" in data):
+        currfloor = maze(5,5,difficulty)
+        player.setLocation(0,0)
         CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).getEnv()
         print(CurrEnv.toString())
         continue
@@ -132,6 +134,10 @@ while(1):
         print(CurrEnv.toString())
         continue
         #print("I do not understand your command")
+    if("Error" not in data and "Look" not in data):
+        CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).getEnv()
+        print(CurrEnv.toString())
+        continue    
     #This is not working
     if(data[5:] == " "):
         print("You must act, Adventurer!")
