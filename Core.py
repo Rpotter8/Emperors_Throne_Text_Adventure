@@ -99,7 +99,7 @@ input("Press Enter to Continue...")
 CurrEnv = 0
 currfloor = maze(5,5,difficulty)
 
-currfloor.display()
+#currfloor.display()
 #JailCell = Environment([EnvironmentGenerator.genObject(2,difficulty)],"smelly dark room outside your jail cell",[Door(False,"Up",0)])
 CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).getEnv()
 print(CurrEnv.toString())

@@ -24,7 +24,7 @@ def genObject(objType, difficulty):
         #BuildRandomPotion Object Here
         Descriptions = Library.getDescriptionsList()
         Choice = random.randint(0,len(Descriptions)-1)
-        #TODO Randomize Potion Effect
+        #TODO Randomize Potion Effect CURRENTLY ALWAYS HEAL 5 POINTS
         retEnt = Entity(Descriptions[Choice]+" Potion","Potion",0,5)
     elif objType >= 3:
         #BuildRandomItem object here:
