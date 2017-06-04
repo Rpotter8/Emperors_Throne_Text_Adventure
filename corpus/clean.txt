@@ -1,0 +1,1092 @@
+Adventure The Colossal Cave Enter building.
+ Get keys and lamp.
+ The lamp appears here should you have to be reincarnated.
+ Unlock gate with key Get cage.
+ Try the magic word Try it again.
+ Get rod.
+ Drop rod.
+ Get bird.
+ Get rod.
+ Wave rod.
+ Drop rod.
+ Go get diamonds and gold.
+ Release bird.
+ Drop cage.
+ Grab coins and silver.
+ Note Dwarves are lousy shots but sometimes unfortunately they can get lucky.
+ Carry the ax as you may encounter up to five of these critters.
+ Try the magic word also.
+ Drop silver gold nugget diamonds jewelry and coins.
+ If you haven't already you will soon encounter a thieving pirate.
+ Not to worry he's got to rob you at least once if you're to win all the marbles.
+ Carrying food ax bottle of water key all for later and lantern visit the software den Microsoft Version only Don't mess with anything Software types are a weird lot.
+ Get magic word Works only from here.
+ Water plant twice.
+ Get water for the second pass at the waterfall.
+ Attack dragon.
+ Yes.
+ Get rug.
+ Get oil in now empty bottle Climb the plant.
+ Oil door.
+ Open door.
+ Drop bottle.
+ While here and while carrying golden eggs enter one word at a time.
+ Check your inventory.
+ Go back to where you first found the eggs.
+ Throw eggs to troll Cross bridge before the whatever.
+ Feed bear.
+ Unlock chain with key Get golden chain.
+ Drop key.
+ Get bear.
+ Don't forget the rare spices.
+ At volcano view read and remember the words of fire.
+ Release bear.
+ Don't try crossing the bridge with him on the chain.
+ Open oyster with trident Pearl will roll down into the cul de sac.
+ Insert coin to get a replacement battery for your lamp if necessary.
+ Coins are a treasure however and you won't ge them back so try beating the game with the original batteries only.
+ Never drop vase unless you have already dropped the pillow.
+ Drop everything in order to enter.
+ Get emerald.
+ Say Get pyramid.
+ and pi tooie You must traverse the maze to get Pirate's Treasure Chest which doesn't appear until he's robbed you.
+ Return via the Pit and Drop all treasures in the House.
+ Drop magazine in Witt's End for a point.
+ Get out by entering all different directions except north.
+ It may take a while.
+ Slog around in various and distant locations until a voice announces that the cave is now closed.
+ At this point you are teleported to the two room Master's Game.
+ Get black rod with the rusty marks not the star Drop rod in the northeast room.
+ Retreat to the southwest room.
+ Type blast.
+ Alternate endings are possible but will not yield sufficient points to earn you the rank of adventure grandmaster.
+ Treasure List What Where Golden Eggs Giant Room Trident Magnificent Canyon Pearl Clam Room Pirate's Chest Pirate's Maze Platinum Pyramid Dark Room Emerald Plover Room Ming Vase and Pillow Oriental Room Rare Spices Chamber of Boulders Persian Rug Dragon's Den Golden Chain Bear's Chamber Diamonds West Side of Fissure Jewelry South Side Chamber Gold Nugget Gold Room Silver Bars North South Passage Coins West Side Chamber Adventureland Let sleeping dragons lie until much later.
+ Never go near him with any mud.
+ In quicksand take only the ax.
+ Get ox.
+ Say Bunyon.
+ Swim south.
+ Go to Paul's place.
+ En route get flint and steel.
+ Climb tree.
+ Get key.
+ Read web.
+ Chop tree.
+ May need mud for chigger bites.
+ Go stump.
+ Start dumping treasures.
+ Rub lamp Twice only for two more.
+ With the rubies directly below there should now be five.
+ Take bottle.
+ Unlock door.
+ Drop keys.
+ Go hallway.
+ Light lamp with flint and steel.
+ If lamp dies fill with oily slime.
+ In maze get rug and net.
+ With rug get out by say away twice to transport back to the meadow.
+ At lake with filled bottle and net catch fish.
+ Fish die without bottle.
+ Get wine bladder.
+ Fill bladder with swamp gas In royal chamber drop bladder.
+ Burn bladder.
+ Scream at bear Jump ledge.
+ Get crown mirror and bricks.
+ Don't throw ax at bear or waste honey on him.
+ Drop mirror on rug only get clues Dam lava with bricks.
+ Pour water.
+ Get firestone.
+ In beehive with rug mud and empty bottle catch bees.
+ Take honey.
+ Drop mud.
+ Go meadow.
+ Release bees.
+ Get dragon eggs.
+ Can make it of the time before Bees die but using rug and say away is easier.
+ After dropping all thirteen treasures say score.
+ The treasure summary Blue Ox Golden Fish Golden Net Jeweled Fruit Diamond Ring Bracelet Rubies Rug Magic Mirror Golden Crown Royal Honey Firestone Dragon Eggs Alternate Reality The Dungeon Cryllan Mission original mission Dark Heart of Uukrul Deathlord Defender of the Crown Dragon Wars Elite Generic 'Red Sheet' fix Keef the Thief Might Magic Miscellaneous Buglets Pool of Radiance Realms of Darkness Space Rogue Spellbreaker Ultima Wizardry Wizardry Alternate Reality The Dungeon Key to Dungeon Survival By now you probably know that certain like Diversi Hack and the built in Visit Monitor permit game interruption monitor diddling and program resumption on the This opens whole new vistas to gamers including diskless Realtime Situation Control.
+ With you can hop into the monitor in mid combat to juice up dwindling hitpoints create food packets for a starving character shift map coordinates etc.
+ etc.
+ My first module' is directed to Alternate Reality mavens enmeshed in the labyrinthine Dungeon.
+ Assuming you have installed either 'Hack or Visit during play do a go to the monitor and enter Here you will find most of your character parms and staple supplies All addresses are Hex offsets from current base The following parms are repeated single byte numbers A A A horizontal vertical map The game views the Level as four maps.
+ Coordinates are left to right and up to down; maps are sections of Level For example entering will place you just outside the Retreat upon returning to play.
+ Cryllan Mission original mission Crusin' on Crylla A good guide to party composition is your standard Enterprise away team One doctor can handle all healing chores; a science officer supplies large area map views via Terrain and Life Form scans and you need the fire power of your four weapons specialists.
+ Explore the Ruins thoroughly; the Caverns are good for loot and honing combat technique; take care of things in Adion before entering Cramur.
+ Transports are expensive and you cannot take them into mazes; Heavy Armor is a better investment.
+ The best weapons are won from elite enemy guards.
+ Finally two items which should have been included in your mission briefing i.
+e.
+ the manual To enter a transport you've purchased the first step is to move onto the transport figure and 'click'; Any resurrected team member will have reduced attributes.
+ Don't waste time trying to cure this condition you can't after a day or so the attributes will return to normal values.
+ Dark Heart of Uukrul Become Master of the Game Alive When I found Broderbund's Dark Heart of Uukrul for sale at a recent swap meet it was snapped up without a second thought.
+ Long on my Must Try list the game has proved to be a fine multi character adventure playing much like such greats as Champions of Krynn.
+ Inevitably there came a time when it seemed that 'Uukrul had 'done me wrong'.
+ Expensive armor and weapons were destroyed rare artifacts were used up etc.
+ due to what seemed to be inordinately bad luck and or an unfair lack of information.
+ Then my party came upon a message etched into a Temple wall When all else fails cheat That was the last straw.
+ The ultimate game crack is to have control of character attributes items money etc.
+ One tactic is to use a block editor such as the one included with to search the Save diskette for a character's name and then edit on diskette Game Save info.
+ This did not work with 'Uukrul.
+ The changes were made with no great difficulty but detected by the game as invalid.
+ Evidently Game Save data is protected via some kind of check sum.
+ You can often get around such schemes on the by doing an going to Visit Monitor finding the character info stuff in memory and doing the changes there.
+ If after starting System Visit Monitor does not show up as an option go to the control panel click Enable Programmer and reboot.
+ 'Uukrul is supposed to be uncrackable so naturally it disables interrupts during key accesses.
+ is ignored.
+ Foiled again Happily there is more than one way to skin a dragon.
+ If the game shuts down access then perhaps we should change the game program A good start is to search the on diskette copy of the main program for instances of a machine code instruction often used to read the keyboard.
+ There are very few of these in Uukrul; so it was easy to isolate the main input routine.
+ On my version of the game I found the routine beginning at byte in block A on the Boot diskette On a copy of the Boot diskette this became The new routine enables interrupts waits for a keypress and then disables interrupts.
+ This essentially cracks the game.
+ The user can interrupt the program at practically any moment do a Visit Monitor make desired changes and exit back to the game.
+ Although you will need to start System in order to mount the Visit Monitor 'Uukrul at least the version does not launch from It is a Pascal based game which boots from its own diskette.
+ This is nice because it means that you will not need to hunt for the program in memory.
+ It will reside in memory Bank In 'Uukrul you find the party's Food as a two byte hexadecimal value at address E.
+ As usual the low byte is first; so for example means you have or in decimal Food packets.
+ By the way a cheapo Radio Shack calculator which does hex to decimal conversions is very handy for this kind of work The Party's Money is saved as decimal lower bytes first starting at address If while in the monitor in column mode you enter you will see that character names show up in the right side of the display.
+ As in most such adventures 'Uukrul stores data for individual characters beginning with Name followed soon by Experience in decimal and values of attributes like Dexterity Piety in hexadecimal.
+ To make it easier to see what's where it's a good idea to jot down attributes hit points spell points experience etc.
+ before going to Visit Monitor.
+ Toward the end of a character's entry are his her possessions weapons armor healing salve etc.
+ stored as two byte codes.
+ For instance if a magic user is wearing Silken Robes you will find A charged up Wand of Potency is and one which is worn out is To recharge any charged item you just change the final to Figuring out what code goes with which item is fun and as you can see very useful The best time to interrupt most adventures is during some non special situation such as while your party is exploring a maze.
+ Once the mods e.
+g.
+ more Money more Food etc.
+ are done you return to the game.
+ Your changes may not immediately be reflected in the display.
+ No problem.
+ Walking around a bit battling some monsters or visiting a shop will usually force a display update.
+ This also lets the program reinit pointers and other values which may have been affected.
+ Once it's clear that your mods have taken affect do a Save.
+ When making changes a good 'rule of thumb' is to avoid extremes.
+ For example if you need food give yourself packets not Few style adventures allow attribute values much above in hex setting Strength to something like could bomb the program.
+ If increasing a character's Experience it is best to set a value just below the point at which the next Level increase occurs.
+ Otherwise your higher Level may be recognized; but you may get none of the Hit Point Attribute etc.
+ boosts which go with advancement Similarly when you decide to add some item to a character's inventory do it by overwriting some other roughly similar item.
+ For instance add a Healing Potion by replacing say a Flask of Poison not a lb Mace This reduces the chance of problems in games which maintain a separate item count for each character or keep track of total weight of items carried.
+ Perhaps most important you do not want to spoil the game's challenge.
+ Giving your party enough money to replace a valuable suit of Elfin Chain Mail destroyed by a lucky hit from an Acid Lizard may make sense; but awarding your party gold would ruin the value of many rewards supplied by the game for completing difficult quests.
+ The same principle applies to Hit Points Spell Points etc.
+ In fact 'breaking into' any game produces a new challenge win with the minimum use of the powers at your disposal.
+ Others lacking such arcane knowledge are free of this dilemma.
+ Alas it is a burden you must bear once becoming Master of the Game Deathlord Becoming a Deathlord Survivor Possibly you are enmeshed in Deathlord or eventually will be and are perplexed by 'hero die off'.
+ Even Gorbash winner of Ultima's and I and etc.
+ put Deathlord on the back burner for a few months.
+ One solution as usual is 'super natural intervention' i.
+e.
+ you diddle a few character parms and your guys suddenly feel stronger faster smarter and richer A second trick is to minimize the damage should a 'worst case scenario' eventuate.
+ The approach is to edit character attributes.
+ When you do this it's a good idea to have a list of each character's current Hit Points Strength etc.
+ This makes it easier to check which attribute is being changed and whose when doing the editing.
+ It is a good idea to make backups before editing.
+ If playing on an emulator you can use the Windows Copy option to put a duplicate of your in another folder.
+ If you've been playing on an emulator or using a 'deprotected' copy of the game the or diskettes may be 'open' at least open enough so that the patch described in steps should be skipped.
+ Try starting Copy Plus's Sector Editor inserting the Scenario A disk and going to step If Sector Editor can not read the sector mentioned you will probably need to do steps First the solution Using Central Point's Copy Plus for Apple and alteration data found in Rob Fiduccia's Deathlord article in issue we scanned the Scenario A diskette and found character data in sector on track Go to Bit Copy.
+ In the Sector Editor enter to get to the patcher and then Custom Under Address change to and to Under Data change to and to Exit the patcher and Read D.
+ Should you wish to scan the diskette starting at track expect to encounter a few unreadable sectors along the way.
+ Just skip these and continue.
+ Character attributes in games are usually coded as hexadecimal values.
+ For example if the first character in your party has a Strength of you would expect to find decimal at byte of the sector when viewed with the Copy Plus Sector Editor.
+ For a two byte value like Hit Points max for the first character the hex value is and you would expect to find at byte and at byte On the Sector Editor screen you should find character data arranged in six byte groups one byte per character starting at the following bytes Hit Points max low byte Hit Points max high byte Hit Points current low byte Hit Points current high byte Level Strength Constitution Size Intelligence A Dexterity Charisma Power current Power max Age Food Gold low byte Gold high byte Edit as desired write your characters back to disk and your quest against the Deathlord is a 'whole new ball game'.
+ Granted if you max out every parm and give each character gold there isn't much your party can't handle.
+ If however you merely go for a fair start then the inconvenience associated with having several characters wiped out remains a threat.
+ You can make a character backup each time you start the game; but of course you won't.
+ It's too much bother the backup won't restore hours of progress made in the current session and besides there's a better way Use the Make Scenario function to create a copy of each current scenario diskette on its unused side.
+ During play you just do an occasional on alternate sides.
+ If your party is wiped out and saved as dead on Side One you can restart from Side Two etc.
+ Whatever happens you will never lose more than the progress made since the last opposite side Defender of the Crown Defending the Crown In Cinemaware's new adventure wargame Defender of the Crown crunching the opposition takes a lot of practice.
+ You can take it on the chin for however many sessions it takes to 'learn the ropes'; you can employ a touch of Realtime Situation Control to make those 'practice games' into victories As usual the Visit Monitor or some equivalent must be installed before booting the game.
+ During play enter to call up the menu select Visit Monitor and enter to view the main status bytes for you and your five rivals arranged in six byte sets Whether Wolfric the Wild or some other Saxon your parms are always first in each set and For long play with plenty of opportunity to practice jousting sieges and sword fighting all you really need is a big army.
+ This you obtain by juicing up your treasury e.
+g.
+ Of course you will certainly want to try your hand at raids and fair maiden rescues so just boost your sword fighting skill e.
+g.
+ Thusly imbued with truth justice and raw power you are ready to hone your technique to guarantee that the Crown of England doesn't fall into the wrong hands Dragon Wars Dragon Wars Survivors How many new guys have lost in Interplay's Dragon Wars Well that's too many Before you send in another bunch of doomed weakies if you are playing on a send your characters through the Computist Enhanced Experience Environment i.
+e.
+ the Directions Install a monitor entry e.
+g.
+ Diversi Hack in the Desktop and boot the game.
+ Once you have four characters do an to get to the Desktop; and enter the monitor.
+ Character data blocks begin at and Just enter at byte in each block e.
+g.
+ etc.
+ Return to the game and go to the Experience displays.
+ Now instead of only points to spend on each character's attributes and displays you will have Purgatory Lore Flyer Please Take One On a map of Purgatory with coordinates of you begin at Purgatory has five towers and is surrounded by two walls with a passage between the walls Visit the small shop along the wall to acquire Low Magic scrolls.
+ Volunteers hang out at a bar in the Black marketeers sell weapons and armor in a North wall shop.
+ When you need a Magic Power recharge check out a pool in the South Tower.
+ Don't overlook hidden doors in some of the other towers.
+ If you reach the gap in the outer wall your Swim skill to get out.
+ Tavern Tales still packs the Slicer he found in the Underworld and Wackee favors her Dragon Sword.
+ Still when y' want a good solid hit and a few extra yards o' reach it's hard to beat this here Dragon Tooth.
+ Our archer wasn't worth spit 'til we found that cache of Grey Arrows in the guard house near the bridge.
+ 'Course the guards made a terr'ble fuss; but now we can jus' walze in there any old time spring the lock and.
+ some other nice stuff in the same chest.
+ to use the Spectacles again and scarf up on more goodies Right But it didn't work.
+ You get to the last room and the door is missing Then Rubywand says 'Look we've sprung Zaton; so let's ditch the Bowl and give it another try.
+'.
+ place has been sinking for years.
+ Well Doc Gorbash takes one look and says 'Hydraulics Gentlemen is hydraulics.
+ There has to be a mud leak somewhere.
+ .
+' we're about to say adios to the Underworld and try out Lansk hospitality when Mothnose spots this weird pool just a stone's throw to the west.
+ So this mean mud sucker is sittin' there waitin' to be fed and I'm startin' to think maybe we're on the menu.
+ Then ol' Batfoot here blurts out 'The Mystic Woods I've still got those.
+ claims they tinkered up a mean little beauty called the Dragon Horn; and it's still down there.
+ Trouble is no one knows what happened to the dwarves.
+ Elite An Craft ref.
+ Computist Okay gaining Elite combateer status and finding the mysterious planet Raxxla isn't supposed to be easy.
+ That's why they call the game Elite On the other hand anything which can make your quest a bit less difficult is worth serious consideration.
+ The Thargoid invaders certainly don't hesitate to implement every advantage their bug brains can contrive; why should settle for less than the best in human technology Every combateer is well acquainted with the Mk Cobra's major limitation in galaxies where planetary distances can exceed light years your fighter trader craft carries only about seven light years worth of hyperspace jump fuel.
+ Nearly as bothersome the standard Xexor Hikan Ltd.
+ intergalactic hyperdrive is good for only one hop; whereupon you must locate a new supplier shell out another credits Happily thanks to advanced research at Computist Corp.
+'s Turdnil Labs of the above barriers have been shattered Specifications Super Jump exclusive Tardis pack for range on standard fuel Multi Galactic new Dura Wolfram core for unlimited repeat hops Installation and Operation To implement the new designs you must be able to or into the Apple monitor while Elite is running.
+ For the many readers who have added special xx or are using an pre autostart Apple this should be no problem.
+ Our is equipped with home brew firmware to allow forcing a into monitor Unfortunately Elite 's combat displays do not work correctly on the and besides the interrupt is defeated.
+ The best time to break in is when docked and viewing one of the game's text displays.
+ For Super Jump enter the following at A This mod increases fuel top off level i.
+e.
+ you can buy more It does not affect fuel received should you use your Escape Pod or the amount which can be 'sun skimmed'.
+ To have access to multi galactic jump capability you must own a Galactic Hyperspace drive.
+ If you do not own one installing the mod will allow multi jumping as soon as you do.
+ Enter A The new code makes sure that when you do a hop your inter galactic drive is restored and legal status resets to Clean Once the enhancements are in place entering restarts the program.
+ You will be docked at the current system's trading station.
+ First buy some fuel.
+ Your status display will show Fuel light years Switch to the Galaxy Display i.
+e.
+ key to see your new 'range circle'.
+ To try out Multi Jump blast off and do a Zavoom You're in the next galaxy; you still have a Galactic Hyperspace drive ready for another hop To be sure a very challenging quest remains; but now you are at the helm of a Cobra Mk Elite Craft Tech Note ref.
+ Computist Turdnil Labs Maintenance Note Elt.
+ Evidently as Bob Igo indicated last month there different versions of the game.
+ I worked from an original supplied by Firebird at the time Elite was first released.
+ All of the mods described in issue were incorporated into an open copy of the original created to avoid having to make the changes upon each boot and they all work fine.
+ That the code locations would be off by just one e.
+g.
+ vs.
+ in some versions is odd but not unheard of.
+ Bob also notes that his fuel boost involved an i.
+e.
+ A instead of the Recommendations After into the monitor check the code in the areas to be changed.
+ If you find A then the issue stuff as corrected in the above maintenance note should perform as advertised.
+ If you find A A etc.
+ at a slightly offset location just change the to The same holds for changes to to program restart Instead of A you may find A As to completing the Navy's first mission just follow directions.
+ Two things may throw you off the scent of the rogue craft.
+ First you may not find clues at every station along the way especially after a Galactic jump.
+ I picked up the trail in at Errius.
+ Second wait a couple seconds after docking before you start punching keys; otherwise some messages may be cut off.
+ It's also a good idea to check the current planet's description upon docking.
+ How to become Elite There may be some shortcut; but as far as I can tell you become Elite by blowing away many enemy ships.
+ Generic 'Red Sheet' fix Getting the Red Out Granted a software vendor has the right to protect its products any way it sees fit; and when it employs documentation instead of screwing up the software it deserves a pat on the nose.
+ The dark red code sheets technique employed by some vendors comes close to being an exception.
+ It's nice that they are machine uncopiable though naturally anyone determined to steal the product need only invest an hour or so to make a copiable hand copy It's too bad that under normal lighting the codes are nearly invisible.
+ After missing the correct response twice on a newly arrived game employing tiny print on such a red background I was carping about protection that spoils player enjoyment when Gorbash turned from a nearby computer and suggested Maybe you could bleach it out.
+ Well when an chemistry Doctor of Science says try bleach you try bleach.
+ Viola A dip in a tray of Purex plus some drying flattening between paper towels in an old magazine and the job is done.
+ Warning bleach is bad stuff; so be careful.
+ The red is gone and blue print stands out clearly on a light yellow background.
+ Magic Keef the Thief Keef 'Visits' Boy was that close Ye Olde Computists' Scroll Shoppe must have more traps than the Tel Mercon treasury.
+ Now to see if it was worth the trouble The first scroll reads After what she says this may sound dippy to please the Princess think like a hippy The second scroll says North South or West Mem Santi Maze drives you mad at best.
+ To find Mem's First young man go East.
+ That way there's a chance at least.
+ Gosh what really excellent poetry Your last prize isn't a scroll at all just a rolled up yellow legal pad sheet with some crude notes You always see an orange flash when you walk into a wall right Uh uh not if the wall conceals a secret door and Talk to the Smith in to find out about guards and bridges.
+ and Check out Al Handratta's hut near the sea in the southeast.
+ Might Magic Finale From Gorbash Goo Goo Igmo i.
+e.
+ my dad comes a pair of hints that could save your Might and Magic party a bunch of grief as you near ultimate victory The last puzzle requires you to translate an eight letter word into its coded version using a famous document excerpt in code as your guide.
+ So if the word is Freedoms it isn't you might reasonably win with something like right No way Xjkkahlv is a better try.
+ Preserve the case or face disgrace If you've been playing on a speeded or set to then beware.
+ The last puzzle is timed via a program software loop.
+ At the ten minutes normally allowed shrinks to about four Before booting the game for the 'big push' i.
+e.
+ you know the password and are ready to tackle The Island setting speed to could make all the difference.
+ Miscellaneous Buglets Lest a new player be concerned that Something is wrong with my computer it is worth noting that indeed some of games do exhibit a few glitches.
+ You do not for example always get a Keep option when selling gems and jewelry; and Sell sometimes switches to Join Occasionally your inputs for Platinum to be Traded are ignored; a few non critical artifacts don't work as advertised; early adventures failed to warn that elves cannot be resurrected; etc.
+ To these you can add the absence of a map for Level of the Mines in the 'Silver Blades Clue Book Level is repeated all in all fairly minor stuff which is 'nice to know about' but does not seriously impact enjoyment.
+ Easy for you to say; none of characters is an elf True.
+ Returning to 'Silver Blades there is at least one piece of documentation which approaches bug by omission status.
+ You may Join combine spell scrolls into scroll bundles.
+ This can easily put major attack spells at the ready disposal of each magic user a factor which drastically affects game strategy.
+ Yet the feature is mentioned only as a brief note on the last fold of the Data Card A more serious bug turned up in Champions of Krynn.
+ Here the protection scheme uses references to passages in the 'Journal instead of an 'Infotator' type code wheel.
+ The problem is that perhaps once in every ten game starts you will be asked to type in Word of Journal entry etc.
+ Well aside from the ridiculous requirement of counting words there is no Journal entry With a little experimentation you get three tries at the right answer my dad and I came up with two words that seem to work most of the time and You may need to reboot once or twice to get a protection check which will accept one of these words.
+ Altogether i.
+e.
+ over the life of the game the bug probably cost me no more than four or five reboots.
+ Pool of Radiance No Clue in the Pool Responding to various rumors Linda Blanchard notes that there is currently no plan to supply free Clue Books with any of the adventures.
+ Regarding David Stewart's observation that Pool of Radiance left him wandering and victoryless Yes due largely to the piecemeal nature of the quest i.
+e.
+ you are supposed to clear the city of Evil is known for its unspectacular ending.
+ So long as you do not expect any fireworks you will have a pretty good idea when to declare Victory in Besides the adventure continues in a sequal As to being able to wander around after winning this is an on purpose feature of adventures.
+ Characters on the verge of Level promotion can gain experience and advance in preparation for the next adventure.
+ Pool Cues For those currently enmeshed in Pool of Radiance here are a few doplets of information which may prove useful.
+ I.
+ The Bishop's Volunteer At some point you will visit Bishop Braccio near the temple just east of City Hall He will offer the services of a Level cleric named Dirten who will join your party to help clean out the Temple of Bane.
+ Needless to say Dirten is a valuable addition particularly since his Lawful Good alignment means that he won't turn tail or backstab your characters in the heat of battle.
+ Unfortunately if he is in on the Temple of Bane mission he will according to the Clue Book leave your party once the job is done.
+ I happened to visit the Bishop clearing Bane's temple of evil doers and gromming the treasures I had not however destroyed the alter yet old Braccio made the same offer Since there was a vacant character slot I accepted and discovered that Dirten is perfectly willing to stick with the party to the end.
+ New Alignments for Old Evidently the fighter non player characters you can hire at the Dueling Hall always come with a Lawful Evil alignment.
+ To make this Chaotic Good change byte in the character's descriptor block from to for Lawful Good etc.
+ The values follow the same order as the Alignments listing on page of the game manual.
+ If playing on a you can modify on diskette character data see T.
+ Rapheld's article in Issue On a the easiest approach is to make changes directly to memory during play.
+ Just install the Visit Monitor Call and enter before booting.
+ Or you can boot a diskette which installs Diversi Hack.
+ Once the game is running and you are walking around town do an and select Visit Monitor from the Control Panel.
+ Find the block for your e.
+g.
+ Hero which should begin somewhere between and and enter the new alignment e.
+g.
+ This is also a good time to give your a real name e.
+g.
+ replace A with A for etc.
+ returns you to the Control Panel where selecting Quit puts you back in the game.
+ Note Whenever modifying characters as above be sure the target character is not currently selected e.
+g.
+ being etc.
+ when you go to the control panel.
+ The program maintains a status buffer for a character which once you return to the game may over write any changes.
+ Hence the suggestion that you interrupt play while in 'Exploration mode' movement using I keys Super Weapon Somewhere along the way perhaps during the mission to clear the Valhingen Graveyard I came upon a Two handed Sword The item went unnoticed until the usual post mission visit to the Armor Shop where a Sell check produced an offer of gold I observed that the did not as usual follow the item name.
+ Tests indicate that it is not a sword or even a weapon.
+ It is a magical artifact which grants a brief enormous increase when you it in the wielder's hitpower perfect for the big showdown with The Boss.
+ Unfortunately my experiments wasted the phantom sword's power.
+ You however can be on the look out for the item and put it to better use.
+ Endgame Finally you are dispatched on a special mission from a councilman to help the Forces of Good seize the Stowjanow Gates.
+ After this success you will be able to enter Valjevo Castle wend and or hack your way through a hedge maze and take on The Boss in his two story keep at the center.
+ See pictorial map on page of the 'Journal Strategy Hints In the first part of the 'Final Battle' feel free to unload all of your mass destruction spells on the elite guards.
+ They aren't much good against The Boss anyway.
+ If you survive this fight you'll have a chance to pick over some Rings of Protection heavy duty Plate Armor and at least one Long Sword.
+ Be sure to try the new stuff here i.
+e.
+ and then items while checking changes in Armor Class and Damage Immediately after the routines you will at last see the Pool of Radiance and face The Boss himself.
+ One or two fighters armed with Fine silver Longbows and silver arrows are helpful here.
+ You will have to be a fast reader to catch all of the message following victory.
+ speed to its slowest setting before the battles may be a good idea.
+ As noted earlier adventure players accustomed to flashy displays parades coronations and other such celebrations are bound to find ending a tad underwhelming.
+ Lest there be any doubt once Phlan is cleared of The Boss and his major minions the City Clerk will hand over a pile of gems some fairly hefty Experience bonuses and tell you that you have completed The Quest.
+ Realms of Darkness Light in the Realms Having polished off the first batch of quests in Realms of Darkness your stalwart band is stymied.
+ You know that a Rogue Alliance is stirring up trouble; but no one in Badel is handing out nice specific assignments.
+ Then one day in a desolate region just north of the city your scout stumbles upon a hidden cave Following a trail marked by flickering neon arrows you arrive at a brightly lit grotto in the center of which is a huge stone statue.
+ At its feet a sign reads Ye Olde Computist's Oracle.
+ Cross my palm with silver.
+ Figuring that chance to end your aimless wandering is worth taking you plop the party's last silver denar into the figure's extended hand.
+ With a horrendous groan the golem closes its fist upon the coin and begins to speak in a deep rumbling voice Questless in Badel Not at all To destroy the Rogue Alliance is the call.
+ First three quests for Shapes.
+ Then on the Star a spell is bound; and teleport to another ground.
+ One maze here Yes but toggles too.
+ Enter a room past Gertrude's sign and map Level two a second time Back to Badel then North and down you pursue the Bones of Dragon.
+ The Eight legged Guardian passes just one.
+ Pull stone grinds and the way is done.
+ Rejoined and confused A new doorway is used Down a long corridor past many alcoves you lead; and a mapper exclaims Aha 'Bones' indeed First a hero's treasure; then East to take your magic's measure.
+ Against a Rogues army second to none Reflect early and Realms' greatest quest is won Space Rogue A Space Rogue's Jottings Stardate Raided a merchant trader today.
+ This didn't exactly 'put me in solid' with the Guild my standing went to Neutral but now at least Sir Gut is willing to talk to a 'fellow pirate'.
+ Stardate Located that robot's 'girlfriend' in a 'ruti cantina.
+ What a disguise Still the no liquor business was a dead giveaway.
+ Also what a repair droid I hope she's not too anxious to get back.
+ Stardate Now that he's got the 'mutation coil maybe that weirdo on Micon really can come up with a true hyperspace drive.
+ He'd better I've 'borrowed' my last component from a Navy carrier.
+ Darn good thing I had those alien lens 'plants Stardate After months of looking for some trick to get past the monster on the mining station I finally just landed and 'went for it'.
+ That sucker is but not especially bright.
+ Found the neurostabilizers in the safe and got out Spellbreaker Spellbreaker Break Rating Change Third in Infocom's legendary Enchanter Trilogy Spellbreaker for Apple casts you as the new leader of the Circle of Enchanters owing to your brilliancies in Enchanter and Sorcerer facing an ominous new threat to the very existence of magic.
+ The all text adventure easily earned three stars after my dad and I enjoyed many hours of challenging play.
+ However we had not finished the game and have since discovered a fairly significant bug At some point in the adventure you will need an item one of the cubes obtained from a hermit at the cliff top.
+ To get there you must stop an avalanche via the time freeze spell scroll.
+ If you have used up the scroll to handle some earlier problem you are likely to eventually find yourself of the way through the adventure with no hope of winning I finally checked the Clue Book something I have never before done for one of the Enchanter adventures.
+ Its comment about wasting on page is Bad Move No kidding With luck you may have to replay 'only' of the game to correct the error you committed due to an deficit.
+ This sort of thing isn't supposed to happen in an Infocom product.
+ If you need to solve the cliff puzzle you should not be able to waste it somewhere else.
+ Spellbreaker remains a fine adventure; and now that the bug has been exposed you can avoid the problem.
+ Still such flaws weaken the trust essential for enjoyment of puzzle intensive adventuring.
+ I've gotten this far.
+ There be a solution Hence the new one star less rating.
+ Ultima Wombala's Wonderful Walk Okay so you've made it into the dungeon at the center of Ultima 's Underworld only to encounter insoluble room.
+ i.
+e.
+ You know there is an exit; but it's sealed or there's 'no way' to reach it Not to worry.
+ If you are on a with Diversi Hack or Visit Monitor installed then Wombala's Wonderful Walk is at your disposal.
+ Named for a sorcerer of the ancient Zulu empire this realtime map diddling spell replaces rocks water etc.
+ with nice firm ground.
+ When in the room just do a select Visit or Hack go to the monitor and enter to display the bytes of the current room map.
+ are blanks D's are rocks etc.
+ Now type in 's wherever you want open ground; return to the game; and your Wonderful Walk is ready.
+ Wizardry Keeping the Wiz in Wiz piece' Gorbash commented has been invaluable.
+ The article to which he referred is John Wiegley's description of how to transfer characters from earlier Wizardrys to Wizardry Legacy of Llylgamyn Having 'gotten into' Sir Tech's new Trilogy package re release Apple version Gorbash had completed Knight of Diamonds only to encounter Wiz infamous 'spirit barrier'.
+ Normally developed characters do not truly transfer to Wiz Instead your Legacy guys are supposed to be descendants of earlier heroes.
+ Via a Rite of Passage they undergo a kind of 'spirit transfer' to acquire the memories and skills and names of Wiz I characters.
+ Fair enough.
+ It been a long long time since the legendary Knight of Diamonds quest.
+ Alas spirit transfer technology has a long way to go; The Rite slashes hard won attributes and rips off possessions.
+ technique gets your guys into the Legacy scenario too; but in tact The first step is to go through the standard Wiz character transfer to an initialized disk.
+ Do not however attempt the Rite of Passage.
+ Using Copy Plus's Sector Editor the 'trick' is to find the last byte in each character's information block add and substitute the resulting value.
+ The problem is that finding the last byte isn't always such a simple matter.
+ Some blocks are split and the second part may not be in an adjacent sector.
+ To simplify things we finally went back to Wizardry Knight of Diamonds rested up spelled up the characters and noted Level Hit Points current max plus any mage and priest spell counts e.
+g.
+ and current Armor Class.
+ As shown in Rob Hall's Wizardry character block break down Computist page another invaluable Wiz resource these numbers appear in the latter part of the block Level at Hit Points current at Hit Points max at Mage spells byte counts for each spell level at Priest spells byte counts for each spell level at A current Armor Class at After exiting Wiz we booted Copy Plus hopped to the Sector Editor and used known character numbers e.
+g.
+ Level etc.
+ to track down the second parts of split blocks.
+ For example Suppose Rev Gun's block shows up as starting at byte on the Sector Editor display for Track A Sector You see in flashing letters.
+ Each block is bytes long; so you know bytes are here and the last bytes of the block are somewhere else.
+ If Rev Gun ended Wiz' with Hit Points then if he left with current max you might for hex bytes in hexadecimal Track Sector is a safe place to start since character block storage seems to begin around Track A.
+ When Copy Plus finds the numbers you can use other character numbers to verify that for sure this is the rest of Rev Gun's block.
+ Some 'good try' places to look for block continuations include Track Sectors A E.
+ The creators of Wizardry were concerned with the problem of designing a challenge appropriate for heroes which may come from either Wiz I or Wiz They have come up with a fairly plausible device for re leveling the 'playing field'.
+ The question is just how much re leveling are you willing to accept Is the legacy of your new characters merely names and memories does it also include developed powers and a pile of hardware Wizardry a Bug Some years back my dad caught what appeared to be a sure bug in the original Ultima when an attribute's value increments beyond it resets to zero.
+ Well we called Richard Garriot Lord British and were told that the recyclying is most certainly not a bug.
+ No indeed Richard explained it is a feature intended to keep players from being too greedy Evidently there are many fewer bugs and many more features floating around than one might suppose.
+ Last month I reported an apparent Wizardry bug which produces unexpected Good to Evil shifts in orientation.
+ Since the game does not permit forming a party including both Good and Evil members though interestingly it will not boot out misfits at the time the shift occurs the result can be the loss of valuable personnel.
+ A problem Yes.
+ A bug No.
+ According to Sir Tech's Brenda Garno when the manual says Certain peaceful monster types may offer your party a truce p.
+ it is referring to those times you encounter messages such as You see a wandering group of Arch Devils Attack Leave alone Choosing to attack is viewed as evidence of evil inclinations.
+ Like clearly you'd have to be really corrupt to beat up on peaceful Arch Devils.
+ Due to a random factor just one such attack may trigger a shift; or it may take several.
+ Wiz Kettles False Mazes Dr.
+ Hackenbush's question in provoked a look through my Wizardry notes and very probably has re hooked me on finishing the quest.
+ This one of the great adventures.
+ As to where to find the Laughing Kettle on Level I at coordinates East North there is a secret door in the north wall which leads to the Kettle.
+ He offers some useful clues for prices ranging from through Incidentally don't be fooled by his jolly appearance.
+ If attacked the Kettle proves to be tough powerful magic user; should you win the temple healers will require that you pay for his resurrection The false mazes encountered by some Wiz' players very strange places places in fact where you are not supposed to be but the phenomenon is not the result of some bug.
+ In the first batch of Wizardry packages shipped some did have bad diskettes quickly replaced by Sir Tech but these simply crashed the game.
+ Rather the false maze problem stems from player errors which go undetected because 'correct diskette' verification is limited mainly to occasions when you move from one level to another.
+ For example if you take an elevator to Level the program will insist that Level 's diskette be in place before play continues.
+ If once on Level you should swap in Level 's diskette the program will try to construct a maze from and do updates to whatever it finds.
+ Naturally the Level 'player copy' diskette is ruined; and you find yourself in an oddly 'inside out' maze which can look just genuine enough to occupy your best mapping skills for an hour or so.
+ My excursion into a false maze began when using Roger Wagner's Soft Switch on a I decided to jump back to an earlier position on another level and forgot to swap in the new level's diskette.
+ Well the program had no way of knowing that some sly user was playing fast and loose with the adventure.
+ It went merrily along reading from and the other level's diskette; I ended up mapping a hefty chunk of Wizardry 's 'twilight zone' and the diskette side was bombed.
+ A reasonably satisfactory cure is to get out your set of originals and recopy the side that's been damaged.
+ Everything on the restored level will be reset you may have to reopen a few locks etc.
+ but at least the quest can continue.
+ Hello adventurer It is a bright sunny day in the farmlands of huscaloosia and you sit milking your cows and reflecting on how nice and boring your life is.
+ You smile to yourself as you think about all the mundane tasks that await you in your coming day.
+ Most people would bash their heads into the wall thinking about the meaninglessness your existence holds but not you.
+ You have always longed for a simple life a warm fire and a good harvest.
+ what's that A space meteor It's coming right at you bang boom kersploosh In an instant your farm is a pile of rubble and you lift yourself up from the ground covered in dust and scrapes That was close.
+ You peak into the newly formed smouldering pit that is now full of your previous hopes dreams and cows remains to examine the wreckage.
+ thats not a meteor it's a round metallic ball the size of volkswagen beetle and covered in glowing green runes Yo you call out to the ball for some reason expecting a response.
+ rumble rumble rumble hum The ball seems to respond as steam starts to release from the runes which have since turned a sinister shade of magenta.
+ the ball splits into two like a ripe kielbasa inside you see a shitload of monsters I mean we are talking goblins spiders trolls and oh shit is that a bandit in the back Where did this ball come from Why is it in the middle of my farm Why is that goblin giving me a dirty look These are all questions a smarter person would ask instead you pick up a stick from amongst the rubble and get to crackin skulls.
+ To be continued.
+ Dude like seriously not cool Your once idyllic farm is literally covered in the nasty entrails of your fallen foes.
+ This place sucks now.
+ No more grain just stanky goblin bits and some unrecognizable pieces of that one bandit from earlier.
+ Like that kind old ogre from that story your mum used to tell you about your proverbial swamp has been taken over Now it's up to you to find some answers.
+ You get up to go to the village taking only the clothes on your back and the loot you pillaged from those small goblin children you massacred when you realize that blocking your path is a huge forrest Oh shit that's right You were the idiot that chose to build his farm on the other side of the haunted woods from the village.
+ Welp hope you like that real spooky shit cause there are about to be some skeletons up in this bitch.
+ To be continued.
+ Why did I choose to live near a haunted woods Who are all these ghosts and don't they have anything better to do than spread some frights Like seriously get a job ghosts Anyway you exit the forest and begin to walk into the outskirts of the village.
+ Ah home sweet village.
+ Only It isn't exactly as you remember it.
+ Why is everybody wearing sunglasses Why does that lady have unnecessary cogs stuck onto her blouse Since when are top hats back in style Is this a new trend or the start of something sinister Hey where do you think you're going a voice from behind yells.
+ Huh You say as you turn to face a nerdy looking dude and a clockwork dog hissing steam by his side.
+ What a nerd.
+ you whisper under your breath as you ready your weapon ready to do some nerd bashing.
+ To be continued.
+ Whoops turns out that there isn't a sinister steam punk conspiracy going on in the village only a super lame convention.
+ Now you're wanted for murder.
+ Good start adventurer way to go.
+ I'm being sarcastic you monster.
+ No turning back now you're officially on the run from the law.
+ Too bad you can't stop in at one of the villages countless fortune tellers or wise old shamans; they would have surely told you the haps.
+ I guess it's up to you to figure out on your own now using only your mental prowess and deductive abilities.
+ There's absolutely no way that could go wrong As you've been standing there trying to rub two brain cells together to figure out your next move the fantasy cops have been gaining on you better get a move on To your left you see the start of the great ronocian desert; there is no way they will follow you in there You start to run but barely make it yards before you're attacked by a giant sand crab Plus you're kind of thirsty and you forgot your sun screen.
+ This trip's going to suck.
+ To be continued.
+ After like minutes of wandering you have reached the other edge of the great ronocian desert.
+ You also have a nasty ass sunburn on the back of your neck.
+ Might want to get that checked out.
+ The desert now opens up to the great ronocian swamp The cartographers were super lazy and you start to roll up your pant legs to avoid getting that icky sticky dirt water on your designer jeans.
+ From the corner of your eye you see a metallic glint.
+ It's one of the giant monster balls that crashed through your farm earlier What the heck yo You scan your surroundings but see no signs of life.
+ Hmmm whats going on.
+ You start to question as you feel something wrap around your muscular calf.
+ Ahhh A tentacle monster I've seen enough anime to know where this is going better think fast adventurer To be continued.
+ Yeah let's never talk about that swamp again.
+ Those tentacales what happened under the water stays under the water.
+ We are back on solid land again and there is a chill in the air.
+ So you're all set for The Great Underground Empire eh Okay but before we begin a few words about this walkthru.
+ First this is not the only way to solve the game.
+ It's just one of the faster ones.
+ Second because there is no wasted motion in this game you will not be visiting all the locations.
+ So you might want to play around with the game on your own for a while mapping out as much as you can without much regard for gathering treasures.
+ Actually mapping is a good idea since if you make a misstep somewhere you might find yourself in trouble Be especially careful to follow the directions when in the mazes; a wrong move there and you could be lost for quite some time Finally you may not go through this in exactly the way it's written because of the thief.
+ He is a variable item in the game; you never know where he will show up.
+ Try to move out of the room he's in as soon as he shows up.
+ But keep in mind that even if he does steal anything from you you will get it all back from him in the end.
+ Okay Let's start the adventure You begin West of the house and your first chore is to get inside.
+ So go South and East.
+ Open the window and enter the house you're in the kitchen then go West into the living room.
+ Get the lamp then move the rug revealing the trap door.
+ Open the trap door turn on the lamp and go down.
+ At this point some mysterious person will shut the door on you; don't worry about that for now.
+ Okay so here you are in the cellar.
+ It's time to pick up your first treasure so go South then East to the Gallery.
+ Get the painting then continue North to the Studio.
+ Go up the chimney you can only fit with the lamp and the painting and you will be in the kitchen again.
+ Now go upstairs to the attic and get the knife and rope.
+ Come back down and go into the living room.
+ Open the case and put the painting inside.
+ Then drop the knife and get the sword.
+ Open the trap door again and return to the cellar.
+ Again the door is shut by someone you never will find out who's doing this but it doesn't matter Now you're back in the cellar and since we're coming to one of the more dangerous parts of the game you might want to do a save here.
+ Gripping your trusty sword head North into the Troll room.
+ There's a nasty troll here with a bloody axe and the only way past is to kill him.
+ So do just that Kill Troll With Sword.
+ It will most likely take more than one attempt so keep at it and eventually he will disappear in a cloud of black smoke.
+ Now drop the sword because you really don't need it any more and it will hinder you in carrying other more important items.
+ Having dispatched the troll you move along East East into the Round room then and East.
+ You are now in the Dome room.
+ It's a long way down and too far to jump so here's where the rope comes in handy.
+ Tie the rope to the railing then climb down the rope.
+ You will be in the Torch room.
+ Leave the torch for now; you'll be coming back this way again later.
+ From the Torch room go South then East and get the coffin.
+ Return West then continue South to the Altar.
+ There's no way you're going to get down that hole with the coffin and even the program will tell you that you haven't got a prayer.
+ That's a hint folks Just Pray and you will find yourself in the forest again.
+ Since it's daylight out save energy and turn off the lamp.
+ Now head along South then North I know but it works to the clearing then East to the Canyon View.
+ Climb all the way down to the bottom then go North to Rainbow's End.
+ Drop the coffin and open it.
+ Inside is a jeweled sceptre.
+ Get that and wave it.
+ The rainbow will become solid you'll need to cross over from the other side later Now Look.
+ You should see a pot of gold.
+ Get that and the coffin.
+ After that go then all the way back up to Canyon View.
+ From there it's to the clearing and then West to the window.
+ Once in the kitchen open the bag and get the garlic nothing else just the garlic Go on into the living room and put your treasures in the case.
+ Now sit down and take a breather because you're about to do a lot of traveling I Part Two Once again open the trap door turn on the lamp and go down.
+ Watch carefully and you will notice that this time the door doesn't close Whoever was doing it before must have gotten tired.
+ Anyway you're on your way to the dam so move along North East North and East.
+ You are now on top of the dam.
+ From there go North to the Lobby.
+ Pick up the matches then go either North or East doesn't matter into the Maintenance room.
+ Get the wrench and the screwdriver then push the yellow button.
+ Now return to the dam and you will see that the green bubble is lit.
+ Turn the bolt with the wrench then drop the wrench.
+ You have opened the dam and you will be coming back this way again to reap the fruits of your labors.
+ However right now you're on your way to Hades so let's get going Go South then down into the Loud room.
+ Leave the platinum bar for now; you'll get it later.
+ Head West into the Round room then and East hmmmm haven't you been here before Again climb down the rope.
+ This time get the torch.
+ At this point you can turn off your lamp; the torch will provide light so long as you have it.
+ Now continue straight South getting the bell then the book and candles from the altar.
+ Go down the hole to the cave then down again to the entrance to Hades.
+ Your candles will have blown out by this time but don't worry about it.
+ Okay here's where you have to be careful.
+ First ring the bell.
+ It will become red hot and you will drop it.
+ You will also drop the candles.
+ Stay calm and do the following all in one command Get the candles light match light candles with match necessary because of the torch and use the torch or you'll vaporize the candles Okay strange things happened when you lit the candles now read the book.
+ Whew The demons have been exorcised Drop the book then go South and get the crystal skull.
+ Now back North then up to the cave then North to the Mirror room.
+ By the way better put out the candles.
+ Rub the mirror and you will now be in another Mirror room this one is North of the dam as the other one is South Now go North then West then North then West into the Squeaky room well I told you you'd be doing a lot of traveling this time Make sure you have the garlic with you then go North into the Bat room.
+ So long as you have the garlic he won't bother you.
+ There is a jade figurine here but leave it for now.
+ You'll pick it up on your way out.
+ I Part Three Go East to the Shaft room.
+ Put the torch into the basket then turn on your lamp and head North to the Smelly room then down to the Gas Room best not to carry any open flames here Now you are about to enter a small maze so follow these directions East Northeast Southeast Southwest down and you should be at the top of the ladder if you aren't may God have mercy on your soul From there go down to the Ladder Bottom and then South to the Dead End for the coal.
+ Get that then return to the ladder top.
+ From there go up North East South North and you will be back in the Gas room.
+ Go up then South to the Shaft room again.
+ Put the coal in the basket and lower the basket.
+ Now guess what You have to go back through the coal mine again So make your way to the Ladder Bottom but this time go West to the Timber room.
+ Ignore the broken timber not useful for anything and drop all but the screwdriver.
+ Now you can squeeze through the crack to the West.
+ And here you are in the Drafty Room which is also at the bottom of the shaft.
+ There's the basket so get the coal and the torch and move South into the Machine room.
+ Open the lid put the coal in the machine close the lid and turn the switch with the screwdriver.
+ Drop the screwdriver open the lid and get the diamond well no one ever said Zork was an game Now go back North and put the torch and the diamond in the basket.
+ Squeeze back East into the Timber room.
+ Get the skull lamp and garlic.
+ You won't be needing the matches and the candles any more so you can leave them.
+ They were insurance in case the thief came along and stole the torch before you could get the diamond Now head East again to the Ladder Bottom and from there up and through the coal mine you know the way now to the Gas room.
+ Pick up the bracelet then continue on up and South to the Shaft room.
+ Get the torch and the diamond from the basket turn off the lamp then go West into the Bat room.
+ Get the jade then go South East South to the Slide room.
+ Now here's a fast way back to the cellar Just go down the slide Wheeeee Then it's up to the living room remember the trap door is open now and all the treasures go into the case.
+ Huff Puff Bet you didn't know you'd be doing much running around But don't get too relaxed there's still plenty more to come urk I Part Four Turn on the lamp and return to the cellar.
+ From there it's North ah deja vu then East North to Reservoir South.
+ Now that the sluice gates are open you can head North picking up the trunk of jewels North again to Reservoir North getting the air pump and North one more time getting the crystal trident.
+ After that go all the way back South again to Reservoir South then East to the dam and then East once more to the Dam Base.
+ Here you find a little pile of folded plastic; guess what it is Right it's an inflatable boat So inflate it with the pump then drop the pump then get inside the boat say Launch and you're floating off along the Frigid River.
+ Now just keep waiting until you see the buoy.
+ Get that then East to the beach.
+ Get out of the boat then get the shovel and move on to the Sandy Cave to the You might want to save the game at this point since you have to dig here until the scarab turns up and I'm sure you don't want to get buried alive it's been known to happen Okay drop the shovel and get the scarab then go back Drop the buoy and open it; inside is an emerald.
+ Get that then continue South to the Aragain Falls.
+ Here you can cross the rainbow so do that which brings you to the End of The Rainbow.
+ Turn off the lamp then go to the Canyon Bottom.
+ From there make your way back to the living room and put all the treasures in the case.
+ Your collection is quite impressive by now but you aren't finished yet.
+ Go East twice then North twice.
+ Climb up the tree and get the egg.
+ Climb down again and go South East and back to the living room.
+ However this time you don't put the treasure in the case.
+ Turn on the lamp and go down once again into the cellar and North to the Troll room.
+ Now you are about to enter a maze so follow the directions very carefully West this brings you into the maze South East up and you find several items here.
+ Take only the coins and the key and be careful not to touch the skeleton From here go East South and you will be in the Cyclops room.
+ The Cyclops is not friendly but you can deal with him effortlessly Just type in Ulysses or Odysseus if you prefer Old One Eye will tear out of there right through the wall In fact he will create a passage eastward from that room right into the living room However you don't want to go that way yet Instead go upstairs and you will be in the Treasure Room the thief's secret lair.
+ Now give him the egg and go back downstairs then East to the living room.
+ Deposit the coins in the case then get the knife the thief needs a little time to open the egg Okay go back West to the Cyclops room.
+ Again at this point saving is recommended; the thief will not be easy to kill So head upstairs and use the nasty knife to kill the thief.
+ Once he's dead all treasures in the room will be visible.
+ This includes the egg a silver chalice and anything he may have stolen from you before.
+ Get everything then follow these directions Down South West up down and you will be in the Grating Room.
+ Unlock and open the grate watch out for falling leaves then go up.
+ You will be in a clearing.
+ From there go South and climb the tree again.
+ Wind up the canary that's inside the egg.
+ A songbird will come by and drop a bauble for you.
+ Climb down again and get the bauble then return to the living room.
+ Put all the treasures in the case making sure you from the egg and put it in the case separately You're almost finished Just one more trip to make Now for the last time enter the cellar and go North.
+ From the Troll Room go East until you come again to the Loud Room.
+ Type in Echo and you will now be able to get the bar.
+ So grab it and return to the living room.
+ Once you place it in the case you will get a message.
+ Follow the advice of that message and you will get a map.
+ Take that and return to the place where this all started the mailbox West of the house.
+ You should have no trouble getting to the barrow from there.
+ Of course once you enter the barrow.
+ You didn't really think it would end there did you Not when there's still Zork and Zork waiting for you up ahead Ah but it's too late; you can't turn back now You'll just have to grit your teeth and follow through to the end with a little help of course See you in Zork You start off in front of the house.
+ Don't go in just yet.
+ N.
+ Forest Path U.
+ Here's the first of your adventure killing pitfalls i.
+e.
+ dropping the egg while you're in the tree.
+ Don't D.
+ S.
+ Behind House W.
+ Neither the water nor the lunch serve any purpose but you will need the garlic later.
+ Leave it for now.
+ W.
+ Hold onto the egg; you have to find a way to open it safely first.
+ Ah here's your ticket to the D.
+ No turning back now And your adventure begins in S.
+ E.
+ The chimney leads to the kitchen but you can only go up with a very light load far less than what you're carrying right now so forget it.
+ W.
+ N.
+ Save your game and go to the Troll Room.
+ A vicious troll lurks here and he'll probably attack you the moment you enter.
+ Respond in kind Repeat until he's dead.
+ He's a clumsy fighter so you should easily dispatch him without taking any damage.
+ If not restore your game and try again.
+ after the battle if you're uncertain.
+ You'll want all your strength for your next and last fight which will come up shortly.
+ You don't need it anymore and you can disregard the troll's ax as well.
+ W.
+ Hoo boy a maze what a delight.
+ You did remember to save after beating the troll right Incidentally the thief will probably show up for the first time while you're in the maze.
+ Don't worry if he robs you; in fact that's exactly what you want.
+ If he sizes you up right let him have it.
+and leave the area posthaste.
+ If he doesn't show up restore and go through the maze again or just wait until he appears.
+ Okay you're at the start of the maze.
+ S.
+ E.
+ U.
+ You find the remains of an adventurer who foolishly tried to navigate the maze without a walkthrough.
+and what do you know he's got stuff on him.
+ The key unlocks a grate in the forest but it just leads back to the maze so ignore it.
+ Best leave the skeleton and knife alone too.
+ E.
+ S.
+ Out of the fryer and into the broiler; a cyclops bars your way he's as indestructible as the cavern walls and worse he looks a little hungry.
+ Stay The monster will tear out of the room opening up a path back to.
+the Living Room Much better than that musty 'ol chimney eh E.
+ E.
+ if you still have any.
+ E.
+ U.
+ The attic is dark which is why you need to keep the lantern on.
+ Yes you can get eaten in the attic Man those grues are ruthless.
+ D.
+ W.
+ W.
+ W.
+ Save take a deep breath and take the ladder up.
+ You're in the thief's Treasure Room where he puts all the treasures that he steals from you and he's none too pleased about you finding it.
+ and repeat.
+ The thief is far deadlier than the troll and there's a very good chance that you'll get killed.
+ If so restore and retry.
+ Don't try to take him on with any other weapon; the sword is practically useless you keep hitting him with the flat of the blade for some reason the axe is slow and ineffective and the dead adventurer's knife is cursed and will kill if you use it Anyway once you finally dispatch the scoundrel save.
+ You can now take all the treasures in the room including the thief's own silver chalice.
+ And guess what when he opened the egg he found another treasure inside You have no more need for weaponry so D.
+ E.
+ E.
+ If you're badly wounded if you're curious although you don't really need to since you won't take any more damage for the rest of the game you'll have to make another trip to get everything.
+ This is no big deal.
+ This takes it out of the egg.
+ E.
+ E.
+ N.
+ Forest Path The songbird appears responds to the canary's song and in the process drops a brass bauble.
+ Three treasures from one Return to the Kitchen.
+ W.
+ Six down thirteen to go D.
+ You'll notice that the trapdoor doesn't close this time.
+ Apparently whoever closed the door wanted to give you the feeling that you were trapped thus creating tension.
+ But now that you've opened up a different way out there's no longer any fear of entrapment so barring the trapdoor has lost its purpose.
+ Or something.
+ N.
+ E.
+ N.
+ Reservoir South E.
+ You're now at the Flood Control Dam which created the huge reservoir you just passed.
+ N.
+ or it doesn't matter Here we have the Zork trilogy's first lady or tiger quandary in the form of the colored buttons.
+ Okay the yellow button is the one you're after.
+ The red button just turns the lights on while the brown button reverses what the yellow button does and is thus useless Avoid the blue button at all costs.
+ You get the tools and the chests simply fall apart.
+ The Tube 'o Gunk is useless.
+ or W.
+ S.
+ S.
+ Hmm what does a green light mean W.
+ The reservoir is now draining rapidly and will be crossable when you come by here again.
+ S.
+ Round Room Dome Room It looks like a dead end.
+ And isn't of course.
+ D.
+ You wind up on a tall pedestal in the middle of a room atop which rests a new light source.
+ The torch's light is endless and as long as you have it you can leave the lantern off hang onto it though; you'll need it later The torch is also a treasure by the way which is why it's a good thing you already killed the thief.
+ D.
+ Altar Before going further check your inventory and make sure you have all of the following candles book bell torch screwdriver matches garlic lantern.
+ This is the maximum number of items you can carry by the way so if you can't pick up something make sure you're not carrying anything extra.
+ By now any damage done by the thief should have healed so you can carry a full load.
+ Save go and go again to the entrance to the Land of the Dead.
+ You have to exorcize the spirits to gain passage.
+ Do the following in succession Don't dally or the exorcism will fail.
+ Once the spirits disperse then go to the Land of the Dead.
+ Here's a nice reward for your efforts Note You have a limited time from when you first enter the Altar room to perform the exorcism.
+ If you wait too long the candles will burn down too far to light and you're sunk.
+ Also if you don't take the candles they'll burn down even if you blow them out Incredible but true.
+ Taking the candles and blowing them out might prevent them from burning down but there's really no point in doing this when you already have two light sources.
+ It's best to just do the exorcism right away and get it over with.
+ There's nothing else to do in the Land of the Dead so leave.
+ N.
+ U.
+ You can't go back so you may as well go forward.
+ N.
+ Like the Dome Room this only looks like a dead end.
+ Although it appears that nothing's happened you've actually been transported to an identical looking room this one's north of the reservoir; the other's south of it N.
+ Eureka a new area an old coal mine to be exact W.
+ The slide is your ticket out of here; leave it for now.
+ N.
+ W.
+ N.
+ There's a bat guarding this room which will immediately pick you up and drop you someplace far away.
+unless you have garlic.
+ Which you do of course.
+ As long as the garlic is in this room the bat will stay put.
+ Shaft Room You're about to enter a room containing a lot of coal gas and if you're carrying anything with open flames you'll get blown to bits.
+ N.
+ Gas Room Save before going E.
+ You're now in a non descript part of a coal mine .
+yep you guessed it another maze D.
+ You should be at the Ladder Top.
+ If not.
+well you know what to do.
+ D.
+ S.
+ N.
+ U.
+ You have to get back to the Gas Room now and the path is not the same as the one you originally took Standard level my eye.
+N.
+ E.
+ S.
+ N.
+ Gas Room yay.
+ U.
+ S.
+ As you've probably guessed by now that shaft leads somewhere important and now you're going to go there.
+ Go all the way back to the Ladder Bottom then W.
+ You must be completely unburdened to fit through the passageway.
+ Oh and don't turn off the lantern W.
+ You're now at the bottom of the shaft.
+which is dark which is the other reason you had to put the torch in the basket.
+ doesn't work because they're inside another object S.
+ Bet you were wondering why you made that extra trip just to put the coal in the basket.
+ A lot of work but the payoff was worth it no N.
+ E.
+ it's useless Return to the Gas Room for the last time.
+ U.
+ S.
+ With the thief dead and the Gas Room no longer a threat you can use the torch without fear for the rest of the game.
+ W.
+ S.
+ E.
+ Slide Room D.
+ Remember that ramp you saw in the Cellar Well guess where you are now.
+ U.
+ Wonderful you're halfway there and you've already done all the hard stuff.
+ It's nothing but smooth sailing the rest of the way.
+ D.
+ N.
+ E.
+ Round Room E.
+ This is the Loud Room which is pretty weird; anything you enter including or will do nothing but cause an echo.
+ That should be a The room will quiet down and the platinum bar is now free for the taking.
+ W.
+ W.
+ N.
+ Back to the reservoir which is now drained.
+ N.
+ So there was something hidden under all that water N.
+ N.
+ You've just hit your weight limit so leave the air pump for now.
+ S.
+ S.
+ S.
+ East West Passage and back to the Living Room.
+ Time now for a return trip to the Temple.
+ D.
+ N.
+ E.
+ E.
+ E.
+ D.
+ D.
+ This time go to the Egyptian Room.
+ Now instead of trudging all the way back to the Living Room go and to the Altar and This instantly zips you to a clearing in the forest Which happens to be near where you want to go next.
+ E.
+ E.
+ S.
+ Top of Canyon D.
+ D.
+ End of Rainbow Hot dang one becomes three again You've also turned the rainbow into a bridge which you'll need pretty soon.
+ You're weighed down again so it's time for another return trip.
+ U.
+ Top of Canyon W.
+ W.
+ to the now familiar Forest Path and back to the Living Room.
+ It's very easy to get lost in the forest which is why you should follow these steps exactly.
+ Thankfully there are no dangers here so if you do get lost just keep wandering until you find a familiar landmark.
+ Again Almost done Return to Reservoir South you know the way by now N.
+ N.
+ S.
+ S.
+ E.
+ D.
+ Leave the folded pile of plastic where it is and Not surprisingly it's a boat.
+ or not.
+it really doesn't matter at this point in the game Kick back relax and wait for the current carry you downstream.
+ Ignore the first landing; it just leads back to the Loud Room.
+ Keep waiting until the buoy shows up then take it.
+ Looks like it wasn't just a warning marker after all.
+ Assume nothing in the By now you're at the last landing area and the water's become very treacherous.
+ or E.
+ You can also land at the second landing area to the east before opening the buoy but you must land by the third landing area or you'll plummet over a waterfall to your death.
+ If you're at the third landing area go to the second landing.
+ four times to find the buried scarab.
+ S.
+ Aragain Falls Go twice crossing the rainbow bridge to the End of Rainbow and go all the way back to the Living Room.
+ What's this counsel from a benevolent deity Or maybe the mysterious person who locked the trapdoor Whoever it's from follow it.
+ L.
+ Hey that parchment wasn't there before Southwest huh Return to the west of the house the place where.
+yes.
+it all began.
+ And there it is.
+ Save your game if you like then go into the barrow.
+ Well done Master Adventurer You've slain the villainous thief uncovered numerous long forgotten secrets and recovered all the treasures of the first part of the But your journey has just begun and a whole new set of tricks and twists as well as a new enemy lie ahead.
+ Once you begin you can open the mailbox and read the leaflet if you want but it is by no means required.
+ It is also fun to throw the leaflet at yourself.
+ Anyways head north from the house twice and go up the tree there.
+ At the top in the bird's next should be an ornate jeweled egg.
+ Bet that hurt coming out.
+ Anyways take it.
+ Don't worry about opening it while you can do so just throw the egg while up here it will damage the contents within so forget about.
+ We'll get someone else to open it.
+ Go on down and south then east.
+ You should have a window near you on the house; open it and enter the house.
+ Take the bottle and go west.
+ Open the case there and take the sword and the lantern which will become quite familiar to you as you continue throughout this and other Zork games.
+ Next go east and up the stairs to the attack.
+ Turn on the lantern and take the rope.
+ Turn off the lantern it will eventually run out if left on and we need it a lot in this game then go back downstairs.
+ Go west and move the rug in the living room.
+ Open the trap door and go on down.
+ As luck would have it the door closes above you preventing the need for you to do so yourself.
+ Oh wait.
+ Trollz Here turn the lantern on lest a wandering grue devour you.
+ What the heck is a grue anyways Then take note of how your sword is somewhat glowing it glows like this with an enemy is in an adjacent room and grows brightly when they are in the same room as yourself.
+ Thusly opt to save the game.
+ That way if you get your head chopped off or something you can restore the game back to this point.
+ Afterwards go north and you'll find the troll.
+ Pretty much just fight the troll with your sword it may take more than one hit but keep going until someone bites the dust.
+ After the fight diagnose your condition.
+ If you're able to be killed with a light wound I'd use the wait command until my wounds healed up a bit as we will be fighting some enemies soon enough but they generally won't seriously wound you.
+ The Underground Maze After defeat the troll go west.
+ You'll find this area to be one of the most baffling you'll ever encounter as if you go one way you generally cannot trace your steps back.
+ It would be prudent to follow my directions to the letter.
+ Also during the course of the maze you may meet up with some kind of man who may steal from you.
+ You don't particularly want this so save before going any further.
+ He can also attack you.
+ You will want to check your inventory just use inventory after the encounters.
+ If you have a sword lantern bottle and coins if you're that far then there's no real need to worry about restoring since you want him to take the jeweled egg.
+ Otherwise restore.
+ If you don't get him to steal it don't worry.
+ Anyways once in the maze go south east and up.
+ Don't mess with the skeleton here or you'll lose everything and that is not good.
+ Take just the bag of coins then go southwest east south and southeast to the Cyclops's room.
+ What do you do about him Well anyone remember Greek mythology Basically just input the command Say 'Ulysses' and the Cyclops will run off leaving a metaphorical trail of urine behind him.
+ The Land of the Living Dead Did the thief take the egg from you If not save in the Cyclops room and go up.
+ You'll find the thief's hideout; he may wound you but it is very unlikely to be serious.
+ Give the egg to the thief and go back down.
+ We'll kill him later don't worry.
+ Then go southeast east and east.
+ Hey this area's familiar.
+ Put the treasures into the case open the trap door and go down.
+ Head north east north northeast and east.
+ Go north into the dam lobby and take the matchbook.
+ Go south twice to the Deep Canyon and go down.
+ Then go west southeast and east to the Dome Room.
+ Save and jump for a bit of fun but it is counterintuitive you lose items even if you go where you need to After that tie the rope to the railing and head down to the Torch Room.
+ Go south and take the bell then south again.
+ Take the book and the candles.
+ Also consider reading the book though it isn't required.
+ Go down from here and repeat this action.
+ Welcome to Hell That is to say the Entrance to Hades.
+ So Greek Hell.
+ Now then let us exorcise the crap out of those devilish spirits.
+ Open the matchbook then ring the bell to stop the spirits.
+ This will cause you to drop the candles; don't worry.
+ Light a match then light the candles with this match.
+ Wave the candles and you'll scare the living crap out of those spirits.
+ Read the book again possibly to get rid of them.
+ Nice.
+ Pour some water on the bell then take the bell it grew hot and you dropped it too remember Put out the candles as well then drop the bottle.
+ Go south you'll find an ornate skull.
+ Take it.
+ The Thief After taking the skull go north up north north north west west south south and east.
+ Take the painting here and go west north and up.
+ Hey I know this place Put the painting into the case to lighten your load.
+ Take the bag of coins and go west then west again to the Cyclops room.
+ Save here and we can deal with the thief.
+ There are two big methods as to how to do so.
+ The main one is the most obvious.
+ Go up and restore the game until you end up not getting hit upon entrance.
+ Then give the coins to the thief then Kill thief with sword You may get a hit on him; you need to give him a light wound at least.
+ Otherwise restore.
+ Then repeat this but hand over the skull first.
+ Then just keep bashing at him.
+ You might get lucky.
+ The second one is a lot easier.
+ Go up and Get stiletto You'll likely fail; don't worry.
+ Go back down and use the command.
+ Due to some bad programming you'll then actually receive the stiletto.
+ Go upstairs and repeatedly try to kill the thief with the stiletto.
+ Lot easier ain't it As with the previous method you can give the thief the coins skull to distract him as needed.
+ Once you win the battle take all of the treasures.
+ Let your wounds heal if needed.
+ Then go down east and east.
+ Put all of the treasures into the case.
+ Go west west and up take the stiletto if you need to then go down east and east.
+ If you already had the stiletto for whatever reason ignore this last bit.
+ Draining the Reservoir After the above save.
+ Take the clockwork canary it is what was in the jeweled egg then go east east north north and up.
+ Wind the canary.
+ Huh.
+ Go down and take the brass bauble and go south east west west and put all of the treasures into the case.
+ Save if you want.
+ Now onto the actual business.
+ Go down north east north northeast and east to find the controls for the dam.
+ We'll mess with it later go north and north again.
+ Switch off the lantern and press the red button.
+ Only take the screwdriver then push the yellow button.
+ Go south two times and turn the bolt with the wrench.
+ Wait a few times and the reservoir will soon drain.
+ Go west and turn on the lantern then north.
+ Drop all but the lantern and go north twice.
+ Take the trident you know who that's a reference to right and go south twice.
+ Take the trunk and go south southwest southwest west south and up.
+ Put all of the treasures in the case.
+ Coal and Diamonds Go east and open the sack there.
+ Take the garlic as if you'd eat it and go west down north east north northeast and north.
+ Take all the crap you dropped before.
+ Go north twice.
+ Then go up north north west north west and north.
+ Get the figurine and go east.
+ Put the screwdriver matchbook and candles into the basket; we'll do more with this later.
+ Go north down and take the bracelet.
+ Then go east northeast southeast southwest down down and west.
+ Drop all but the lantern here and go east south take the coal north up up north east south north up and south.
+ Phew Take the candles and the matchbook.
+ Light a match and then light the candle with it.
+ Put the candles and coal into the basket then lower it.
+ Go north down east northeast southeast southwest down down and west.
+ Drop all of your stuff and go west.
+ Hey look It's the basket Take the candles screwdriver and the coal.
+ Head south and open the lid.
+ Put the coal into this machine and close the lid.
+ Move the switch with the screwdriver then open the lid for a big freakin' diamond Take it and go north.
+ Put the candles diamond and screwdriver into the basket.
+ Go east and take everything except the stiletto and timber then go east up up north east south north up and south.
+ Raise the basket and take the candles and the diamond.
+ May as well return to the treasure case.
+ Go west south east south down and up.
+ Put all treasures into the case.
+ Silence is Golden Go down north east east north northeast east south and down.
+ Whatever logic it seems to defy say Echo and for some random reason the room becomes quiet.
+ Huh.
+ That was easy.
+ Take the platinum bar and go southeast east and down.
+ Turn off the lantern then drop the lantern and the candles.
+ Take the torch now which will eternally be lit.
+ Go south and east.
+ Open the coffin and take the sceptre.
+ Go west south down north north north west west south and up.
+ Put all of the treasures the sceptre and torch into the case.
+ We still got stuff to do with them pretty soon.
+ Go east four times down twice and north.
+ You'll find the rainbow but no random leprechaun north a pot of gold.
+ Perhaps on the other side Wave the sceptre so we can see.
+ Yup that worked take the pot of gold.
+ Then head east twice north twice and take the shovel.
+ Go northeast and dig in the sand with the shovel.
+ You'll eventually after a few repetitions of this action find a scarab.
+ After this drop the shovel as you will no longer need to use it.
+ Take the scarab and go southwest south twice west twice southwest up twice northwest and west thrice.
+ Put all treasures the torch into the case.
+ Row Row Row Your Boat.
+ Go down north east thrice up northwest and north twice.
+ Take the air pump as you'll obviously need it later.
+ Go south twice east down and take the plastic.
+ This pile of random plastic actually is an air boat.
+ We'll use it momentarily.
+ Go up south down and east twice.
+ Drop all but the pump and torch then inflate plastic Then get into the boat and launch it.
+ Wait around for a bit until you read something about a red buoy.
+ Take it and land to the east.
+ Here open the buoy to find an emerald.
+ Weird place to keep treasure but I've seen weirder I guess.
+ Drop the buoy get out of the boat deflate the boat and get the plastic.
+ Go south until you reach Aragain Falls.
+ Note Niagara.
+ There go west twice southwest up twice northwest and west four times.
+ Put the emerald into the case then go down north and east five times.
+ Take all but the label.
+ It won't be there if you read it which is just as okay.
+ Continued in Zork Oh heck no I ain't letting you off that easily.
+ We'll actually finish this journey.
+ Go west three times southeast east down south and east.
+ Take the coffin if needed drop all but the torch.
+ Go west and south.
+ Pray to find yourself in the forest.
+ Now head east south east and west twice.
+ Put all of the treasures into the case.
+ Read the parchment you caused to fall.
+ Interesting.
+ Go east twice southwest northwest and southwest.
+ Go into the tomb and.
+ Huh.
+ My game closed off.
+ Well given that Zork starts in the Stone Barrow it is quite likely that this is the end of the game.
