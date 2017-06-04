@@ -7,8 +7,14 @@ class Door():
         self.doorNum = doorNum
     def isLocked(self):
         return self.locked
-    def unlock(self):
-        self.locked = False
+    def lock(self, key):
+        self.doorNum = key;
+        self.locked = True;
+    def unlock(self,key):
+        if key == self.doorNum:
+            self.locked = False
+            return True
+        return False
     def getDoorNum(self):
         return self.doorNum
     def getDoorDir(self):

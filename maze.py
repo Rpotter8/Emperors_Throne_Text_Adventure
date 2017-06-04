@@ -7,7 +7,6 @@ WALL = "X"
 class maze():
 
 
-
     def getSurrounding(self, curr):
         surr = []
         depth = self.height
@@ -80,7 +79,6 @@ class maze():
                 curr = st.pop()
 
     def addDoors(self):
-
         for v in self.matrix:
 
             for z in v:
@@ -97,11 +95,34 @@ class maze():
                 if z.right == False:
                     right = 1
                 z.environment = genEnvironment(self.difficulty,up,down,right,left)
+                #Start Modifications
                 if(z.x==0 and z.y==0):
                     z.environment.changeDesc("smelly dark room outside your jail cell")
                     z.environment.addItem(genObject(2,self.difficulty))
+                #Locking end doors with hardcoded key 0
+                if(z.x==self.width - 1 and z.y==self.height - 1):
+                    if z.above == False:
+                        print("Locking DOWN"+"y:"+str(self.height - 2)+"x:"+str(self.width - 1))
+                        self.matrix[self.height - 2][self.width - 1].getEnv().lockDoor("Down",0)
+                    if z.below == False:
+                        print("Locking DOWN"+"y:"+str(self.height)+"x:"+str(self.width - 1))
+                        self.matrix[self.height][self.width - 1].getEnv().lockDoor("Up",0)
+                    if z.left == False:
+                        print("Locking DOWN"+"y:"+str(self.height - 1)+"x:"+str(self.width - 2))
+                        self.matrix[self.height - 1][self.width - 2].getEnv().lockDoor("Right",0)
+                    if z.right == False:
+                        print("Locking DOWN"+"y:"+str(self.height - 1)+"x:"+str(self.width))
+                        self.matrix[self.height - 1][self.width].getEnv().lockDoor("Left",0)
+        self.setExit()
+        self.dropKey(0)
     def getVertex(self,x,y):
         return self.matrix[x][y]
+    def setExit(self):
+        self.matrix[self.height - 1][self.width - 1].getEnv().addItem(Entity("set of stairs to the next floor","stairs",0,0));
+    def dropKey(self,key):
+        y = random.randint(0,self.height-2)
+        x = random.randint(0,self.width-2)
+        self.matrix[y][x].getEnv().addItem(genObject(1,self.difficulty))
     def display(self):
 
         height = len(self.printer)

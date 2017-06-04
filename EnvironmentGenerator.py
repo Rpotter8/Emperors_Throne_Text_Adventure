@@ -18,8 +18,9 @@ def genObject(objType, difficulty):
         #BuildRandomKey Object Here
         Descriptions = Library.getDescriptionsList()
         Choice = random.randint(0,len(Descriptions)-1)
-        retEnt = Entity(Descriptions[Choice]+" Key","Key",\
-                random.randint(0,NUMBER_OF_DOORS-1),0)
+        #Removed Random Keydrop, always door 0
+        retEnt = Entity(Descriptions[Choice]+" Key","Key",0,0)
+                #random.randint(0,NUMBER_OF_DOORS-1),0)
     elif objType == 2:
         #BuildRandomPotion Object Here
         Descriptions = Library.getDescriptionsList()
@@ -58,6 +59,9 @@ def genEnvironment(difficulty,updoor,downdoor,rightdoor,leftdoor):
     numObjects = random.randint(0,2)
     for i in range(0,numObjects):
         objType = random.randint(0,3)
+        #Removed Random Key Generation, only one key per floor now.
+        while objType == 1:
+            objType = random.randint(0,3)
         objects.append(genObject(objType,difficulty))
     #Generate random room description
     #TODO make the description more random
