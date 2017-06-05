@@ -14,10 +14,10 @@ from maze import *
 print("Welcome Player!")
 name = input("Please Input Your Name! ")
 #defaults to yes
-stot = input("Would you like to use speech to text? y/n")
+stot = input("Would you like to use speech to text? y/n : ")
 while True:
     try:
-        difficulty = int(input("Please Select a Difficulty From 1-5 "))
+        difficulty = int(input("Please Select a Difficulty From 1-5 : "))
         if(difficulty>0 and difficulty<6):
             break
     except ValueError:
@@ -105,9 +105,10 @@ CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).g
 print(CurrEnv.toString())
 #Testing RunCode
 while(1):
-    print("y:"+str(player.getLocation()[0])+" x:"+str(player.getLocation()[1]))
+    #print("y:"+str(player.getLocation()[0])+" x:"+str(player.getLocation()[1]))
+    print("\n")
     data = ""
-    if(stot != 'n'):
+    if(stot.lower() == 'y' or stot.lower() == 'yes'):
         text = RecognizeSpeech.recognize()
         data = InputProcessor.processInput(text,player,CurrEnv)
     else:
