@@ -1,4 +1,5 @@
 import nltk
+from nltk.corpus import wordnet
 
 file = open("clean.txt")
 
@@ -19,3 +20,6 @@ while(1):
         if(verb != None and action != None):
             print("Verb: " + verb +", Action: " + action)
             break
+
+
+    
