@@ -83,17 +83,17 @@ print("""		.		.:			.                  :
                     a@@@@@@@\   | `| ''.'     .' | ' /@@@@@@@@@a  """)
 
 
-input("Press Enter to Continue...")
-print("This is your father's castle. Yet your adventure does not start in the throne room, or the dining room, or even your bedroom.")
-input("Press Enter to Continue...")
-print("You have awoken this morning locked in the jail cell in the cellar of the castle. Surrounded by rats and other undesirables.")
-input("Press Enter to Continue...")
+input("\n\tPress Enter to Continue...\n")
+print("This is your father's castle. Yet your adventure does not start in the throne\nroom, or the dining room, or even your bedroom.")
+input("\n\tPress Enter to Continue...\n")
+print("You have awoken this morning locked in the jail cell in the cellar of the\ncastle. Surrounded by rats and other undesirables.")
+input("\n\tPress Enter to Continue...\n")
 print("Your memory slowly returns as you clear the sleep from your eyes...")
-print("You remember the violent murder of your father at the hands of your uncle\nYou realize your uncle must have thrown you in the jail to keep you out of the way")
-print("until he can fully take over the kingdom!")
-input("Press Enter to Continue...")
-print("You quickly escape the jail cell and decide to confront your uncle in the throne room!")
-input("Press Enter to Continue...")
+print("You remember the violent murder of your father at the hands of your uncle\nYou realize your uncle must have thrown you in the jail to keep you out of")
+print("the way until he can fully take over the kingdom!")
+input("\n\tPress Enter to Continue...\n")
+print("You quickly escape the jail cell and decide to confront your uncle in the\nthrone room!")
+input("\n\tPress Enter to Continue...\n")
 #Game Starts Here!
 #Predefined location, with one potion type random item.
 CurrEnv = 0
@@ -111,18 +111,17 @@ while(1):
         text = RecognizeSpeech.recognize()
         data = InputProcessor.processInput(text,player,CurrEnv)
     else:
-        data = InputProcessor.processInput(input("What do you do?"),player,CurrEnv)
+        data = InputProcessor.processInput(input("What do you do..?\n\t"),player,CurrEnv)
     if("Grab" in data):
-        print("GRABBY GRABBY")
         continue
     if("Inventory" in data):
-        print("This is your inventory...")
+        print("This is your inventory...\n")
         continue
     if("Equipment" in data):
-        print("Those are your equipped items..")
+        print("Those are your equipped items..\n")
         continue
     if("Equip" in data):
-        print ("Equipping done.")
+        print ("Equipping done.\n")
         continue
     if("Stairs" in data):
         currfloor = maze(5,5,difficulty)
@@ -134,14 +133,16 @@ while(1):
         print(CurrEnv.toString())
         continue
         #print("I do not understand your command")
+    if("Fail" in data):
+        continue
     if("Error" not in data and "Look" not in data):
         CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).getEnv()
         print(CurrEnv.toString())
         continue    
     #This is not working
     if(data[5:] == " "):
-        print("You must act, Adventurer!")
+        print("You must act, Adventurer!\n")
         continue
-    print("You "+data[5:]+", but nothing happens")
+    print("You "+data[5:]+", but nothing happens..\n")
     #input("Press Enter to Continue...")
     #print(EnvironmentGenerator.genEnvironment(difficulty,"Up").toString())

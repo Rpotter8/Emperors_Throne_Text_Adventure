@@ -81,7 +81,7 @@ class Player():
             else:
                 print("You swing your "+self.weapon.toStringItem()+" but you miss.\n")
             if monster.getAttr1() <= 0:
-                print("You have defeated the"+monster.toStringItem()+"..\n\t"+\
+                print("You have defeated the "+monster.toStringItem()+"..\n\t"+\
                     "Congratulations, Hero!")
                 env.remove(monster)
             else:
