@@ -14,18 +14,18 @@ class Environment():
         self.entities.append(item)
     def toString(self):
         if(len(self.entities)==0):
-            retDesc = "You have entered "+self.description+" that is empty "
+            retDesc = "\n\tYou have entered "+self.description+" that is empty "
         else:
-            retDesc = "You have entered "+self.description+" that contains "
+            retDesc = "\n\tYou have entered "+self.description+" that contains "
             for i in self.entities:
                 #print ("\t\t\t\tDEBUG : ",i)
                 if i not in Library.getCollectList():
-                    retDesc = retDesc+"\n a(n)"+i.toString()
+                    retDesc = retDesc+"\n\t\t a(n) "+i.toString()
                 else:
-                    retDesc = retDesc+"\n "+i
-        retDesc = retDesc+"\nThe exits from this room are"
+                    retDesc = retDesc+"\n\t\t "+i
+        retDesc = retDesc+"\n\tThe exits from this room are"
         for z in self.doors:
-            retDesc = retDesc+"\n"+z.toString()
+            retDesc = retDesc+"\n\t\t"+z.toString()
         return retDesc
     def hasDoor(self,direction):
         for z in self.doors:

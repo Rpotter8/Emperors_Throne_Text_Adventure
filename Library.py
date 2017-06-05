@@ -33,8 +33,8 @@ weapons={'sword':13,'sword':13,'sword':13,'sword':13,'sword':13,'sword':13,\
 
 armors={'helmet':5,'helmet':5,'helmet':5,'helmet':5,'helmet':5,'helmet':5,\
 		'helmet':5,'helmet':5,'helmet':5,'helmet':5,'helmet':5,'helmet':5,\
-		'pair of pants':3,'pair of pants':3,'pair of pants':3,\
-		'pair of pants':3,'pair of pants':3,'pair of pants':3,\
+		'pants':3,'pants':3,'pants':3,'pants':3,'pants':3,\
+		'pants':3,'pants':3,'pants':3,'pants':3,'pants':3,\
 		'shirt':8,'shirt':8,'shirt':8,'shirt':8,'shirt':8,'shirt':8,'shirt':8,\
 		'shirt':8,'shirt':8,'shirt':8,'shirt':8,'shirt':8,'shirt':8,'shirt':8,\
 		'armor':15,'armor':15,'armor':15,'armor':15,\
