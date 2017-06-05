@@ -21,10 +21,10 @@ weapons={'sword':13,'sword':13,'sword':13,'sword':13,'sword':13,'sword':13,\
 		'hammer':10,'hammer':10,'hammer':10,'hammer':10,'hammer':10,\
 		'stick':2,'stick':2,'stick':2,'stick':2,\
 		'stick':2,'stick':2,'stick':2,'stick':2,\
-		'greatsword':20,'greatsword':20,'greatsword':20\
-		'greatsword':20,'greatsword':20,'greatsword':20\
-		'greataxe':18,'greataxe':18\
-		'greataxe':18,'greataxe':18\
+		'greatsword':20,'greatsword':20,'greatsword':20,\
+		'greatsword':20,'greatsword':20,'greatsword':20,\
+		'greataxe':18,'greataxe':18,\
+		'greataxe':18,'greataxe':18,\
 		'spear':14,'spear':14,'spear':14,'spear':14,\
 		'spear':14,'spear':14,'spear':14,'spear':14,\
 		'whip':3,'whip':3,\
