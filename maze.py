@@ -73,9 +73,13 @@ class maze():
                         curr.above = False;
                         st[-1].below = False;
                 if(not foundEnd):
+                    curr.parOfPath = True
+                    st[-1].parOfPath = True
                     if(curr == end):
                         foundEnd = True;
             else:
+                if(not foundEnd):
+                    curr.parOfPath = False
                 curr = st.pop()
 
     def addDoors(self):
@@ -102,16 +106,16 @@ class maze():
                 #Locking end doors with hardcoded key 0
                 if(z.x==self.width - 1 and z.y==self.height - 1):
                     if z.above == False:
-                        print("Locking DOWN"+"y:"+str(self.height - 2)+"x:"+str(self.width - 1))
+                        #print("Locking DOWN"+"y:"+str(self.height - 2)+"x:"+str(self.width - 1))
                         self.matrix[self.height - 2][self.width - 1].getEnv().lockDoor("Down",0)
                     if z.below == False:
-                        print("Locking DOWN"+"y:"+str(self.height)+"x:"+str(self.width - 1))
+                        #print("Locking DOWN"+"y:"+str(self.height)+"x:"+str(self.width - 1))
                         self.matrix[self.height][self.width - 1].getEnv().lockDoor("Up",0)
                     if z.left == False:
-                        print("Locking DOWN"+"y:"+str(self.height - 1)+"x:"+str(self.width - 2))
+                        #print("Locking DOWN"+"y:"+str(self.height - 1)+"x:"+str(self.width - 2))
                         self.matrix[self.height - 1][self.width - 2].getEnv().lockDoor("Right",0)
                     if z.right == False:
-                        print("Locking DOWN"+"y:"+str(self.height - 1)+"x:"+str(self.width))
+                        #print("Locking DOWN"+"y:"+str(self.height - 1)+"x:"+str(self.width))
                         self.matrix[self.height - 1][self.width].getEnv().lockDoor("Left",0)
         self.setExit()
         self.dropKey(0)
@@ -122,7 +126,10 @@ class maze():
     def dropKey(self,key):
         y = random.randint(0,self.height-2)
         x = random.randint(0,self.width-2)
-        self.matrix[y][x].getEnv().addItem(genObject(1,self.difficulty))
+        if(self.matrix[y][x].parOfPath==True):
+            self.matrix[y][x].getEnv().addItem(genObject(1,self.difficulty))
+        else:
+            self.dropKey(key)
     def display(self):
 
         height = len(self.printer)
@@ -204,6 +211,7 @@ class Vertex():
         self.right = True
         self.visited = False
         self.environment = None
+        self.parOfPath = False
     def getEnv(self):
         return self.environment
 
