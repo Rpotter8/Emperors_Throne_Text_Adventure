@@ -113,7 +113,6 @@ while(1):
     else:
         data = InputProcessor.processInput(input("What do you do..?\n\t"),player,CurrEnv)
     if("Grab" in data):
-        print("GRABBY GRABBY")
         continue
     if("Inventory" in data):
         print("This is your inventory...\n")
@@ -134,6 +133,8 @@ while(1):
         print(CurrEnv.toString())
         continue
         #print("I do not understand your command")
+    if("Fail" in data):
+        continue
     if("Error" not in data and "Look" not in data):
         CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).getEnv()
         print(CurrEnv.toString())
