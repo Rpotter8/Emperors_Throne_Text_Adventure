@@ -21,8 +21,8 @@ class Environment():
                 #print ("\t\t\t\tDEBUG : ",i)
                 if i not in Library.getCollectList():
                     retDesc = retDesc+"\n a(n)"+i.toString()
-                else:
-                    retDesc = retDesc+"\n "+i
+                #else:
+                    #retDesc = retDesc+"\n "+i
         retDesc = retDesc+"\nThe exits from this room are"
         for z in self.doors:
             retDesc = retDesc+"\n"+z.toString()

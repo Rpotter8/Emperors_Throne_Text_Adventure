@@ -8,6 +8,7 @@ import Library
 class Entity():
     def __init__(self,name,etype,attr1,attr2):
         self.name = name
+        self.name.replace('',' ')
         self.type = etype
         if etype=="Enemy":
             self.attr1 = attr1 #Health
