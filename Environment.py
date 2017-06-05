@@ -16,16 +16,16 @@ class Environment():
         if(len(self.entities)==0):
             retDesc = "\n\tYou have entered "+self.description+" that is empty "
         else:
-            retDesc = "\n\tYou have entered "+self.description+" that contains "
+            retDesc = "\nYou have entered "+self.description+" that contains "
             for i in self.entities:
                 #print ("\t\t\t\tDEBUG : ",i)
                 if i not in Library.getCollectList():
-                    retDesc = retDesc+"\n\t\t a(n) "+i.toString()
+                    retDesc = retDesc+"\n\t a(n) "+i.toString()
                 else:
-                    retDesc = retDesc+"\n\t\t "+i
-        retDesc = retDesc+"\n\tThe exits from this room are"
+                    retDesc = retDesc+"\n\t "+i
+        retDesc = retDesc+"\nThe exits from this room are"
         for z in self.doors:
-            retDesc = retDesc+"\n\t\t"+z.toString()
+            retDesc = retDesc+"\n\t"+z.toString()
         return retDesc
     def hasDoor(self,direction):
         for z in self.doors:
@@ -39,6 +39,11 @@ class Environment():
             door.unlock(key)
     def hasItem(self):
         return len(self.entities)>0
+    def hasEnemy(self):
+        if len(self.getMonsters()) > 0:
+            print (self.getMonstersSimple())
+            return True
+        return False
     def lockDoor(self,direction,key):
         for door in self.doors:
             if door.getDoorDir()==direction:
