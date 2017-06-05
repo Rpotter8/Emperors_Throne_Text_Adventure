@@ -30,11 +30,11 @@ def processInput(data,plyr,env):
     if("look" in data):
         return "Look"
     if("grab" in data):
-        print(data)
+        #print(data)
         if(env.hasItem()):
             for item in env.getItems():
                 #print(tuple(item.getName().split(" ")))
-                if (((item.getName() in Library.getEquipsList()) or (tuple(item.getName().split(" ")) in Library.getMasterItemList())) and (item.getName().lower() in data)):
+                if (((item.getName() in Library.getEquipsList()) or (item.getName() in Library.getMasterItemList())) and (item.getName().lower() in data)):
                     plyr.addInventory(item)
                     env.remove(item)
                     print("You have added ",item.toString()," to your inventory.")
