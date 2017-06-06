@@ -1,5 +1,25 @@
 from Entity import Entity
 import random
+import time
+import sys
+import simpleaudio as sa
+import os
+
+wave_obj = sa.WaveObject.from_wave_file("attack.wav")
+
+def dprint(s):
+    for c in s:
+        sys.stdout.write( '%s' % c )
+        sys.stdout.flush()
+        time.sleep(0.025)
+    time.sleep(.3)
+    print()
+
+def sound():
+    os.system("tput bel")
+    play = wave_obj.play()
+    play.wait_done()
+
 class Player():
     def __init__(self,name,health,attack):
         self.pos = [0,0]
@@ -23,14 +43,16 @@ class Player():
         return self.defense
     def getAttack(self):
         return self.attack
+    def getName(self):
+        return self.name
     def setWeapon(self,item):
         self.weapon = item
         self.attack = self.weapon.getAttr1();
-        print(str(item.toStringItem())+" is equipped as weapon")
+        dprint(str(item.toStringItem())+" is equipped as weapon")
     def setArmor(self,item):
         self.armor = item
         self.defense = self.armor.getAttr2();
-        print(str(item.toStringItem())+" is equipped as armor")
+        dprint(str(item.toStringItem())+" is equipped as armor")
     def getWeapon(self):
         return self.weapon
     def getArmor(self):
@@ -58,10 +80,10 @@ class Player():
         if(item.getType()=="Potion"):
             if item.getAttr1() == 0:
                 self.health += item.getAttr2()
-                print("You were healed for "+str(item.getAttr2())+" health")
+                dprint(str("You were healed for "+str(item.getAttr2())+" health"))
             else:
                 self.health -= item.getAttr2()
-                print("You were poisened for "+str(item.getAttr2())+" damage")
+                dprint(str("You were poisened for "+str(item.getAttr2())+" damage"))
         self.inventory.remove(item)
     def move(self,direction):
         if(direction == "Up"):
@@ -75,37 +97,39 @@ class Player():
     def getLocation(self):
         return self.pos
     def fight(self, monster,env):
-        print("You are now fighting a(n) "+monster.toStringItem()+".")
+        dprint(str("You are now fighting a(n) "+monster.toStringItem()+"."))
         while monster.getAttr1() > 0 and self.health > 0:
             chance = random.randint(1,10)
             if chance < 9:
-                print("You swing your "+self.weapon.toStringItem()+" and do\n\t"+\
-                    str(self.attack)+" damage to the "+monster.toStringItem()+".")
+                dprint(str("You swing your "+self.weapon.toStringItem()+" and do\n\t"+\
+                    str(self.attack)+" damage to the "+monster.toStringItem()+"."))
+                sound()
                 monster.setAttr1(monster.getAttr1()-self.attack)
-                print("\t\tThe monster now has "+str(monster.getAttr1())+" health.\n")
+                dprint(str("\t\tThe monster now has "+str(monster.getAttr1())+" health.\n"))
             else:
-                print("You swing your "+self.weapon.toStringItem()+" but you miss.\n")
+                dprint(str("You swing your "+self.weapon.toStringItem()+" but you miss.\n"))
             if monster.getAttr1() <= 0:
-                print("You have defeated the "+monster.toStringItem()+"..\n\t"+\
-                    "Congratulations, Hero!")
-                print("You have "+str(self.health)+" remaining.\n")
+                dprint(str("You have defeated the "+monster.toStringItem()+"..\n\t"+\
+                    "Congratulations, Hero!"))
+                dprint(str("You have "+str(self.health)+" remaining.\n"))
                 env.remove(monster)
             else:
                 chance = random.randint(1,10)
                 if chance < 8:
-                    print("The "+monster.toStringItem()+" attacks you and does "+\
-                        "\n\t"+str(monster.getAttr2())+" damage.")
+                    dprint(str("The "+monster.toStringItem()+" attacks you and does "+\
+                        "\n\t"+str(monster.getAttr2())+" damage."))
+                    sound()
                     if self.defense < monster.getAttr2():
-                        print("\tYour armor has blocked "+str(self.defense)+" damage.")
+                        dprint(str("\tYour armor has blocked "+str(self.defense)+" damage."))
                         self.health -= (monster.getAttr2()) - self.defense
                     else:
-                        print("\tYour armor blocks all of this enemies damage.")
+                        dprint("\tYour armor blocks all of this enemies damage.")
                     if self.health > 0:
-                        print("\tYou have "+str(self.health)+" health remaining, Hero!\n")
+                        dprint(str("\tYou have "+str(self.health)+" health remaining, Hero!\n"))
                     else:
-                        print("\n\n\tThe "+monster.toStringItem()+" has slain you!")
-                        print("\tYou have died.")
-                        print("\tThe emporers reign continues...")
+                        dprint(str("\n\n\tThe "+monster.toStringItem()+" has slain you!"))
+                        dprint("\tYou have died.")
+                        dprint("\tThe emporers reign continues...")
                         exit()
                 else:
-                    print("The "+monster.toStringItem()+" swings at you but misses.\n")
+                    dprint(str("The "+monster.toStringItem()+" swings at you but misses.\n"))

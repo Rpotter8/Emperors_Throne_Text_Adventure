@@ -4,6 +4,16 @@ import Library
 import nltk
 
 import json
+import time
+import sys
+
+def dprint(s):
+    for c in s:
+        sys.stdout.write( '%s' % c )
+        sys.stdout.flush()
+        time.sleep(0.025)
+    time.sleep(.3)
+    print()
 
 
 
@@ -14,7 +24,7 @@ def processInput(data,plyr,env):
 
     words = nltk.word_tokenize(data)
     words = nltk.pos_tag(words)
-    print(words)
+    dprint(words)
 
     with open('corpus/thes.nofinal', 'r') as myfile:
         thes=myfile.read().replace('\n', '')
@@ -70,17 +80,17 @@ def processInput(data,plyr,env):
                 if (((item.getName().lower() in Library.getEquipsList()) or (item.getName().lower() in Library.getMasterItemList())) and (item.getName().lower() == action)):
                     plyr.addInventory(item)
                     env.remove(item)
-                    print("You have added ",item.toString()," to your inventory.")
+                    dprint(str("You have added "+item.toString()+" to your inventory."))
         return "Grab"
     if("inventory" == action or action in thes["data"]["inventory"]["t1"]):
         inv = plyr.getInventory()
-        print (inv)
+        dprint (inv)
         return "Inventory"
     if("equipment" == action or action in thes["data"]["equipment"]["t1"]):
         armor = plyr.getArmor()
         weapon = plyr.getWeapon()
-        print ("This is your weapon : ",weapon.toString())
-        print ("This is your armor  : ",armor.toString())
+        dprint (str("This is your weapon : "+weapon.toString()))
+        dprint (str("This is your armor  : "+armor.toString()))
         return "Equipment"
     if("equip" == verb or verb in thes["data"]["equip"]["t1"]):
         comp = plyr.getInventoryComplex()
@@ -98,7 +108,7 @@ def processInput(data,plyr,env):
                     if item.toStringItem() == action.lower():
                         plyr.setArmor(item)
         else :
-            print ("YOU DONT HAVE THIS!")
+            dprint ("YOU DONT HAVE THIS!")
         return "Equip"
     #if("key" == verb):
     #    comp = plyr.getInventoryComplex()
@@ -136,17 +146,17 @@ def processInput(data,plyr,env):
                         else:
                             plyr.useItem(item)
         else :
-            print ("YOU DONT HAVE THIS!")
+            dprint ("YOU DONT HAVE THIS!")
             return "ErrorUsing item."
         return "Use"
     if("fight" == verb or "attack" == verb or verb in thes["data"]["fight"]["t1"]):
         monLis = env.getMonstersMap()
         #monster = input("\tWhich would you like to fight?\n\t\t")
         if action.lower() in monLis.keys():
-            print ("\nBrace yourself, Hero, for a battle commences!\n")
+            dprint (str("\nBrace yourself, "+plyr.getName()+", for a battle commences!\n"))
             plyr.fight(monLis[action.lower()],env)
         else:
-            print ("\tThis monster isn't in the room with you.\n")
+            dprint ("\tThis monster isn't in the room with you.\n")
         return "Fight"
     if("stairs" == action):
         if env.containsStairs():
