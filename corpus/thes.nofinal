@@ -20,12 +20,12 @@
 ["accessories","accompaniments","accouterments","apparatus","appliances","appurtenances","articles","attachments","baggage","belongings","contraptions","contrivances","devices","equipage","facilities","fittings","fixtures","furnishings","furniture","gadgets","habiliments","impedimenta","kitandkaboodle","machinery","material","materiel","miscellaneous","outfit","paraphernalia","provisioning","provisions","rig","setup","shebang","stock","store","stuff","tackle","things","tools","trappings","traps","utensils"]},
 "fight":
 {"t1":
-["altercate","assault","attack","bandywith","battle","beararms","bicker","box","brawl","brushwith","buck","carryonwar","challenge","clash","contend","crossswords","dispute","dobattle","duel","exchangeblows","feud","flareup","gotowar","grapple","joust","meet","mixitup","oppugn","plyweapons","protect","quarrel","repel","resist","rowdy","scrap","scuffle","skirmish","spar","strive","struggle","takeallcomers","takethefield","takeupthegauntlet","tiff","tilt","traverse","tug","tussle","wagewar","war","withstand","wrangle","wrestle"],
+["altercate","assault","attack","bandywith","battle","beararms","bicker","box","brawl","brushwith","buck","carryonwar","challenge","clash","contend","crossswords","dispute","dobattle","duel","exchangeblows","feud","flareup","gotowar","grapple","joust","meet","mixitup","oppugn","plyweapons","protect","quarrel","repel","resist","rowdy","scrap","scuffle","skirmish","spar","strive","struggle","takeallcomers","takethefield","takeupthegauntlet","tiff","tilt","traverse","tug","tussle","wagewar","war","withstand","wrangle","wrestle", "maul"],
 "t2":
 ["break","charge","clash","combat","contend","crossswords","duel","encounter","joust","overthrow","spar","thrust"]},
 "equip":
 {"t1":
-["accouter","adorn","appoint","arm","array","attire","deck","deckout","decorate","dress","endow","feathernest","fitout","fixup","furnish","gear","gearup","heel","implement","linenest","man","outfit","prep","prepare","provide","qualify","ready","rig","setup","stake","stock","supply","turnout"]},
+["accouter","adorn","appoint","arm","array","attire","deck","deckout","decorate","dress","endow","feathernest","fitout","fixup","furnish","gear","gearup","heel","implement","linenest","man","outfit","prep","prepare","provide","qualify","ready","rig","setup","stake","stock","supply","turnout", "wear", "put"]},
 "condition":
 {"t1":
 ["appearance","aspect","build","constitution","fettle","form","health","kilter","mint","order","phase","repair","state","status","tone","trim"]}}}
