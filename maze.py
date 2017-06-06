@@ -107,16 +107,16 @@ class maze():
                 if(z.x==self.width - 1 and z.y==self.height - 1):
                     if z.above == False:
                         #print("Locking DOWN"+"y:"+str(self.height - 2)+"x:"+str(self.width - 1))
-                        self.matrix[self.height - 2][self.width - 1].getEnv().lockDoor("Down",0)
+                        self.matrix[self.height - 2][self.width - 1].getEnv().lockDoor("Down",self.difficulty)
                     if z.below == False:
                         #print("Locking DOWN"+"y:"+str(self.height)+"x:"+str(self.width - 1))
-                        self.matrix[self.height][self.width - 1].getEnv().lockDoor("Up",0)
+                        self.matrix[self.height][self.width - 1].getEnv().lockDoor("Up",self.difficulty)
                     if z.left == False:
                         #print("Locking DOWN"+"y:"+str(self.height - 1)+"x:"+str(self.width - 2))
-                        self.matrix[self.height - 1][self.width - 2].getEnv().lockDoor("Right",0)
+                        self.matrix[self.height - 1][self.width - 2].getEnv().lockDoor("Right",self.difficulty)
                     if z.right == False:
                         #print("Locking DOWN"+"y:"+str(self.height - 1)+"x:"+str(self.width))
-                        self.matrix[self.height - 1][self.width].getEnv().lockDoor("Left",0)
+                        self.matrix[self.height - 1][self.width].getEnv().lockDoor("Left",self.difficulty)
         self.setExit()
         self.dropKey(0)
     def getVertex(self,x,y):
