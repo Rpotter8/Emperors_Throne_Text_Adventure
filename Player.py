@@ -17,6 +17,10 @@ class Player():
             return "Dead"
     def heal(self,amount):
         self.health = self.health+amount
+    def getHealth(self):
+        return self.health
+    def getDefense(self):
+        return self.defense
     def getAttack(self):
         return self.attack
     def setWeapon(self,item):
@@ -58,6 +62,7 @@ class Player():
             else:
                 self.health -= item.getAttr2()
                 print("You were poisened for "+str(item.getAttr2())+" damage")
+        self.inventory.remove(item)
     def move(self,direction):
         if(direction == "Up"):
             self.pos[1] = self.pos[1]-1

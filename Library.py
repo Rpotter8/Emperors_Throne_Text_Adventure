@@ -68,7 +68,7 @@ def getMasterItemList():
     itemList = list(itertools.product(Descriptions,items))
     returnlist = []
     for item in itemList:
-        returnlist.append(''.join(item))
+        returnlist.append((''.join(item)).lower())
     return returnlist
 def getEquipsList():
     return list(getArmorsList().keys())+list(getWeaponsList().keys())

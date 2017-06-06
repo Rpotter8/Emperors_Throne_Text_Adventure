@@ -19,44 +19,42 @@ def processInput(data,plyr,env):
     with open('corpus/thes.nofinal', 'r') as myfile:
         thes=myfile.read().replace('\n', '')
 
-    verb = None
-    action = None
+    verb = ""
+    action = ""
     for i in words:
-        if(i[1] == "VBP" or i[1] == "VBD"):
+        if(i[1] == "VBP" or i[1] == "VBD" or i[1] == "VBZ"):
             verb = i[0]
         if(i[1] == "RB" or i[1] == "RP" or i[1] == "NNS" or
-            i[1] == "NN"):
+            i[1] == "NN" or i[1] == "JJ"):
             action = i[0]
-        if(verb != None and action != None):
+        if(verb != "" and action != ""):
             print("Verb: " + verb +", Action: " + action)
             break
-    if(verb == None):
-        verb = "Nothing"
 
 
     thes = json.loads(thes)
 
 
 
-    if("up" == action or "north" == action):
+    if("up" == action or "up" == verb or "north" == action):
         if(env.hasDoor("Up")):
             plyr.move("Up")
             return "Up"
         else:
             return "Errorrun into wall"
-    if("down" == action or "south" == action):
+    if("down" == action or "down" == verb or "south" == action):
         if(env.hasDoor("Down")):
             plyr.move("Down")
             return "Down"
         else:
             return "Errorrun into wall"
-    if("left" == action or "west" == action):
+    if("left" == action or "left" == verb or "west" == action):
         if(env.hasDoor("Left")):
             plyr.move("Left")
             return "Left"
         else:
             return "Errorrun into wall"
-    if("right" == action or "east" == action):
+    if("right" == action or "right" == verb or "east" == action):
         if(env.hasDoor("Right")):
             plyr.move("Right")
             return "Right"
@@ -69,7 +67,7 @@ def processInput(data,plyr,env):
         if(env.hasItem()):
             for item in env.getItems():
                 #print(tuple(item.getName().split(" ")))
-                if (((item.getName() in Library.getEquipsList()) or (item.getName() in Library.getMasterItemList())) and (item.getName().lower() == action)):
+                if (((item.getName().lower() in Library.getEquipsList()) or (item.getName().lower() in Library.getMasterItemList())) and (item.getName().lower() == action)):
                     plyr.addInventory(item)
                     env.remove(item)
                     print("You have added ",item.toString()," to your inventory.")
@@ -102,37 +100,41 @@ def processInput(data,plyr,env):
         else :
             print ("YOU DONT HAVE THIS@!!!@##R")
         return "Equip"
-    if("key" == verb):
-        comp = plyr.getInventoryComplex()
-        inv = plyr.getInventory()
-        #Hardcoded key zero check
-        for item in comp:
+    #if("key" == verb):
+    #    comp = plyr.getInventoryComplex()
+    #    inv = plyr.getInventory()
+    #    #Hardcoded key zero check
+    #    for item in comp:
             #print(item.getName())
             #print(item.getAttr1())
-            if item.getType() == "Key":
+    #        if item.getType() == "Key":
                 #print("Using Key")
                 #print(env.getDoors())
-                env.unlockDoors(item.getAttr1())
-        return "Key"
+    #            env.unlockDoors(item.getAttr1())
+    #    return "Key"
 
     if("use" == verb or verb in thes["data"]["use"]["t1"]):
         comp = plyr.getInventoryComplex()
         inv = plyr.getInventory()
-        print(inv)
-        use=input("\tThis is your Inventory, what would you like to use?\n\t\t")
-        if use in inv:
+        #print(inv)
+        #use=input("\tThis is your Inventory, what would you like to use?\n\t\t")
+        if action.lower() in [x.lower() for x in inv]:
             print("You have this item!!!")
-            print(Library.getMasterItemList())
-            print(use.split(" "))
-            if tuple(use.split(" ")) in Library.getMasterItemList():
+            #print(Library.getMasterItemList())
+            #print(use.split(" "))
+            if action.lower() in Library.getMasterItemList():
+                #print("Found in list")
                 for item in comp:
-                    if item.getType() == "Key":
-                        #print("Using Key")
-                        #print(env.getDoors())
-                        env.unlockDoors(item.getAttr1)
-                        return "Unlocked"
-                    if item.toStringItem() == use:
-                        plyr.useItem(item)
+                    if item.getName().lower() == action.lower():
+                        #print("Found Specific Item")
+                        #print(item.getType())
+                        if item.getType() == "Key":
+                            #print("Using Key")
+                            #print(env.getDoors())
+                            env.unlockDoors(item.getAttr1())
+                            return "Unlocked"
+                        else:
+                            plyr.useItem(item)
         else :
             print ("YOU DONT HAVE THIS@!!!@##R")
             return "ErrorUsing item."
@@ -149,4 +151,6 @@ def processInput(data,plyr,env):
     if("stairs" == action):
         if env.containsStairs():
             return "Stairs"
+    if(action.lower() == "condition" or action.lower() in thes["data"]["condition"]["t1"]):
+        return "Condition"
     return "Error"+verb
