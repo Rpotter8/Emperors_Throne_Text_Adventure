@@ -85,20 +85,20 @@ def processInput(data,plyr,env):
     if("equip" == verb or verb in thes["data"]["equip"]["t1"]):
         comp = plyr.getInventoryComplex()
         inv = plyr.getInventory()
-        print (inv)
-        equip=input("\tThis is your Inventory, which would you like to equip?\n\t\t")
-        if equip in inv:
-            print ("you have this item!!!");
-            if equip in Library.getWeaponsList():
+        #print (inv)
+        #equip=input("\tThis is your Inventory, which would you like to equip?\n\t\t")
+        if action.lower() in [x.lower() for x in inv]:
+            #print ("you have this item!!!");
+            if action.lower() in Library.getWeaponsList():
                 for item in comp:
-                    if item.toStringItem() == equip:
+                    if item.toStringItem() == action.lower():
                         plyr.setWeapon(item)
-            elif equip in Library.getArmorsList():
+            elif action.lower() in Library.getArmorsList():
                 for item in comp:
-                    if item.toStringItem() == equip:
+                    if item.toStringItem() == action.lower():
                         plyr.setArmor(item)
         else :
-            print ("YOU DONT HAVE THIS@!!!@##R")
+            print ("YOU DONT HAVE THIS!")
         return "Equip"
     #if("key" == verb):
     #    comp = plyr.getInventoryComplex()
@@ -119,7 +119,7 @@ def processInput(data,plyr,env):
         #print(inv)
         #use=input("\tThis is your Inventory, what would you like to use?\n\t\t")
         if action.lower() in [x.lower() for x in inv]:
-            print("You have this item!!!")
+            #print("You have this item!!!")
             #print(Library.getMasterItemList())
             #print(use.split(" "))
             if action.lower() in Library.getMasterItemList():
@@ -136,15 +136,15 @@ def processInput(data,plyr,env):
                         else:
                             plyr.useItem(item)
         else :
-            print ("YOU DONT HAVE THIS@!!!@##R")
+            print ("YOU DONT HAVE THIS!")
             return "ErrorUsing item."
         return "Use"
     if("fight" == verb or "attack" == verb or verb in thes["data"]["fight"]["t1"]):
         monLis = env.getMonstersMap()
-        monster = input("\tWhich would you like to fight?\n\t\t")
-        if monster in monLis.keys():
+        #monster = input("\tWhich would you like to fight?\n\t\t")
+        if action.lower() in monLis.keys():
             print ("\nBrace yourself, Hero, for a battle commences!\n")
-            plyr.fight(monLis[monster],env)
+            plyr.fight(monLis[action.lower()],env)
         else:
             print ("\tThis monster isn't in the room with you.\n")
         return "Fight"
