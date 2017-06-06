@@ -9,9 +9,30 @@ import EnvironmentGenerator
 import InputProcessor
 import RecognizeSpeech
 from maze import *
+import time
+import sys
+import winsound
+import simpleaudio as sa
+
+wave_obj = sa.WaveObject.from_wave_file("Danger2.wav")
+play_obj = wave_obj.play()
+play_obj.wait_done()
+Freq = 500 # Set Frequency To 2500 Hertz
+Dur = 50 # Set Duration To 1000 ms == 1 second
+#winsound.Beep(500,1000)
+
+
+def dprint(s):
+    for c in s:
+        sys.stdout.write( '%s' % c )
+        sys.stdout.flush()
+        #winsound.Beep(Freq,Dur)
+        time.sleep(0.025)
+    time.sleep(.3)
+    print()
 
 #Game Intro!
-print("Welcome Player!")
+dprint("Welcome Player!")
 name = input("Please Input Your Name! ")
 #defaults to yes
 stot = input("Would you like to use speech to text? y/n : ")
@@ -26,8 +47,8 @@ while True:
 #TODO modify stats based on difficulty
 player = Player(name,100,2)
 print("\n\n---------------------------------------------------------------------------------------------")
-print("Welcome "+name+"! You are about to embark on a great quest which\n is a matter of life and death for the entire kingdom!")
-print("Our story begins here:")
+dprint("Welcome "+name+"! You are about to embark on a great quest which\n is a matter of life and death for the entire kingdom!")
+dprint("Our story begins here:")
 
 
 
@@ -80,19 +101,20 @@ print("""		.		.:			.                  :
 @@@@@a@@@@@@a      ~~~~~ \\\\`//| | \ \//   \`  .-'  .' | '/      ~~~~~~~  ~~
 @@@@@@@@@@@@@@@a          \// |.`  ` ' /~  :-'   .'|  '/~aa
 ~~~~~~~ ~~~~~~         a@@@|   \\\\ |   // .'    .'| |  |@@@@@@a
-                    a@@@@@@@\   | `| ''.'     .' | ' /@@@@@@@@@a  """)
+                    a@@@@@@@\   | `| ''.'     .' | ' /@@@@@@@@@a  
+---------------------------------------------------------------------------------------------""")
 
 
 input("\n\tPress Enter to Continue...\n")
-print("This is your father's castle. Yet your adventure does not start in the throne\nroom, or the dining room, or even your bedroom.")
+dprint("This is your father's castle. Yet your adventure does not start in the throne\nroom, or the dining room, or even your bedroom.")
 input("\n\tPress Enter to Continue...\n")
-print("You have awoken this morning locked in the jail cell in the cellar of the\ncastle. Surrounded by rats and other undesirables.")
+dprint("You have awoken this morning locked in the jail cell in the cellar of the\ncastle. Surrounded by rats and other undesirables.")
 input("\n\tPress Enter to Continue...\n")
-print("Your memory slowly returns as you clear the sleep from your eyes...")
-print("You remember the violent murder of your father at the hands of your uncle\nYou realize your uncle must have thrown you in the jail to keep you out of")
-print("the way until he can fully take over the kingdom!")
+dprint("Your memory slowly returns as you clear the sleep from your eyes...")
+dprint("You remember the violent murder of your father at the hands of your uncle\nYou realize your uncle must have thrown you in the jail to keep you out of")
+dprint("the way until he can fully take over the kingdom!")
 input("\n\tPress Enter to Continue...\n")
-print("You quickly escape the jail cell and decide to confront your uncle in the\nthrone room!")
+dprint("You quickly escape the jail cell and decide to confront your uncle in the\nthrone room!")
 input("\n\tPress Enter to Continue...\n")
 #Game Starts Here!
 #Predefined location, with one potion type random item.
@@ -102,7 +124,7 @@ currfloor = maze(5,5,difficulty)
 #currfloor.display()
 #JailCell = Environment([EnvironmentGenerator.genObject(2,difficulty)],"smelly dark room outside your jail cell",[Door(False,"Up",0)])
 CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).getEnv()
-print(CurrEnv.toString())
+dprint(CurrEnv.toString())
 #Testing RunCode
 while(1):
     #print("y:"+str(player.getLocation()[0])+" x:"+str(player.getLocation()[1]))
@@ -116,34 +138,34 @@ while(1):
     if("Grab" in data):
         continue
     if("Inventory" in data):
-        print("This is your inventory...\n")
+        dprint("This is your inventory...\n")
         continue
     if("Equipment" in data):
-        print("Those are your equipped items..\n")
+        dprint("Those are your equipped items..\n")
         continue
     if("Equip" in data):
-        print ("Equipping done.\n")
+        dprint ("Equipping done.\n")
         continue
     if("Stairs" in data):
-        currfloor = maze(5,5,difficulty)
+        currfloor = maze(5,5,++difficulty)
         player.setLocation(0,0)
         CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).getEnv()
-        print(CurrEnv.toString())
+        dprint(CurrEnv.toString())
         continue
     if("Look" in data):
-        print(CurrEnv.toString())
+        dprint(CurrEnv.toString())
         continue
         #print("I do not understand your command")
     if("Fail" in data):
         continue
     if("Error" not in data and "Look" not in data):
         CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).getEnv()
-        print(CurrEnv.toString())
+        dprint(CurrEnv.toString())
         continue    
     #This is not working
     if(data[5:] == " "):
-        print("You must act, Adventurer!\n")
+        dprint("You must act, "+player.getName()+"!\n")
         continue
-    print("You "+data[5:]+", but nothing happens..\n")
+    dprint("You "+data[5:]+", but nothing happens..\n")
     #input("Press Enter to Continue...")
     #print(EnvironmentGenerator.genEnvironment(difficulty,"Up").toString())

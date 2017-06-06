@@ -53,6 +53,7 @@ armors={'helmet':5,'helmet':5,'helmet':5,'helmet':5,'helmet':5,'helmet':5,\
 		'devarmor':50}
 
 def getCreatureList():
+	#print([cre.lower() for cre in Creatures])
     return Creatures
 def getDescriptionsList():
     return Descriptions

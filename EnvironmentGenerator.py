@@ -39,8 +39,9 @@ def genObject(objType, difficulty):
             base = weapons[Choice]
         else:
             base =0
-        retEnt = Entity(Choice,"item",random.randint(4,10)-difficulty+base,\
-            random.randint(4,10)-difficulty+base)
+        mult = random.randint(1,2)
+        retEnt = Entity(Choice,"item",random.randint(4,10)+(difficulty*mult)+base,\
+            random.randint(4,10)+(difficulty*mult)+base)
     return retEnt;
 
 def genEnvironment(difficulty,updoor,downdoor,rightdoor,leftdoor):

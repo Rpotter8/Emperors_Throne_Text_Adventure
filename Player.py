@@ -82,7 +82,7 @@ class Player():
                 print("You swing your "+self.weapon.toStringItem()+" but you miss.\n")
             if monster.getAttr1() <= 0:
                 print("You have defeated the "+monster.toStringItem()+"..\n\t"+\
-                    "Congratulations, Hero!")
+                    "Congratulations, "+self.name+"!")
                 print("You have "+str(self.health)+" remaining.\n")
                 env.remove(monster)
             else:
@@ -96,7 +96,7 @@ class Player():
                     else:
                         print("\tYour armor blocks all of this enemies damage.")
                     if self.health > 0:
-                        print("\tYou have "+str(self.health)+" health remaining, Hero!\n")
+                        print("\tYou have "+str(self.health)+" health remaining, "+self.name+"!\n")
                     else:
                         print("\n\n\tThe "+monster.toStringItem()+" has slain you!")
                         print("\tYou have died.")
