@@ -40,9 +40,9 @@ class Environment():
     def hasItem(self):
         return len(self.entities)>0
     def hasEnemy(self):
-        if len(self.getMonsters()) > 0:
-            print (self.getMonstersSimple())
-            return True
+        #if len(self.getMonsters()) > 0:
+        #    print (self.getMonstersSimple())
+        #    return True
         return False
     def lockDoor(self,direction,key):
         for door in self.doors:
@@ -53,7 +53,7 @@ class Environment():
     def remove(self, item):
         self.entities.remove(item)
     def getMonstersSimple(self):
-        return [monster.toStringItem() for monster in self.entities\
+        return [monster.toStringItem().lower() for monster in self.entities\
                 if(monster.toStringItem() in Library.getCreatureList())]
     def getMonsters(self):
         return [monster for monster in self.entities\
@@ -62,7 +62,7 @@ class Environment():
         monsterDict = {}
         for monster in self.entities:
             if monster.toStringItem() in Library.getCreatureList():
-                monsterDict[monster.toStringItem()] = monster
+                monsterDict[monster.toStringItem().lower()] = monster
         return monsterDict
     def getItems(self):
         return [item for item in self.entities]

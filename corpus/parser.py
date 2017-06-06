@@ -1,7 +1,12 @@
 import nltk
 from nltk.corpus import wordnet
 
-file = open("clean.txt")
+import json
+
+
+
+with open('thes.nofinal', 'r') as myfile:
+    data=myfile.read().replace('\n', '')
 
 while(1):
     nb = input("Enter a sentence: ")
@@ -22,4 +27,4 @@ while(1):
             break
 
 
-    
+    thes = json.loads(data)

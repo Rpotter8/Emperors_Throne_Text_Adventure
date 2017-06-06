@@ -164,7 +164,7 @@ while(1):
         continue
         #print("I do not understand your command")
     if("Condition" in data):
-        dprint(player.getName()+",\nYou have "+str(player.getHealth())+" hitpoints\nYou have "+str(player.getDefense())+" defense\nYou have "+str(player.getAttack())+" attack!")
+        dprint(str(player.getName()+",\nYou have "+str(player.getHealth())+" hitpoints\nYou have "+str(player.getDefense())+" defense\nYou have "+str(player.getAttack())+" attack!"))
     if("Fail" in data):
         continue
     if("Error" not in data and "Look" not in data):
