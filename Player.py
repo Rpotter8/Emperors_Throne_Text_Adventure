@@ -2,6 +2,10 @@ from Entity import Entity
 import random
 import time
 import sys
+import simpleaudio as sa
+import os
+
+wave_obj = sa.WaveObject.from_wave_file("attack.wav")
 
 def dprint(s):
     for c in s:
@@ -10,6 +14,11 @@ def dprint(s):
         time.sleep(0.025)
     time.sleep(.3)
     print()
+
+def sound():
+    os.system("tput bel")
+    play = wave_obj.play()
+    play.wait_done()
 
 class Player():
     def __init__(self,name,health,attack):
@@ -68,7 +77,7 @@ class Player():
                 dprint("You were healed for "+str(item.getAttr2())+" health")
             else:
                 self.health -= item.getAttr2()
-                dprint("You were poisened for "+str(item.getAttr2())+" damage")
+                dprint("You were poisoned for "+str(item.getAttr2())+" damage")
     def move(self,direction):
         if(direction == "Up"):
             self.pos[1] = self.pos[1]-1
@@ -87,6 +96,7 @@ class Player():
             if chance < 9:
                 dprint("You swing your "+self.weapon.toStringItem()+" and do\n\t"+\
                     str(self.attack)+" damage to the "+monster.toStringItem()+".")
+                sound()
                 monster.setAttr1(monster.getAttr1()-self.attack)
                 print("\t\tThe monster now has "+str(monster.getAttr1())+" health.\n")
             else:
@@ -101,6 +111,7 @@ class Player():
                 if chance < 8:
                     dprint("The "+monster.toStringItem()+" attacks you and does "+\
                         "\n\t"+str(monster.getAttr2())+" damage.")
+                    sound()
                     if self.defense < monster.getAttr2():
                         dprint("\tYour armor has blocked "+str(self.defense)+" damage.")
                         self.health -= (monster.getAttr2()) - self.defense

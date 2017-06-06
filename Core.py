@@ -11,32 +11,29 @@ import RecognizeSpeech
 from maze import *
 import time
 import sys
-import winsound
 import simpleaudio as sa
+import os
 
 wave_obj = sa.WaveObject.from_wave_file("dungeon.wav")
-#play_obj.wait_done()
-Freq = 500 # Set Frequency To 2500 Hertz
-Dur = 50 # Set Duration To 1000 ms == 1 second
-#winsound.Beep(500,1000)
-
 
 def dprint(s):
     for c in s:
         sys.stdout.write( '%s' % c )
         sys.stdout.flush()
-        #winsound.Beep(Freq,Dur)
         time.sleep(0.025)
     time.sleep(.3)
     print()
 
 def thunder():
     wav = sa.WaveObject.from_wave_file("danger2.wav")
+    os.system("tput bel")
     play = wav.play()
     play.wait_done()
     time.sleep(.5)
+    os.system("tput bel")
     play = wav.play()
     play.wait_done()
+    os.system("tput bel")
     time.sleep(.15)
     play = wav.play()
     play.wait_done()
