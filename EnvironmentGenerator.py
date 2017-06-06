@@ -38,7 +38,6 @@ def genObject(objType, difficulty):
         elif Choice in weapons:
             base = weapons[Choice]
         else:
-            print ("YOUR BASE ARE BELONG TO US!")
             base =0
         retEnt = Entity(Choice,"item",random.randint(4,10)-difficulty+base,\
             random.randint(4,10)-difficulty+base)

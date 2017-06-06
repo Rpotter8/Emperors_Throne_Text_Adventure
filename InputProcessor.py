@@ -1,67 +1,90 @@
 from Player import *
 from Environment import *
 import Library
+import nltk
+
+import json
+
+
+
+
+
 def processInput(data,plyr,env):
-    data = data.lower()
-    if("up" in data):
-        if(env.hasEnemy()):
-            print("The monster blocks you path.\n")
-            return "Fail"
+    data = "I " + data.lower()
+
+    words = nltk.word_tokenize(data)
+    words = nltk.pos_tag(words)
+    print(words)
+
+    with open('corpus/thes.nofinal', 'r') as myfile:
+        thes=myfile.read().replace('\n', '')
+
+    verb = None
+    action = None
+    for i in words:
+        if(i[1] == "VBP" or i[1] == "VBD"):
+            verb = i[0]
+        if(i[1] == "RB" or i[1] == "RP" or i[1] == "NNS" or
+            i[1] == "NN"):
+            action = i[0]
+        if(verb != None and action != None):
+            print("Verb: " + verb +", Action: " + action)
+            break
+    if(verb == None):
+        verb = "Nothing"
+
+
+    thes = json.loads(thes)
+
+
+
+    if("up" == action or "north" == action):
         if(env.hasDoor("Up")):
             plyr.move("Up")
             return "Up"
         else:
             return "Errorrun into wall"
-    if("down" in data):
-        if(env.hasEnemy()):
-            print("The monster blocks you path.\n")
-            return "Fail"
+    if("down" == action or "south" == action):
         if(env.hasDoor("Down")):
             plyr.move("Down")
             return "Down"
         else:
             return "Errorrun into wall"
-    if("left" in data):
-        if(env.hasEnemy()):
-            print("The monster blocks you path.\n")
-            return "Fail"
+    if("left" == action or "west" == action):
         if(env.hasDoor("Left")):
             plyr.move("Left")
             return "Left"
         else:
             return "Errorrun into wall"
-    if("right" in data):
-        if(env.hasEnemy()):
-            print("The monster blocks you path.\n")
-            return "Fail"
+    if("right" == action or "east" == action):
         if(env.hasDoor("Right")):
             plyr.move("Right")
             return "Right"
         else:
             return "Errorrun into wall"
-    if("look" in data):
+    if("look" == verb):
         return "Look"
-    if("grab" in data):
+    if("grab" == verb or verb in thes["data"]["grab"]["t1"]):
         #print(data)
         if(env.hasItem()):
             for item in env.getItems():
                 #print(tuple(item.getName().split(" ")))
-                if (((item.getName() in Library.getEquipsList()) or (item.getName() in Library.getMasterItemList())) and (item.getName().lower() in data)):
+                if (((item.getName() in Library.getEquipsList()) or (item.getName() in Library.getMasterItemList())) and (item.getName().lower() == action)):
                     plyr.addInventory(item)
                     env.remove(item)
                     print("You have added ",item.toString()," to your inventory.")
         return "Grab"
-    if("inventory" in data):
+    if("inventory" == action or action in thes["data"]["inventory"]["t1"]):
         inv = plyr.getInventory()
         print (inv)
         return "Inventory"
-    if("equipment" in data):
+    if("equipment" == action or action in thes["data"]["equipment"]["t1"]):
         armor = plyr.getArmor()
         weapon = plyr.getWeapon()
         print ("This is your weapon : ",weapon.toString())
         print ("This is your armor  : ",armor.toString())
         return "Equipment"
-    if("equip" in data):
+    if("equip" == verb or verb in thes["data"]["equip"]["t1"]):
         comp = plyr.getInventoryComplex()
         inv = plyr.getInventory()
         print (inv)
@@ -79,7 +102,7 @@ def processInput(data,plyr,env):
         else :
             print ("YOU DONT HAVE THIS@!!!@##R")
         return "Equip"
-    if("key" in data):
+    if("key" == verb):
         comp = plyr.getInventoryComplex()
         inv = plyr.getInventory()
         #Hardcoded key zero check
@@ -91,8 +114,8 @@ def processInput(data,plyr,env):
                 #print(env.getDoors())
                 env.unlockDoors(item.getAttr1())
         return "Key"
-                    
-    if("use" in data):
+
+    if("use" == verb or verb in thes["data"]["use"]["t1"]):
         comp = plyr.getInventoryComplex()
         inv = plyr.getInventory()
         print(inv)
@@ -114,7 +137,7 @@ def processInput(data,plyr,env):
             print ("YOU DONT HAVE THIS@!!!@##R")
             return "ErrorUsing item."
         return "Use"
-    if("fight" in data or "attack" in data):
+    if("fight" == verb or "attack" == verb or verb in thes["data"]["fight"]["t1"]):
         monLis = env.getMonstersMap()
         monster = input("\tWhich would you like to fight?\n\t\t")
         if monster in monLis.keys():
@@ -123,7 +146,7 @@ def processInput(data,plyr,env):
         else:
             print ("\tThis monster isn't in the room with you.\n")
         return "Fight"
-    if("stairs" in data):
+    if("stairs" == action):
         if env.containsStairs():
             return "Stairs"
-    return "Error"+data
+    return "Error"+verb

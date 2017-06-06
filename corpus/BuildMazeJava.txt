@@ -1,0 +1,58 @@
+private void buildMaze(Vertex start, Vertex end) {
+		// depth first search so we use a stack
+		Stack<Vertex> st = new Stack<>();
+		start.visited = true;
+		st.push(start);
+		Vertex curr = start;
+		boolean foundEnd = false;
+		while (!st.isEmpty()) {
+			if(debug) {
+				display();
+			}
+			List<Vertex> surrVert = getSurrounding(curr);
+//			System.out.println(surrVert);
+			curr.visited = true;
+
+			if (!surrVert.isEmpty()) { //has valid neighbors
+				st.push(curr);
+				Random rand = new Random();
+				curr = surrVert.get(rand.nextInt(surrVert.size()));
+
+				//Figure out which neighbor was actually chosen.
+				if (curr.x == st.peek().x) {
+					if (curr.y < st.peek().y) {
+						curr.right = false;
+						st.peek().left = false;
+					} else {
+						curr.left = false;
+						st.peek().right = false;
+					}
+				} else {
+					if (curr.x < st.peek().x) {
+						curr.below = false;
+						st.peek().above = false;
+					} else {
+						curr.above = false;
+						st.peek().below = false;
+					}
+				}
+				//calculating the path through the maze.
+				if(!foundEnd) {
+					curr.parOfPath = true;
+					st.peek().parOfPath = true;
+					if(curr == end) {
+						foundEnd = true;
+					}
+				}
+
+			} else {
+				//removes bad paths
+				if(!foundEnd) {
+					curr.parOfPath = false;
+				}
+				curr = st.pop();
+			}
+
+		}
+//		display();
+	}

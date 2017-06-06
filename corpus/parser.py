@@ -1,6 +1,12 @@
 import nltk
+from nltk.corpus import wordnet
 
-file = open("clean.txt")
+import json
+
+
+
+with open('thes.nofinal', 'r') as myfile:
+    data=myfile.read().replace('\n', '')
 
 while(1):
     nb = input("Enter a sentence: ")
@@ -19,3 +25,6 @@ while(1):
         if(verb != None and action != None):
             print("Verb: " + verb +", Action: " + action)
             break
+
+
+    thes = json.loads(data)

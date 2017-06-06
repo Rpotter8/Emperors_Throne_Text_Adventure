@@ -83,6 +83,7 @@ class Player():
             if monster.getAttr1() <= 0:
                 print("You have defeated the "+monster.toStringItem()+"..\n\t"+\
                     "Congratulations, Hero!")
+                print("You have "+str(self.health)+" remaining.\n")
                 env.remove(monster)
             else:
                 chance = random.randint(1,10)
