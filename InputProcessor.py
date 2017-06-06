@@ -60,7 +60,7 @@ def processInput(data,plyr,env):
                 if (((item.getName() in Library.getEquipsList()) or (item.getName() in Library.getMasterItemList())) and (item.getName().lower() in data)):
                     plyr.addInventory(item)
                     env.remove(item)
-                    dprint(str("You have added ",item.toString()," to your inventory."))
+                    dprint(str("You have added "+item.toString()+" to your inventory."))
         return "Grab"
     if("inventory" in data):
         inv = plyr.getInventory()
@@ -69,8 +69,8 @@ def processInput(data,plyr,env):
     if("equipment" in data):
         armor = plyr.getArmor()
         weapon = plyr.getWeapon()
-        dprint (str("This is your weapon : ",weapon.toString()))
-        dprint (str("This is your armor  : ",armor.toString()))
+        dprint (str("This is your weapon : "+weapon.toString()))
+        dprint (str("This is your armor  : "+armor.toString()))
         return "Equipment"
     if("equip" in data):
         comp = plyr.getInventoryComplex()

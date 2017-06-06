@@ -34,10 +34,10 @@ def thunder():
     wav = sa.WaveObject.from_wave_file("danger2.wav")
     play = wav.play()
     play.wait_done()
-    time.sleep(1)
+    time.sleep(.5)
     play = wav.play()
     play.wait_done()
-    time.sleep(.3)
+    time.sleep(.15)
     play = wav.play()
     play.wait_done()
 
@@ -113,7 +113,7 @@ print("""		.		.:			.                  :
 @@@@@@@@@@@@@@@a          \// |.`  ` ' /~  :-'   .'|  '/~aa
 ~~~~~~~ ~~~~~~         a@@@|   \\\\ |   // .'    .'| |  |@@@@@@a
                     a@@@@@@@\   | `| ''.'     .' | ' /@@@@@@@@@a  
----------------------------------------------------------------------------------------------""")
+--------------------------------------------------------------------------------""")
 
 thunder()
 play_obj = wave_obj.play()
@@ -178,8 +178,8 @@ while(1):
         continue    
     #This is not working
     if(data[5:] == " "):
-        dprint("You must act, "+player.getName()+"!\n")
+        dprint(str("You must act, "+player.getName()+"!\n"))
         continue
-    dprint("You "+data[5:]+", but nothing happens..\n")
+    dprint(str("You "+data[5:]+", but nothing happens..\n"))
     #input("Press Enter to Continue...")
     #print(EnvironmentGenerator.genEnvironment(difficulty,"Up").toString())
