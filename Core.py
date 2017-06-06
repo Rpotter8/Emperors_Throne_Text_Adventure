@@ -14,9 +14,8 @@ import sys
 import winsound
 import simpleaudio as sa
 
-wave_obj = sa.WaveObject.from_wave_file("Danger2.wav")
-play_obj = wave_obj.play()
-play_obj.wait_done()
+wave_obj = sa.WaveObject.from_wave_file("dungeon.wav")
+#play_obj.wait_done()
 Freq = 500 # Set Frequency To 2500 Hertz
 Dur = 50 # Set Duration To 1000 ms == 1 second
 #winsound.Beep(500,1000)
@@ -30,6 +29,18 @@ def dprint(s):
         time.sleep(0.025)
     time.sleep(.3)
     print()
+
+def thunder():
+    wav = sa.WaveObject.from_wave_file("danger2.wav")
+    play = wav.play()
+    play.wait_done()
+    time.sleep(1)
+    play = wav.play()
+    play.wait_done()
+    time.sleep(.3)
+    play = wav.play()
+    play.wait_done()
+
 
 #Game Intro!
 dprint("Welcome Player!")
@@ -104,7 +115,8 @@ print("""		.		.:			.                  :
                     a@@@@@@@\   | `| ''.'     .' | ' /@@@@@@@@@a  
 ---------------------------------------------------------------------------------------------""")
 
-
+thunder()
+play_obj = wave_obj.play()
 input("\n\tPress Enter to Continue...\n")
 dprint("This is your father's castle. Yet your adventure does not start in the throne\nroom, or the dining room, or even your bedroom.")
 input("\n\tPress Enter to Continue...\n")
@@ -128,6 +140,8 @@ dprint(CurrEnv.toString())
 #Testing RunCode
 while(1):
     #print("y:"+str(player.getLocation()[0])+" x:"+str(player.getLocation()[1]))
+    if not play_obj.is_playing():
+        play_obj = wave_obj.play()
     print("\n")
     data = ""
     if(stot.lower() == 'y' or stot.lower() == 'yes'):
