@@ -19,7 +19,7 @@ def genObject(objType, difficulty):
         Descriptions = Library.getDescriptionsList()
         Choice = random.randint(0,len(Descriptions)-1)
         #Removed Random Keydrop, always door 0
-        retEnt = Entity(Descriptions[Choice]+"Key","Key",0,0)
+        retEnt = Entity(Descriptions[Choice]+"Key","Key",difficulty,0)
                 #random.randint(0,NUMBER_OF_DOORS-1),0)
     elif objType == 2:
         #BuildRandomPotion Object Here

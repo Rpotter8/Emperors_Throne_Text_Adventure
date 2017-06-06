@@ -40,9 +40,9 @@ class Environment():
     def hasItem(self):
         return len(self.entities)>0
     def hasEnemy(self):
-        if len(self.getMonsters()) > 0:
-            print (self.getMonstersSimple())
-            return True
+        #if len(self.getMonsters()) > 0:
+        #    print (self.getMonstersSimple())
+        #    return True
         return False
     def lockDoor(self,direction,key):
         for door in self.doors:
