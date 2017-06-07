@@ -4,7 +4,7 @@ Creatures = ["Giant","Dragon","Wolf","Mime","Rat","Skeleton","Ogre",\
 			"Bandit","Vampire","Zombie","Stone-Gollum","Goblin","Orc"]
 
 Descriptions = ["Large",'Bright','Ancient','Quiet','Scorched','Dirty',\
-				'Burnt','Hot','Freezing','Friged','Dark',"Giant","Small",\
+				'Burnt','Freezing','Friged','Dark',"Giant","Small",\
 				"Tiny","Red","Black","Blue","Green","Purple","Translucent"]
 
 items=['Potion','Gem','Key']

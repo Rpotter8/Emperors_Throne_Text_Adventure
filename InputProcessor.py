@@ -24,7 +24,7 @@ def processInput(data,plyr,env):
 
     words = nltk.word_tokenize(data)
     words = nltk.pos_tag(words)
-    dprint(words)
+
 
     with open('corpus/thes.nofinal', 'r') as myfile:
         thes=myfile.read().replace('\n', '')
@@ -38,7 +38,6 @@ def processInput(data,plyr,env):
             i[1] == "NN" or i[1] == "JJ"):
             action = i[0]
         if(verb != "" and action != ""):
-            print("Verb: " + verb +", Action: " + action)
             break
 
 
@@ -84,7 +83,7 @@ def processInput(data,plyr,env):
         return "Grab"
     if("inventory" == action or action in thes["data"]["inventory"]["t1"]):
         inv = plyr.getInventory()
-        dprint (inv)
+        dprint (str(inv))
         return "Inventory"
     if("equipment" == action or action in thes["data"]["equipment"]["t1"]):
         armor = plyr.getArmor()
