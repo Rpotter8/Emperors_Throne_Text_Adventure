@@ -1,10 +1,12 @@
 {"data":
 {"look":
 {"t1":
-["admire","attend","behold","beware","consider","contemplate","eye","feastoneseyes","flash","focus","gape","gawk","gaze","getaloadof","glance","glower","goggle","heed","inspect","mark","mind","note","notice","observe","ogle","peep","peer","poreover","read","regard","rubberneck","scan","scout","scrutinize","see","spot","spy","stare","study","survey","takeagander","takeinthesights","tend","view","watch","view","observe","describe","detail","gander","peruse"]},
+["admire","attend","behold","beware","consider","contemplate","eye","feastoneseyes","flash","focus","gape","gawk","gaze","getaloadof","glance","glower","goggle","heed","inspect","mark","mind","note","notice","observe","ogle","peep","peer","poreover","read","regard","rubberneck","scan","scout","scrutinize","see","spot","spy","stare","study","survey","takeagander","takeinthesights","tend","view","watch","view","observe","describe","detail","gander","peruse","check"],
+"t2":["ogle"]},
 "inventory":
 {"t1":
-["account","backlog","catalogue","file","fund","hoard","index","itemization","record","register","reserve","reservoir","roll","roster","schedule","stockbook","stockpile","store","summary","supply","table","tabulation","bag","sack","pocket","storage","rucksack","ruck","attaché","backpack","briefcase","carry-on","carryall","case","duffel","gear","handbag","haversack","holdall","kit","knapsack","pack","packet","pocket","pocketbook","poke","pouch","purse","rucksack","sac","sack","saddlebag","satchel","suitcase","tote"]},
+["account","backlog","catalogue","file","fund","hoard","index","itemization","record","register","reserve","reservoir","roll","roster","schedule","stockbook","stockpile","store","summary","supply","table","tabulation","bag","sack","pocket","storage","rucksack","ruck","attaché","backpack","briefcase","carry-on","carryall","case","duffel","gear","handbag","haversack","holdall","kit","knapsack","pack","packet","pocket","pocketbook","poke","pouch","purse","rucksack","sac","sack","saddlebag","satchel","suitcase","tote"],
+"t2":[]},
 "grab":
 {"t1":
 ["capture","catch","catchholdof","clutch","collar","corral","getonefingerson","getoneshandson","glom","grapple","grasp","grip","hook","land","layoneshandson","nab","nail","pluck","seize","snag","snapup","snatch","take","takeholdof","pickup","pick","take","obtain","retrieve","get"],
@@ -17,15 +19,17 @@
 ["advance","apply","appropriate","availoneselfof","bestow","employ","exercise","exploit","forward","further","handle","haverecourseto","profitby","promote","puttouse","resortto","takeadvantageof","turntoaccount","use"]},
 "equipment":
 {"t1":
-["accessories","accompaniments","accouterments","apparatus","appliances","appurtenances","articles","attachments","baggage","belongings","contraptions","contrivances","devices","equipage","facilities","fittings","fixtures","furnishings","furniture","gadgets","habiliments","impedimenta","kitandkaboodle","machinery","material","materiel","miscellaneous","outfit","paraphernalia","provisioning","provisions","rig","setup","shebang","stock","store","stuff","tackle","things","tools","trappings","traps","utensils"]},
+["accessories","accompaniments","accouterments","apparatus","appliances","appurtenances","articles","attachments","baggage","belongings","contraptions","contrivances","devices","equipage","facilities","fittings","fixtures","furnishings","furniture","gadgets","habiliments","impedimenta","kitandkaboodle","machinery","material","materiel","miscellaneous","outfit","paraphernalia","provisioning","provisions","rig","setup","shebang","stock","store","stuff","tackle","things","tools","trappings","traps","utensils"],"t2":[]},
 "fight":
 {"t1":
-["altercate","assault","attack","bandywith","battle","beararms","bicker","box","brawl","brushwith","buck","carryonwar","challenge","clash","contend","crossswords","dispute","dobattle","duel","exchangeblows","feud","flareup","gotowar","grapple","joust","meet","mixitup","oppugn","plyweapons","protect","quarrel","repel","resist","rowdy","scrap","scuffle","skirmish","spar","strive","struggle","takeallcomers","takethefield","takeupthegauntlet","tiff","tilt","traverse","tug","tussle","wagewar","war","withstand","wrangle","wrestle", "maul"],
+["altercate","assault","attack","bandywith","battle","beararms","bicker","box","brawl","brushwith","buck","carryonwar","challenge","clash","contend","crossswords","dispute","dobattle","duel","exchangeblows","feud","flareup","gotowar","grapple","joust","meet","mixitup","oppugn","plyweapons","protect","quarrel","repel","resist","rowdy","scrap","scuffle","skirmish","spar","strive","struggle","takeallcomers","takethefield","takeupthegauntlet","tiff","tilt","traverse","tug","tussle","wagewar","war","withstand","wrangle","wrestle","maul","kill","murder"],
 "t2":
-["break","charge","clash","combat","contend","crossswords","duel","encounter","joust","overthrow","spar","thrust"]},
+["break","charge","clash","combat","contend","crossswords","duel","encounter","joust","overthrow","spar","thrust","annihallate","slap","bite","tickle","lick","eviscerate"]},
 "equip":
 {"t1":
-["accouter","adorn","appoint","arm","array","attire","deck","deckout","decorate","dress","endow","feathernest","fitout","fixup","furnish","gear","gearup","heel","implement","linenest","man","outfit","prep","prepare","provide","qualify","ready","rig","setup","stake","stock","supply","turnout", "wear", "put"]},
+["accouter","adorn","appoint","arm","array","attire","deck","deckout","decorate","dress","endow","feathernest","fitout","fixup","furnish","gear","gearup","heel","implement","linenest","man","outfit","prep","prepare","provide","qualify","ready","rig","setup","stake","stock","supply","turnout", "wear", "put"],
+"t2":[]},
 "condition":
 {"t1":
-["appearance","aspect","build","constitution","fettle","form","health","kilter","mint","order","phase","repair","state","status","tone","trim"]}}}
+["appearance","aspect","build","constitution","fettle","form","health","kilter","mint","order","phase","repair","state","status","tone","trim"],
+"t2":[]}}}

@@ -83,7 +83,7 @@ class Player():
                 dprint(str("You were healed for "+str(item.getAttr2())+" health"))
             else:
                 self.health -= item.getAttr2()
-                dprint(str("You were poisened for "+str(item.getAttr2())+" damage"))
+                dprint(str("You were poisoned for "+str(item.getAttr2())+" damage"))
         self.inventory.remove(item)
     def move(self,direction):
         if(direction == "Up"):
@@ -111,7 +111,7 @@ class Player():
             if monster.getAttr1() <= 0:
                 dprint(str("You have defeated the "+monster.toStringItem()+"..\n\t"+\
                     "Congratulations, Hero!"))
-                dprint(str("You have "+str(self.health)+" remaining.\n"))
+                dprint(str("You have "+str(self.health)+"health remaining.\n"))
                 env.remove(monster)
             else:
                 chance = random.randint(1,10)
