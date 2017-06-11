@@ -154,6 +154,7 @@ while(1):
         dprint ("Equipping done.\n")
         continue
     if("Stairs" in data):
+        difficulty = difficulty+1
         currfloor = maze(5,5,++difficulty)
         player.setLocation(0,0)
         CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).getEnv()
@@ -165,7 +166,14 @@ while(1):
         #print("I do not understand your command")
     if("Condition" in data):
         dprint(str(player.getName()+",\nYou have "+str(player.getHealth())+" hitpoints\nYou have "+str(player.getDefense())+" defense\nYou have "+str(player.getAttack())+" attack!"))
+        continue
     if("Fail" in data):
+        dprint("A monster blocks your path!")
+        continue
+    if("Help" in data):
+        dprint("Your objective is to find the key to exit the current floor, battling increasingly difficult enemies as you ascend the castle.\
+               \n\nIf you are struggling to have your instructions understood, try incorporating the following commands:\nUp(North)\nDown(South)\nLeft(West)\nRight(East)\
+               \nLook\nGrab [Item]\nFight [Enemy]\nUse [Item]\nEquip [Item]\nInventory\nCondition\nEquipment\n\n\nSynonyms for these commands should also be acceptable!\nTry to avoid unnecessary descriptive language.")
         continue
     if("Error" not in data and "Look" not in data):
         CurrEnv = currfloor.getVertex(player.getLocation()[1],player.getLocation()[0]).getEnv()
