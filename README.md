@@ -4,6 +4,7 @@ Required Libraries*:
   SpeechRecognition,
   simpleaudio,
   pocketsphynx (version 0.1.3 and greater)
+  NLTK
 
 *Additional libraries must also be installed due to dependencies
 
