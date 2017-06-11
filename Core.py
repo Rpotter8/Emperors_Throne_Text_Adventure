@@ -13,6 +13,7 @@ import time
 import sys
 import simpleaudio as sa
 import os
+import platform
 
 wave_obj = sa.WaveObject.from_wave_file("dungeon.wav")
 
@@ -41,8 +42,13 @@ def thunder():
 #Game Intro!
 dprint("Welcome Player!")
 name = input("Please Input Your Name! ")
-#defaults to yes
-stot = input("Would you like to use speech to text? y/n : ")
+#defaults to no, unless on a non windows system in which case there is no prompt.
+stot = 'n'
+if(platform.system()=='Windows'):
+    stot = input("Would you like to use speech to text? y/n : ")
+else:
+    dprint("Warning! Speech to text is only guaranteed to function on windows machines.")
+    stot = input("Would you like to use speech to text? y/n : ")
 while True:
     try:
         difficulty = int(input("Please Select a Difficulty From 1-5 : "))
@@ -136,12 +142,12 @@ while(1):
     #print("y:"+str(player.getLocation()[0])+" x:"+str(player.getLocation()[1]))
     print("\n")
     data = ""
-    if(stot.lower() == 'y' or stot.lower() == 'yes'):
-        text = RecognizeSpeech.recognize()
-        data = InputProcessor.processInput(text,player,CurrEnv)
-    else:
+    if(stot.lower() == 'n' or stot.lower() == 'no'):
         choice = input("What do you do..?\n\t")
         data = InputProcessor.processInput(choice,player,CurrEnv)
+    else:
+        text = RecognizeSpeech.recognize()
+        data = InputProcessor.processInput(text,player,CurrEnv)
     if("Grab" in data):
         continue
     if("Inventory" in data):
