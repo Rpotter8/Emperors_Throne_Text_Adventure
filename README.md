@@ -1,8 +1,8 @@
 # Emperors_Throne_Text_Adventure
 Runs on Python 3.5 or above
 Required Libraries*:
-  SpeechRecognition
-  simpleaudio
+  SpeechRecognition,
+  simpleaudio,
   pocketsphynx (version 0.1.3 and greater)
 
 *Additional libraries must also be installed due to dependencies
